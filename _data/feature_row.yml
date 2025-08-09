@@ -1,0 +1,24 @@
+- image_path: /assets/images/feature-customizable.png
+  alt: "Super customizable"
+  title: "Super customizable"
+  excerpt: "Easily configure site settings, layouts, and content without touching code."
+  url: "#"
+  btn_label: "Learn more"
+  btn_class: "btn--primary"
+
+- image_path: /assets/images/feature-responsive.png
+  alt: "Responsive layouts"
+  title: "Responsive layouts"
+  excerpt: "Works on mobile, tablet, and desktop. No extra effort needed."
+  url: "#"
+  btn_label: "See in action"
+  btn_class: "btn--primary"
+
+- image_path: /assets/images/feature-free.png
+  alt: "100% free"
+  title: "100% free"
+  excerpt: "Open source and free for personal and commercial projects."
+  url: "#"
+  btn_label: "Get it now"
+  btn_class: "btn--primary"
+
