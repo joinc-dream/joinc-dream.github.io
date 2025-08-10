@@ -1,0 +1,17 @@
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        {{ include.prompt | markdownify | remove: '<p>' | remove: '</p>' | newline_to_br }}
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                <pre><code class="language-markdown">{{ include.response | strip | escape }}</code></pre>
+            </div>
+        </details>
+    </div>
+</div>

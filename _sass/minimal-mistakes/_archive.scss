@@ -239,6 +239,12 @@
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
 
+  /* 작은 화면 이상일 때 Flexbox 레이아웃 적용 */
+  @include breakpoint($small) {
+    display: flex;
+    gap: gutter(of 12); /* 아이템 사이의 간격을 gap으로 한번에 설정 */
+  }
+
   .archive__item-title {
     margin-bottom: 0;
   }
@@ -250,25 +256,10 @@
   font-size: 1.125em;
 
   @include breakpoint($small) {
-    float: inline-start;
-    margin-bottom: 0;
-    width: span(4 of 12);
-
-    &:nth-child(3n + 1) {
-      clear: both;
-      margin-inline-start: 0;
-    }
-
-    &:nth-child(3n + 2) {
-      clear: none;
-      margin-inline-start: gutter(of 12);
-    }
-
-    &:nth-child(3n + 3) {
-      clear: none;
-      margin-inline-start: gutter(of 12);
-    }
-
+     /* Flexbox 아이템으로 작동하도록 설정 */
+     display: flex;
+     flex-direction: column;
+     flex: 1; /* 모든 아이템이 동일한 너비를 차지하도록 설정 */
     .feature__item-teaser {
       max-height: 200px;
       overflow: hidden;
@@ -277,6 +268,10 @@
 
   .archive__item-body {
     padding-inline: gutter(1 of 12);
+    /* 버튼을 아래로 밀어내는 로직 추가 */
+    .btn {
+      margin-top: auto;
+    }    
   }
 
   a.btn::before {

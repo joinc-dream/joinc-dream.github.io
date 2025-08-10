@@ -1,24 +1,23 @@
-- image_path: /assets/images/feature-customizable.png
-  alt: "Super customizable"
-  title: "Super customizable"
-  excerpt: "Easily configure site settings, layouts, and content without touching code."
+- image_path: /assets/images/mm-customizable-feature.png
+  alt: "Latest AI News & Trends"
+  title: "Latest AI News & Trends"
+  excerpt: "빠르게 변화하는 생성 AI 분야의 최신 모델과 기술 트렌드를 소개합니다. 복잡한 소식들 속에서 핵심만 정확히 파악하여 업계의 중요한 흐름을 놓치지 않도록 돕습니다."
   url: "#"
   btn_label: "Learn more"
   btn_class: "btn--primary"
 
-- image_path: /assets/images/feature-responsive.png
-  alt: "Responsive layouts"
-  title: "Responsive layouts"
-  excerpt: "Works on mobile, tablet, and desktop. No extra effort needed."
+- image_path: /assets/images/mm-responsive-feature.png
+  alt: "Practical AI Guides"
+  title: "Practical AI Guides"
+  excerpt: "LangChain,ADK,A2A 등 최신 AI 도구를 실제로 설치하고 활용하는 방법을 안내합니다. 누구나 쉽게 따라 할 수 있는 단계별 튜토리얼과 실용적인 노하우를 공유합니다"
   url: "#"
   btn_label: "See in action"
   btn_class: "btn--primary"
 
-- image_path: /assets/images/feature-free.png
-  alt: "100% free"
-  title: "100% free"
-  excerpt: "Open source and free for personal and commercial projects."
+- image_path: /assets/images/mm-free-feature.png
+  alt: "AI/ML Concepts"
+  title: "AI/ML Concepts"
+  excerpt: "추론(Reasoning), RAG, 미세조정(Fine-tuning) 등 복잡한 AI와 머신러닝의 핵심 개념을 다룹니다. 어려운 원리도 구체적인 예시를 통해 누구나 명확하게 이해할 수 있도록 쉽게 풀어 설명합니다."
   url: "#"
   btn_label: "Get it now"
   btn_class: "btn--primary"
-

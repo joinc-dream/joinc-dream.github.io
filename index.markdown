@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "Welcome to My Blog"
-excerpt: "A short description of your site or yourself."
+title: "WELCOME TO THE REAL AI WORLD"
+excerpt: "내일은 내일의 해가 뜬다"
 header:
   overlay_image: /assets/images/header.jpg
   overlay_filter: "0.5"
@@ -10,7 +10,7 @@ header:
   caption: "Photo credit: [Unsplash](https://unsplash.com)"
 ---
 
-Welcome to my blog! Here you can find articles, tutorials, and more.
+<h1>Welcome to our team blog! Here you can find articles, tutorials, and more.</h1>
 
 {% include feature_row.html %}
 

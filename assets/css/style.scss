@@ -1,0 +1,118 @@
+--- 
+---
+/* === 채팅창 개선된 스타일 V2 === */
+
+/* 전체 컨테이너 */
+.chat-container {
+    border: 1px solid #dee2e6;
+    /* 테두리 색상 변경 */
+    border-radius: 10px;
+    /* 둥근 모서리 증가 */
+    overflow: hidden;
+    margin: 2em 0;
+    /* 위아래 여백 추가 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* 은은한 그림자 효과 */
+}
+
+/* User 입력과 LLM 응답 공통 스타일 */
+.chat-prompt,
+.chat-response {
+    padding: 16px 20px;
+}
+
+/* User 입력창 스타일 */
+.chat-prompt {
+    font-size: 0.8em;
+    background-color: #f8f9fa;
+    /* 밝은 회색 배경 */
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* LLM 응답창 스타일 */
+.chat-response {
+    background-color: #f0f7ff;
+    /* 은은한 파란색 배경으로 시각적 구분 */
+}
+
+/* 'User', 'LLM' 레이블 공통 스타일 */
+.chat-prompt strong,
+.chat-response strong {
+    display: block;
+    /* 레이블을 블록 요소로 변경 */
+    margin-bottom: 8px;
+    /* 레이블과 본문 사이의 간격 조절 (핵심!) */
+    color: #495057;
+    /* 텍스트 색상 부드럽게 */
+    font-size: 0.8em;
+    /* 폰트 크기 살짝 줄이기 */
+    font-weight: 600;
+    /* 폰트 굵기 조절 */
+}
+
+/* LLM 응답의 코드 블록 스타일 */
+.chat-response pre {
+    margin: 0;
+    font-size: 0.8em;
+    padding: 12px;
+    background-color: #ffffff;
+    /* 코드 블록 배경을 흰색으로 지정 */
+    border: 1px solid #cce4ff;
+    /* 응답창 배경과 어울리는 테두리 */
+    border-radius: 6px;
+}
+
+/* === 채팅창 접기 기능 스타일 추가 === */
+
+/* <details> 태그의 기본 스타일 */
+.chat-response details {
+  padding: 16px 20px;
+}
+
+/* <summary> 태그 (클릭하는 영역) 스타일 */
+.chat-response summary {
+  cursor: pointer; /* 마우스를 올리면 손가락 모양으로 변경 */
+  outline: none;   /* 클릭 시 생기는 외곽선 제거 */
+  list-style: none; /* 브라우저 기본 화살표(마커) 제거 */
+}
+/* Firefox에서 기본 화살표 제거 */
+.chat-response summary::-webkit-details-marker {
+  display: none;
+}
+
+/* '응답 보기/숨기기' 텍스트 스타일 */
+.chat-response summary span {
+  font-size: 0.8em;
+  color: #6c757d;
+  margin-left: 8px;
+  font-weight: normal;
+}
+
+/* 실제 답변 내용이 담길 div 스타일 */
+.response-content {
+  margin-top: 15px; /* 제목과 내용 사이의 간격 */
+}
+
+/* --- 카드 버튼 하단 정렬을 위한 최종 수정 코드 --- */
+
+/* .feature__item의 직접적인 자식인 .archive__item이
+   부모 높이를 100% 채우고, 내부적으로 flex column 레이아웃을 갖도록 설정 */
+.feature__item .archive__item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 이미지, 제목 등을 감싸는 .archive__item-body가
+   남은 세로 공간을 모두 차지하도록 설정 (핵심!) */
+.feature__item .archive__item-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+/* 본문(.archive__item-body) 내에서 마지막 p 태그(보통 버튼을 감싸고 있음)를
+   컨테이너의 맨 아래로 밀어냅니다. */
+.feature__item .archive__item-body p:last-child {
+  margin-top: auto;
+}
