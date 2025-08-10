@@ -1,10 +1,10 @@
 ---
 layout: home
-title: "WELCOME TO THE REAL AI WORLD"
+title: "REAL AI WORLD"
 excerpt: "내일은 내일의 해가 뜬다"
 header:
   overlay_image: /assets/images/header.jpg
-  overlay_filter: "0.5"
+  overlay_filter: "rgba(0, 0, 0, 0)" # 이미지 위에 씌울 어두운 오버레이
   cta_label: "Learn More"
   cta_url: "/about/"
   caption: "Photo credit: [Unsplash](https://unsplash.com)"

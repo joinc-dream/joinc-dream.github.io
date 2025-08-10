@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Sang Bae YUN"
+  avatar           : "/assets/images/bio-photo-yun.webp"
+  bio              : "We are **amazing** team."
+  location         : "Seoul. Korea"
+  email            : yundream@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

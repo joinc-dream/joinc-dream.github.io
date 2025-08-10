@@ -1,0 +1,29 @@
+# 첫 번째 작성자
+gildong:
+  name             : "Sang Bae YUN"
+  avatar           : "/assets/images/bio-photo-yun" # 홍길동 프로필 사진
+  bio              : "세상을 바꾸는 개발자, 홍길동입니다."
+  location         : "대한민국 서울"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:gildong@example.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gildong"
+
+# 두 번째 작성자
+soonsin:
+  name             : "이순신"
+  avatar           : "/assets/images/bio-photo-hong.png" # 이순신 프로필 사진
+  bio              : "데이터 분석과 전략을 사랑하는 이순신입니다."
+  location         : "대한민국 부산"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://soonsin-data.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/soonsin"
+
+# 필요하다면 세 번째, 네 번째 작성자도 같은 형식으로 계속 추가할 수 있습니다.
