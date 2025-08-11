@@ -10,7 +10,7 @@
                 <span>응답 보기 / 숨기기</span>
             </summary>
             <div class="response-content">
-                <pre><code class="language-markdown">{{ include.response | strip | escape }}</code></pre>
+                {{ include.response | markdownify }}
             </div>
         </details>
     </div>
