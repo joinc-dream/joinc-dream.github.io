@@ -72,21 +72,80 @@ layout: single
 
   .skill-bar {
     height: 10px;
-    background-color: #149ddd;
+    background-color: #202020;
     border-radius: 5px;
   }
+
+.experience-timeline {
+  position: relative;
+  margin-top: 1em;
+}
+
+
+
+.experience-item {
+  position: relative;
+  margin-bottom: 2em;
+  padding-left: 40px;
+}
+
+.experience-dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 22px;
+  width: 22px;
+  background: #fff;
+  border: 2px solid #149ddd;
+  border-radius: 50%;
+}
+
+.experience-content {
+  background: #f9f9f9;
+  padding: 0 20px 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.experience-content h4 {
+  margin-top: 0;
+  font-size: 1.2em; /* Slightly larger */
+  color: #333;
+}
+
+.experience-content h5 {
+  font-size: 0.85em;
+  font-weight: 400; /* Lighter */
+  color: #777; /* Gray color */
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.experience-content p em {
+  font-style: italic; /* Back to italic for distinction */
+  color: #555;
+}
+
+.summary-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 0.1em;
+}
+
 
   /* Step 3: Enhance the "Resume" Section */
   .resume-timeline {
     position: relative;
-    padding-left: 30px;
-    border-left: 2px solid #eef1f5;
+    padding-left: 0px;
   }
 
   .resume-item {
     position: relative;
     margin-bottom: 1.2em; /* Reduced from 2em */
-    padding: 0.5em 1em; /* Reduced padding-top from 1em to 0.5em */
+    padding: 0 1em 0.5em; /* Reduced padding-top from 1em to 0.5em */
     background-color: #fff;
     border-radius: 8px;
     border: 1px solid #eef1f5;
@@ -111,6 +170,7 @@ layout: single
     color: #000000;
     margin-bottom: 0.25em;
     margin-top: 0; /* Ensure no default top margin */
+    padding: 0;
   }
 
   .resume-item h5 {
@@ -204,24 +264,28 @@ layout: single
     <h2>Resume</h2>
     <div class="resume-timeline">
       <h3>Summary</h3>
-      <div class="resume-item">
-        <h4>{{ portfolio.resume.summary.name }}</h4>
+      <div class="summary-item">
         <p><em>{{ portfolio.resume.summary.description }}</em></p>
       </div>
 
       <h3>Professional Experience</h3>
-      {% for item in portfolio.resume.experience %}
-        <div class="resume-item">
-          <h4>{{ item.title }}</h4>
-          <h5>{{ item.period }}</h5>
-          <p><em>{{ item.company }}</em></p>
-          <ul>
-          {% for duty in item.duties %}
-            <li>{{ duty }}</li>
-          {% endfor %}
-          </ul>
-        </div>
-      {% endfor %}
+      <div class="experience-timeline">
+        {% for item in portfolio.resume.experience %}
+          <div class="experience-item">
+            <div class="experience-dot"></div>
+            <div class="experience-content">
+              <h4>{{ item.title }}</h4>
+              <h5>{{ item.period }}</h5>
+              <p><em>{{ item.company }}</em></p>
+              <ul>
+                {% for duty in item.duties %}
+                  <li>{{ duty }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </section>
 
