@@ -36,7 +36,7 @@
 
 <div class="custom-team-container">
 {% for member in site.members %}
-  {%- assign author_id = member.author_id -%}
+  {%- assign author_id = member.author -%}
   {%- assign author = site.data.authors[author_id] -%}
   {% if author %}
     <div class="custom-team-card">

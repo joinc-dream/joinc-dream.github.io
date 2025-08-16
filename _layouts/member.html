@@ -1,0 +1,243 @@
+---
+layout: single
+---
+
+{%- assign author_id = page.author -%}
+{%- assign author = site.data.authors[author_id] -%}
+{%- assign portfolio = site.data.portfolios[author_id] -%}
+
+<style>
+  /* Step 1: Improve Readability and Spacing */
+  .portfolio-content h2:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .portfolio-content h2 { /* Section headers */
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.3em;
+  }
+
+  .portfolio-content h3 { /* Sub-headers */
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0.5em;
+    margin-bottom: 0.1em;
+  }
+
+  .portfolio-content p,
+  .portfolio-content ul {
+    line-height: 1.7;
+    font-size: 1.05em;
+    margin-bottom: 0.3em;
+  }
+
+  .portfolio-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .portfolio-content li {
+    margin-bottom: 0.5em;
+  }
+
+  /* Step 2: Stylize the "Skills" Section */
+  .skills-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .skill-item {
+    margin-bottom: 1.5em;
+  }
+
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+
+  .skill-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+  }
+
+  .skill-bar {
+    height: 10px;
+    background-color: #149ddd;
+    border-radius: 5px;
+  }
+
+  /* Step 3: Enhance the "Resume" Section */
+  .resume-timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #eef1f5;
+  }
+
+  .resume-item {
+    position: relative;
+    margin-bottom: 1.2em; /* Reduced from 2em */
+    padding: 0.5em 1em; /* Reduced padding-top from 1em to 0.5em */
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #eef1f5;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  }
+
+  .resume-item::before {
+    content: '';
+    position: absolute;
+    left: -39px;
+    top: 18px; /* Adjusted from 24px */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #149ddd;
+    border: 2px solid #fff;
+  }
+
+  .resume-item h4 {
+    font-size: 1.1em; /* Slightly reduced from 1.2em */
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.25em;
+    margin-top: 0; /* Ensure no default top margin */
+  }
+
+  .resume-item h5 {
+    font-size: 0.9em; /* Slightly reduced from 1em */
+    font-weight: 600;
+    background-color: #f0f4f8;
+    padding: 3px 8px; /* Reduced padding */
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 0.25em; /* Reduced from 0.75em */
+    margin-top: 0; /* Ensure no default top margin */
+  }
+
+  .resume-item em {
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .resume-item ul {
+    padding-left: 40px; /* Increased from 15px for better indentation */
+    list-style-type: disc; /* Ensure bullet points are visible */
+    margin-top: 0.5em; /* Add some space above the list */
+  }
+
+  .resume-item ul li {
+    margin-bottom: 0.25em; /* Reduced from 0.5em for tighter spacing */
+    line-height: 1.5; /* Adjusted line height for duties */
+  }
+
+  /* Step 4: Add Visual Flourishes */
+  .portfolio-content {
+    background-color: #fff;
+    padding: 0 2em 2em;
+    border-radius: 8px;
+  }
+
+  .portfolio-content h2 {
+    color: #000000; /* Theme's accent color */
+    border-bottom: 1px solid #a8a8a8; /* Match border color */
+  }
+
+  .portfolio-content a {
+    color: #149ddd;
+    transition: color 0.3s ease;
+  }
+
+  .portfolio-content a:hover {
+    color: #0a6ebd; /* Darker shade on hover */
+  }
+
+  /* Adjust margin for sections inside portfolio-content */
+  .portfolio-content section:not(:first-child) {
+    margin-top: 3em;
+  }
+</style>
+
+<div class="portfolio-content">
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <h3>{{ portfolio.about.title }}</h3>
+    <p><em>{{ portfolio.about.description }}</em></p>
+    <ul>
+    {% for item in portfolio.about.details %}
+      <li><strong>{{ item.key }}:</strong> {{ item.value }}</li>
+    {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" style="margin-top: 2.5em;">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+    {% for skill in portfolio.skills %}
+      <li class="skill-item">
+        <div class="skill-info">
+          <span>{{ skill.name }}</span>
+          <span>{{ skill.level }}%</span>
+        </div>
+        <div class="skill-bar-container">
+          <div class="skill-bar" style="width: {{ skill.level }}%;"></div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" style="margin-top: 2.5em;">
+    <h2>Resume</h2>
+    <div class="resume-timeline">
+      <h3>Summary</h3>
+      <div class="resume-item">
+        <h4>{{ portfolio.resume.summary.name }}</h4>
+        <p><em>{{ portfolio.resume.summary.description }}</em></p>
+      </div>
+
+      <h3>Professional Experience</h3>
+      {% for item in portfolio.resume.experience %}
+        <div class="resume-item">
+          <h4>{{ item.title }}</h4>
+          <h5>{{ item.period }}</h5>
+          <p><em>{{ item.company }}</em></p>
+          <ul>
+          {% for duty in item.duties %}
+            <li>{{ duty }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" style="margin-top: 2.5em;">
+    <h2>Education</h2>
+    <div class="resume-timeline">
+    {% for item in portfolio.education %}
+      <div class="resume-item">
+        <h4>{{ item.degree }}</h4>
+        <h5>{{ item.period }}</h5>
+        <p><em>{{ item.school }}</em></p>
+      </div>
+    {% endfor %}
+    </div>
+  </section>
+
+
+</div>

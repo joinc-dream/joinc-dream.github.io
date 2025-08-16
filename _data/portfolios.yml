@@ -1,0 +1,95 @@
+sangbaeyun:
+  about:
+    title: "Software Engineer & AI Enthusiast."
+    description: "세상을 바꾸는 기술에 기여하고 싶은 개발자 홍길동입니다. 사용자 중심의 서비스를 만드는 데 큰 보람을 느낍니다."
+    details:
+      - key: "Location"
+        value: "Seoul, Korea"
+      - key: "Website"
+        value: "https://www.joinc.co.kr"
+
+  skills:
+    - name: "Python"
+      level: 80
+    - name: "JavaScript"
+      level: 70
+    - name: "GoLang"
+      level: 80
+    - name: "React"
+      level: 85
+    - name: "AWS"
+      level: 90
+    - name: "GCP"
+      level: 80
+    - name: "Generative AI"
+      level: 85
+
+  education:
+    - degree: "Master of Computer Science"
+      period: "2016 - 2018"
+      school: "Korea University, Seoul, KR"
+
+  resume:
+    summary:
+      name: "Gildong Hong"
+      description: "Innovative and deadline-driven Software Engineer with 5+ years of experience designing and developing user-centered applications."
+    experience:
+      - title: "Senior Software Engineer"
+        period: "2020 - Present"
+        company: "Awesome Tech Inc., Seoul, KR"
+        duties:
+          - "Lead in the design, development, and implementation of applications."
+          - "Delegate tasks to the 7 members of the design team."
+      - title: "Software Engineer"
+        period: "2018 - 2019"
+        company: "Startup Heroes, Pangyo, KR"
+        duties:
+          - "Developed numerous marketing programs."
+          - "Managed up to 5 projects or tasks at a given time."
+
+soonsin:
+  about:
+    title: "Data Scientist & Strategist."
+    description: "데이터의 흐름 속에서 가치를 발견하는 데이터 분석가 이순신입니다. 전략적인 사고와 데이터 기반의 의사결정을 중요하게 생각합니다."
+    details:
+      - key: "Location"
+        value: "Busan, Korea"
+      - key: "Website"
+        value: "data-driven.example.com"
+
+  skills:
+    - name: "Python"
+      level: 95
+    - name: "R"
+      level: 90
+    - name: "SQL"
+      level: 85
+    - name: "Pandas & Scikit-learn"
+      level: 90
+    - name: "TensorFlow"
+      level: 80
+    - name: "Tableau"
+      level: 85
+
+  education:
+    - degree: "Master of Statistics"
+      period: "2017 - 2019"
+      school: "Yonsei University, Seoul, KR"
+
+  resume:
+    summary:
+      name: "Soonsin Lee"
+      description: "Analytical and goal-oriented Data Scientist with a passion for finding narratives in data and driving business strategy."
+    experience:
+      - title: "Data Scientist"
+        period: "2021 - Present"
+        company: "Data Driven Corp., Busan, KR"
+        duties:
+          - "Customer churn prediction modeling and dashboard construction."
+          - "A/B test design for marketing campaigns."
+      - title: "Data Analyst"
+        period: "2019 - 2021"
+        company: "Analytics Pioneer Ltd., Seoul, KR"
+        duties:
+          - "Analyzed marketing campaign performance."
+          - "Created reports for business stakeholders."
