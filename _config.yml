@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sang Bae YUN"
-  avatar           : "/assets/images/bio-photo-yun.webp"
+  name             : "AI Explorer"
+  avatar           : "/assets/images/ai-explorer.jpeg"
   bio              : "We are **amazing** team."
   location         : "Seoul. Korea"
-  email            : yundream@gmail.com
+  email            : joinc.dream@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -310,6 +310,12 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Collections
+collections:
+  members:
+    output: true
+    permalink: /members/:name/
 
 
 # Defaults

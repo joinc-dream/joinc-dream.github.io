@@ -11,6 +11,11 @@ header:
   caption: "Photo credit: [Unsplash](https://unsplash.com)"
 
 ---
+
+## Our Team
+
+{% include custom-team-grid.html %}
+
 ## Our Core Values
 
  * 내일은 내일의 태양이 뜬다.

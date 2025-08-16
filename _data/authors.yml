@@ -1,9 +1,10 @@
 # 첫 번째 작성자
 gildong:
   name             : "Sang Bae YUN"
-  avatar           : "/assets/images/bio-photo-yun" # 홍길동 프로필 사진
-  bio              : "세상을 바꾸는 개발자, 홍길동입니다."
+  avatar           : "/assets/images/bio-photo-yun.webp"
+  bio              : "세상을 바꾸는 개발자, 윤상배 입니다."
   location         : "대한민국 서울"
+  url              : "/members/gildong/"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -18,6 +19,7 @@ soonsin:
   avatar           : "/assets/images/bio-photo-hong.png" # 이순신 프로필 사진
   bio              : "데이터 분석과 전략을 사랑하는 이순신입니다."
   location         : "대한민국 부산"
+  url              : "/members/soonsin/"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"

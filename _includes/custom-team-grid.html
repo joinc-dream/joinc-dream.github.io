@@ -1,0 +1,51 @@
+<!-- _includes/custom-team-grid.html -->
+
+<style>
+  .custom-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 카드 사이의 간격 */
+    justify-content: center;
+    padding: 0;
+    margin: 2em 0;
+  }
+  .custom-team-card {
+    flex: 1 1 280px; /* 카드의 최소 너비 지정 */
+    max-width: 320px;
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  .custom-team-card img {
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  .custom-team-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+  }
+  .custom-team-card p {
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
+
+<div class="custom-team-container">
+{% for member in site.members %}
+  {%- assign author_id = member.author_id -%}
+  {%- assign author = site.data.authors[author_id] -%}
+  {% if author %}
+    <div class="custom-team-card">
+      <a href="{{ member.url | relative_url }}">
+        <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}">
+      </a>
+      <h3><a href="{{ member.url | relative_url }}">{{ author.name }}</a></h3>
+      <p>{{ author.bio }}</p>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
