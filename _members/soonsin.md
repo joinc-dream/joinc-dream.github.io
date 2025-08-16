@@ -1,31 +1,78 @@
 ---
-title: "Soonsin Lee's Profile"
-layout: single
+title: "Soonsin's Portfolio"
+layout: "single"
 author_profile: true
-author_id: soonsin
+permalink: /members/soonsin/
+author: soonsin
 ---
 
-## 🌊 About Me
+<style>
+  /* Hide the social media link buttons */
+  .author__urls {
+    display: none;
+  }
+  /* Adjust avatar size */
+  .author__avatar img {
+    max-width: 120px;
+  }
+  /* Adjust font sizes */
+  .author__name {
+    font-size: 1.2em;
+  }
+  .author__bio {
+    font-size: 0.9em;
+  }
+  /* Align sidebar content with main content */
+  .sidebar {
+    margin-top: 4.5em; /* Adjust this value as needed */
+  }
+</style>
 
-데이터의 흐름 속에서 가치를 발견하는 데이터 분석가 이순신입니다.
-전략적인 사고와 데이터 기반의 의사결정을 중요하게 생각합니다.
+{%- assign author_id = page.author -%}
+{%- assign portfolio = site.data.portfolios[author_id] -%}
+
+### {{ portfolio.about.title }}
+
+*{{ portfolio.about.description }}*
+
+<ul>
+{% for item in portfolio.about.details %}
+  <li><strong>{{ item.key }}:</strong> {{ item.value }}</li>
+{% endfor %}
+</ul>
+
+## Skills
+
+<ul>
+{% for skill in portfolio.skills %}
+  <li>{{ skill.name }} ({{ skill.level }}%)</li>
+{% endfor %}
+</ul>
 
 ---
 
-## 🚀 Career
+## Resume
+### Summary
 
-- **Data Driven Corp.** (2021.03 ~ 현재)
-  - Data Scientist
-  - 주요 프로젝트: 고객 이탈 예측 모델링 및 시각화 대시보드 구축
-- **Analytics Pioneer Ltd.** (2019.01 ~ 2021.02)
-  - Data Analyst
-  - 주요 업무: 마케팅 캠페인 성과 분석 및 A/B 테스트 설계
+**{{ portfolio.resume.summary.name }}**
 
----
+*{{ portfolio.resume.summary.description }}*
 
-## 🛠️ Skills
+### Education
 
-- **Languages**: Python, R, SQL
-- **Libraries**: Pandas, Scikit-learn, TensorFlow
-- **BI Tools**: Tableau, Power BI
-- **Databases**: BigQuery, Redshift
+{% for item in portfolio.resume.education %}
+**{{ item.degree }}**
+*{{ item.school }} ({{ item.period }})*
+{% endfor %}
+
+### Professional Experience
+
+{% for item in portfolio.resume.experience %}
+**{{ item.title }}** at {{ item.company }} ({{ item.period }})
+
+<ul>
+{% for duty in item.duties %}
+  <li>{{ duty }}</li>
+{% endfor %}
+</ul>
+{% endfor %}
