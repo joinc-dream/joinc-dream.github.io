@@ -1,0 +1,90 @@
+/* --- Notion Style Link Card (Horizontal) --- */
+.link-card-horizontal {
+  display: flex !important; /* !important를 추가하여 다른 스타일에 덮어쓰이지 않도록 강제합니다. */
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1.5em 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.link-card-horizontal:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* --- 이미지 섹션 --- */
+.link-card-horizontal .link-card-image {
+  flex: 0 0 150px; /* 너비 고정 */
+  min-height: 120px;
+}
+
+.link-card-horizontal .link-card-image a {
+  display: block;
+  height: 100%;
+}
+
+.link-card-horizontal .link-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-right: 1px solid #e0e0e0;
+}
+
+/* --- 콘텐츠(텍스트) 섹션 --- */
+.link-card-horizontal .link-card-content {
+  flex-grow: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.link-card-horizontal .link-card-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- 텍스트 요소 --- */
+.link-card-horizontal .link-card-title {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.link-card-horizontal .link-card-description {
+  font-size: 0.65em;
+  color: #666;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: calc(0.95em * 1.4 * 2);
+}
+
+.link-card-horizontal .link-card-domain {
+  font-size: 0.8em;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- 이미지가 없는 경우 --- */
+.link-card-horizontal.no-image .link-card-content {
+  padding: 16px 20px;
+}
+
+.link-card-horizontal.no-image .link-card-image {
+  display: none; /* 이미지가 없으면 이미지 영역을 완전히 숨김 */
+}

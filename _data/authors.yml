@@ -1,17 +1,17 @@
 # 첫 번째 작성자
-gildong:
+sangbaeyun:
   name             : "Sang Bae YUN"
   avatar           : "/assets/images/bio-photo-yun.webp"
   bio              : "세상을 바꾸는 개발자, 윤상배 입니다."
   location         : "대한민국 서울"
-  url              : "/members/gildong/"
+  url              : "/members/sangbaeyun/"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:gildong@example.com"
+      url: "mailto:yundream@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/gildong"
+      url: "https://github.com/yundream"
 
 # 두 번째 작성자
 soonsin:

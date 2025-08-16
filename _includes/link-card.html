@@ -1,0 +1,19 @@
+{% assign card = site.data.linkcards | where: "url", include.url | first %}
+{% if card %}
+<div class="link-card-horizontal {% unless card.image %}no-image{% endunless %}">
+  {% if card.image %}
+  <div class="link-card-image">
+    <a href="{{ card.url }}" target="_blank" rel="noopener">
+      <img src="{{ card.image }}" alt="{{ card.title | escape }}">
+    </a>
+  </div>
+  {% endif %}
+  <div class="link-card-content">
+    <a href="{{ card.url }}" target="_blank" rel="noopener">
+      <div class="link-card-title">{{ card.title }}</div>
+      <div class="link-card-description">{{ card.description }}</div>
+      <div class="link-card-domain">{{ card.url | replace: 'http://', '' | replace: 'https://', '' | split: '/' | first }}</div>
+    </a>
+  </div>
+</div>
+{% endif %}
