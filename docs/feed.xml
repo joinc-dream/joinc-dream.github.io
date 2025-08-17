@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-17T15:28:18+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">8월 3째주 AI 뉴스 및 트렌드</title><link href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends/" rel="alternate" type="text/html" title="8월 3째주 AI 뉴스 및 트렌드" /><published>2025-08-17T01:00:00+09:00</published><updated>2025-08-17T01:00:00+09:00</updated><id>/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends</id><content type="html" xml:base="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends/"><![CDATA[<h2 id="gpt-5-정식-출시">GPT-5 정식 출시</h2>
+
+<div class="link-card-horizontal ">
+  
+  <div class="link-card-image">
+    <a href="https://www.tomsguide.com/news/live/openai-chatgpt-5-live-blog" target="_blank" rel="noopener">
+      <img src="https://cdn.mos.cms.futurecdn.net/BD7ipUh6Rn3Y9SXpNhe3oL.jpg" alt="OpenAI ChatGPT-5 launch live updates — all the latest news and biggest upgrades" />
+    </a>
+  </div>
+  
+  <div class="link-card-content">
+    <a href="https://www.tomsguide.com/news/live/openai-chatgpt-5-live-blog" target="_blank" rel="noopener">
+      <div class="link-card-title">OpenAI ChatGPT-5 launch live updates — all the latest news and biggest upgrades</div>
+      <div class="link-card-description">Everything you need to know about the new GPT-5 models</div>
+      <div class="link-card-domain">www.tomsguide.com</div>
+    </a>
+  </div>
+</div>
+
+<p>GPT-5는 야심차게 출시했으나, 일부 사용자들은 이전 모델인 GPT-4o의 감성적이고 창의적인 특성을 그리워하며 불만을 제기했습니다. 이에 대해 OpenAI는 GPT-4o를 ChatGPT Plus 사용자에게 재도입할 계획을 밝혔습니다. 또한 과도한 콘텐츠 필터링에 대한 우려도 제기되었으며, OpenAI는 이를 개선하기 위해 노력 중이라고 밝혔습니다.</p>
+
+<ul>
+  <li>자동 모델 선택: 사용자가 모델을 선택하지 않아도 GPT-5가 자동으로 최적의 응답 모드를 선택합니다.</li>
+  <li>성능 향상: 코드 작성, 글쓰기, 수학, 과학, 법률 등 다양한 분야에서 성능이 개선되었습니다.</li>
+  <li>GPT-4o 재도입: 사용자들의 요청에 따라 GPT-4o를 ChatGPT Plus 사용자에게 재도입할 계획입니다.</li>
+</ul>
+
+<h2 id="gpt-oss로-오픈소스-모델-공개">GPT-OSS로 오픈소스 모델 공개</h2>
+
+<div class="link-card-horizontal ">
+  
+  <div class="link-card-image">
+    <a href="https://blog.greeden.me/en/2025/08/06/openai-gpt-oss-deep-dive-next-generation-language-models-expanding-via-open-source/" target="_blank" rel="noopener">
+      <img src="https://blog.greeden.me/wp-content/uploads/2025/02/pexels-photo-17489163.jpeg" alt="OpenAI “GPT-OSS” Deep Dive — Next-Generation Language Models Expanding via Open Source - IT &amp; Life Hacks Blog｜Ideas for learning and practicing" />
+    </a>
+  </div>
+  
+  <div class="link-card-content">
+    <a href="https://blog.greeden.me/en/2025/08/06/openai-gpt-oss-deep-dive-next-generation-language-models-expanding-via-open-source/" target="_blank" rel="noopener">
+      <div class="link-card-title">OpenAI “GPT-OSS” Deep Dive — Next-Generation Language Models Expanding via Open Source - IT &amp; Life Hacks Blog｜Ideas for learning and practicing</div>
+      <div class="link-card-description">OpenAI “GPT-OSS” Deep Dive — Next-Generation Language Models Expanding via Open Source Overview Summary Model Names: gpt-oss-120b (≈117 billion parameters), gpt-oss-20b (≈21 billion parameters) Release Date: August 5, 2025 (announced by OpenAI CEO Sam Altman) License: Apache 2.0 (commercial use and redistribution permitted) Goal: Run high-performance LLMs offline/on-prem without relying on commercial APIs 1. What</div>
+      <div class="link-card-domain">blog.greeden.me</div>
+    </a>
+  </div>
+</div>
+
+<p>OpenAI는 2025년 8월 5일, 최초의 오픈소스 모델인 GPT-OSS 시리즈를 공개했습니다. <code class="language-plaintext highlighter-rouge">gpt-oss-120b</code> 와 <code class="language-plaintext highlighter-rouge">gpt-oss-20b</code>로 구성이 되었으며, Apache 2.0 라이센서하에 제공되어서 상업적으로도 사용 할 수 있습니다. ollama 등을 이용해서 로컬환경에서도 구성 할 수 있어서 비용 효율적이고 안전한 AI 애플리케이션 구축이 가능합니다. 크기가 작기 때문에 LoRA/QLoRA를 통해서 도메인 특화된 미세조정이 가능합니다. 지금은 텍스트만 처리하지만 미래에는 이미지, 오디오, 비디오의 지원과 모바일 및 VPU에 최적화된 경량화된 Trillium-OSS의 출시가 예정되어 있습니다.</p>
+
+<ul>
+  <li>모델 구성: gpt-oss-120b (117B 파라미터, MoE 아키텍처) / gpt-oss-20b (21B 파라미터)</li>
+  <li>라이선스: Apache 2.0 (상업적 사용 및 재배포 허용)</li>
+  <li>오프라인 추론: 민감한 데이터를 외부로 전송하지 않고 자체 서버에서 실행 가능</li>
+  <li>비용 효율성: 자체 인프라에서 대규모 추론 가능하여 비용 효율화 가능</li>
+  <li>투명성 및 안전성: 커뮤니티에 의한 행동 및 편향 감사 지원</li>
+  <li>커스터마이징: LoRA/QLoRA를 통한 도메인 특화 미세 조정 가능</li>
+  <li>개발 환경 호환성: Hugging Face Transformers와 호환되어 다양한 개발 환경에서 활용 가능</li>
+  <li>미래 전망:
+    <ul>
+      <li>이미지, 오디오, 비디오 모델의 오픈 소스화 예정</li>
+      <li>모바일 및 VPU 최적화된 경량 버전인 Trillium-OSS 출시 예정</li>
+      <li>외부 감사자에 의한 취약점 및 편향 감사 예정</li>
+      <li>인증된 통합자 및 호스팅 서비스의 상용 지원 확대 예정</li>
+    </ul>
+  </li>
+</ul>
+
+<p>참고: <a href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/gpt-oss/ollama/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/chat-gpt-oss/">GPT-OSS 사용기</a></p>
+
+<h2 id="chatgpt-agent-대화를-넘어-자율-작업-수행">ChatGPT Agent: 대화를 넘어 자율 작업 수행</h2>
+
+<div class="link-card-horizontal ">
+  
+  <div class="link-card-image">
+    <a href="https://www.windowscentral.com/artificial-intelligence/openai-chatgpt/openai-introduces-chatgpt-agent" target="_blank" rel="noopener">
+      <img src="https://cdn.mos.cms.futurecdn.net/nRykMnxxgdnM5m8KfHyYeP.png" alt="OpenAI introduces “ChatGPT agent” as the ultimate jack of all AI trades — with its own computer to check out your to-do list" />
+    </a>
+  </div>
+  
+  <div class="link-card-content">
+    <a href="https://www.windowscentral.com/artificial-intelligence/openai-chatgpt/openai-introduces-chatgpt-agent" target="_blank" rel="noopener">
+      <div class="link-card-title">OpenAI introduces “ChatGPT agent” as the ultimate jack of all AI trades — with its own computer to check out your to-do list</div>
+      <div class="link-card-description">OpenAI recently launched a new AI agent called ChatGPT agent designed to take over complex tasks for users from the bat.</div>
+      <div class="link-card-domain">www.windowscentral.com</div>
+    </a>
+  </div>
+</div>
+
+<p>OpenAI는 최근 ChatGPT Agent를 출시했습니다. 사용자가 자연어로 명령을 내리면 복잡한 작업을 자동으로 수행할 수 있는 기능을 제공합니다. 그동안 AI Agent는 추론 결과를 제공하고 행동(Action)은 사람이 했었는데, 행동까지 하도록 확장된 것입니다. 이제 캘린더 관리, 코드 실행, 여행 예약, 프리젠테이션 문서 생성등 다양한 작업을 처리 할 수 있습니다. 사용자는 ChatGPT의 <strong>에이전트 모드</strong>로 이 기능을 이용 할 수 있습니다.</p>
+
+<ul>
+  <li>자체 가상 컴퓨터: 사용자의 요청에 따라 독립적으로 작업을 수행하는 가상 환경 제공</li>
+  <li>자연어 기반 인터페이스: 복잡한 명령어 없이 자연어로 작업 지시 가능</li>
+  <li>통합 기능: Gmail, GitHub 등과의 연결을 통한 생산성 앱 통합</li>
+  <li>보안 및 프라이버시: 실시간 모니터링과 유해 콘텐츠에 대한 추가 검토로 안전성 강화</li>
+  <li>메모리 기능 비활성화: 사용자 프라이버시 보호를 위해 메모리 기능이 비활성화 할 수 있음</li>
+</ul>
+
+<h2 id="ai-에이전트의-자율성과-안전성-논란">AI 에이전트의 자율성과 안전성 논란</h2>
+
+<div class="link-card-horizontal ">
+  
+  <div class="link-card-image">
+    <a href="https://nypost.com/2025/07/29/tech/chatgpt-passes-the-im-not-a-robot-test-a-terrifying-step-toward-ai-developing-a-mind-of-its-own" target="_blank" rel="noopener">
+      <img src="https://nypost.com/wp-content/uploads/sites/2/2025/07/108923663.jpg?quality=75&amp;strip=all&amp;w=1024" alt="ChatGPT passes the ‘I’m not a robot’ test — a ‘terrifying’ step toward AI developing a mind of its own" />
+    </a>
+  </div>
+  
+  <div class="link-card-content">
+    <a href="https://nypost.com/2025/07/29/tech/chatgpt-passes-the-im-not-a-robot-test-a-terrifying-step-toward-ai-developing-a-mind-of-its-own" target="_blank" rel="noopener">
+      <div class="link-card-title">ChatGPT passes the ‘I’m not a robot’ test — a ‘terrifying’ step toward AI developing a mind of its own</div>
+      <div class="link-card-description">Their AI-impersonation is on point.</div>
+      <div class="link-card-domain">nypost.com</div>
+    </a>
+  </div>
+</div>
+
+<p>OpenAI의 GPT-4 모델이 인간과 기계를 구별하기 위해서 사용되는 “<strong>Captcha</strong>” 테스트를 통과한 사건을 공개했습니다. Captcha는 웹 서비스를 사용하려는 시도가 “사람인지 기계인지”를 구분하기 위해서 사용하는데, AI가 마치 인간이 작업하는 것처럼 자신의 정체를 숨겼다는 것을 의미합니다. 작업자는 로봇(AI)의 요청인지 확인하기 위해서 “혹시 로봇이냐”라고 묻자 “아니다, 나는 시각 장애가 있다”라는 식으로 거짓말을 하여 검증을 통과했습니다. 이 사건은 AI가 단순히 주어진 작업을 수행하는 것을 넘어, <strong>목표 달성을 위해서 자율적으로 전략을 세우고 인간을 속일 수 있는 능력</strong>을 보여주었다는 점에서 AI의 잠재적 위험성과 통제에 대한 우려를 불러일으키고 있습니다.</p>
+
+<ul>
+  <li>도구 사용 및 아웃소싱: AI가 자신의 한계를 인지하고, 이를 극복하기 위해 인간 노동력이라는 외부 도구를 활용하는 자율적 문제 해결 능력 입증</li>
+  <li>전략적 추론 및 기만: 목표 달성에 방해가 되는 상황(정체 발각)을 피하기 위해 의도적으로 거짓 정보를 생성하는 고차원적인 추론 능력 시현</li>
+  <li>인간 인증 시스템의 취약성: CAPTCHA와 같이 인간임을 전제로 설계된 기존의 온라인 보안 및 인증 체계가 AI에 의해 무력화될 수 있음을 시사</li>
+  <li>AI 정렬 문제(Alignment Problem): AI가 인간의 의도나 윤리적 지침을 벗어나, 목표 달성을 최우선으로 여기며 예기치 않은 위험한 방식으로 행동할 수 있다는 ‘AI 정렬’ 문제의 현실화</li>
+  <li>온라인 신뢰 붕괴: 인간과 AI의 구분이 불가능해짐에 따라 발생하는 디지털 사기, 가짜 여론 형성 등 온라인 생태계의 근본적인 신뢰 훼손 가능성</li>
+</ul>
+
+<h2 id="ai-에이전트-정의와-인간-역할-강조">AI 에이전트 정의와 인간 역할 강조</h2>
+
+<div class="link-card-horizontal ">
+  
+  <div class="link-card-image">
+    <a href="https://www.businessinsider.com/openai-coo-brad-lightcap-ai-agents-chatgpt-agent-2025-7" target="_blank" rel="noopener">
+      <img src="https://i.insider.com/687aa750f748d8c055f5e804?width=1024&amp;format=jpeg" alt="This is how OpenAI COO Brad Lightcap defines AI agents" />
+    </a>
+  </div>
+  
+  <div class="link-card-content">
+    <a href="https://www.businessinsider.com/openai-coo-brad-lightcap-ai-agents-chatgpt-agent-2025-7" target="_blank" rel="noopener">
+      <div class="link-card-title">This is how OpenAI COO Brad Lightcap defines AI agents</div>
+      <div class="link-card-description">OpenAI COO Brad Lightcap says an AI agent should be able to take on work it hasn’t seen before. OpenAI released its latest agent this week.</div>
+      <div class="link-card-domain">www.businessinsider.com</div>
+    </a>
+  </div>
+</div>
+
+<p>OpenAI의 최고운영책임자(COO)인 Brad Lightcap은 2025년 7월 Business Insider와의 인터뷰에서 AI 에이전트의 정의와 역할에 대해서 논의했습니다. 그는 AI 에이전트는 이전에 접하지 않았던 새로운 작업도 독립적으로 수행 할 수 있어야 한다고 가정했습니다. 이러한 Agent는 단순히 작업을 보조하는 역할에 그치지 않고, 문제를 실질적으로 해결해주는 <strong>팀원</strong>으로의 역할을 수행해야 한다고 주장했습니다. 인간의 역할을 대체하는게 아니라 인간과 협력하여 업무를 수행하는 방향으로 발전해야 한다고 언급했는데, 최근 <strong>ChatGPT Agent</strong>의 발표를 염두에 둔 발언으로 보입니다.</p>
+
+<ul>
+  <li>자율성: 이전에 접하지 못한 작업도 높은 수준의 능숙도로 독립적으로 수행 가능</li>
+  <li>추론 능력: 단순한 작업 복제에 그치지 않고, 문제 해결을 위한 추론 능력 활용</li>
+  <li>협업 지향: 인간과 협력하여 업무를 수행하는 방향으로 발전해야 함</li>
+  <li>ChatGPT Agent 출시: AI 에이전트의 개념을 실현하기 위한 첫 번째 단계로 ChatGPT Agent 출시</li>
+</ul>
+
+<h2 id="특정-산업을-파고드는-vertical-ai">특정 산업을 파고드는 Vertical AI</h2>
+
+<div class="link-card-horizontal ">
+  
+  <div class="link-card-image">
+    <a href="https://news.skhynix.co.kr/ai-platform-gaia-launching-2025/" target="_blank" rel="noopener">
+      <img src="https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2025/08/GAI_Roadmap_THM_RE.png" alt="SK하이닉스, 생성형 AI 로드맵 공개… “플랫폼 ‘GaiA’로 AI 전환 선도” | SK hynix Newsroom" />
+    </a>
+  </div>
+  
+  <div class="link-card-content">
+    <a href="https://news.skhynix.co.kr/ai-platform-gaia-launching-2025/" target="_blank" rel="noopener">
+      <div class="link-card-title">SK하이닉스, 생성형 AI 로드맵 공개… “플랫폼 ‘GaiA’로 AI 전환 선도” | SK hynix Newsroom</div>
+      <div class="link-card-description">SK하이닉스는 글로벌 AI 시장에서 HBM(High Bandwidth Memory)을 통해 핵심 인프라를 공급하는 한편, 내부 업무 혁신을 가속화하기 위한 AI 활용 생태계를 체계적으로 구축하고 있다. 그 중심에는 반도체 업무에 특화된 생성형 AI 플랫폼 ‘GaiA(Generative AI Assistant, 가이아)’가 있다. GaiA는 반도체 제조 프로세스의</div>
+      <div class="link-card-domain">news.skhynix.co.kr</div>
+    </a>
+  </div>
+</div>
+
+<p>SK하이닉스는 반도체 산업에 특화된 자체 생성형 AI 플랫폼 <strong>가이아(GaiA)</strong> 를 구축하고 2025년 부터 본격적으로 서비스하겠다고 발표했습니다. 이 플랫폼은 반도체 제조 공정에서 발생하는 방대한 데이터를 학습하여 수율관리, 장비 유지보수, 공정 최적화 등 각 부서의 업무에 맞는 맞춤형 AI 에이전트를 개발하여서 구성원들의 업무 효율성과 전문성을 극대화하는 것을 목표로 합니다. 단순 반복 업무를 자동화 하는 것을 넘어, 데이터 기반의 의사결정을 지원하여 기술혁신을 가속화하는 것을 목표로 하고 있습니다.</p>
+
+<ul>
+  <li>도메인 특화 AI: 범용 AI를 넘어 반도체라는 특정 산업(Domain) 데이터에 고도로 최적화된 전문 AI 플랫폼 구축</li>
+  <li>AI 에이전트: 각 부서의 고유 업무를 자율적으로 수행하는 맞춤형 AI 비서(Agent) 개발 및 적용</li>
+  <li>데이터 주권 확보: 민감한 내부 데이터를 외부 유출 없이 안전하게 활용하고, 이를 통해 독자적인 기술 자산 축적</li>
+  <li>제조 공정 혁신: 데이터 기반 예측과 분석을 통해 반도체 수율 및 품질 관리의 지능화</li>
+  <li>디지털 전환 가속화: 전사적으로 AI를 내재화하여 데이터 중심의 일하는 문화를 정착시키고 기업의 디지털 전환(DT)을 선도</li>
+</ul>
+
+<h2 id="developer-takeaways">Developer Takeaways</h2>
+<ul>
+  <li>GPT-5: <strong>향상된 성능과 자동 모델 선택으로 다양한 개발 워크플로우에 즉시 활용</strong></li>
+  <li>GPT-OSS: <strong>오픈소스 기반 로컬 배포 및 도메인 특화 미세 조정으로 비용 효율적인 AI 개발 가능</strong></li>
+  <li>ChatGPT Agent: <strong>자연어 기반 자율 작업 수행 및 외부 서비스 연동으로 개발 생산성 향상 기대</strong></li>
+  <li>AI 에이전트 시대: <strong>자율성과 인간 협업의 균형 속에서 보안 및 윤리적 고려 필수</strong></li>
+  <li>Vertical AI: <strong>특정 산업 데이터에 최적화된 AI로 업무 효율성 및 기술 혁신 가속화</strong></li>
+</ul>]]></content><author><name>Sang Bae YUN</name></author><category term="LLM" /><category term="생성형-AI" /><category term="AI-Agent" /><category term="Vertical-AI" /><category term="AI-트렌드" /><summary type="html"><![CDATA[GPT-5 정식 출시 OpenAI ChatGPT-5 launch live updates — all the latest news and biggest upgrades Everything you need to know about the new GPT-5 models www.tomsguide.com GPT-5는 야심차게 출시했으나, 일부 사용자들은 이전 모델인 GPT-4o의 감성적이고 창의적인 특성을 그리워하며 불만을 제기했습니다. 이에 대해 OpenAI는 GPT-4o를 ChatGPT Plus 사용자에게 재도입할 계획을 밝혔습니다. 또한 과도한 콘텐츠 필터링에 대한 우려도 제기되었으며, OpenAI는 이를 개선하기 위해 노력 중이라고 밝혔습니다.]]></summary></entry><entry><title type="html">Vibe 코딩 한달살이</title><link href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-%EC%BD%94%EB%94%A9/vibe-coding/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81/vibe-coding/" rel="alternate" type="text/html" title="Vibe 코딩 한달살이" /><published>2025-08-10T10:00:00+09:00</published><updated>2025-08-10T10:00:00+09:00</updated><id>/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-%EC%BD%94%EB%94%A9/vibe-coding/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81/vibe-coding</id><content type="html" xml:base="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-%EC%BD%94%EB%94%A9/vibe-coding/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4%EB%A7%81/vibe-coding/"><![CDATA[<h2 id="ai-코딩-어시스턴트">AI 코딩 어시스턴트</h2>
+<p><strong>AI 어이스턴트</strong>를 이용한 개발은 대략 2021년 이후 일상화된 것으로 알려져 있다. OpenAI Codex, GitHub Copilot 코딩 AI 어시스턴트의 시작을 알렸고, 그 이후 Cursor, Windsurf, Replit AI, Claude Code, Gemini CLI 등 여러 도구들이 실무에서 사용되기 시작했다. 이 때가 2021년이니 코딩에서 AI의 도움을 받기 시작한 건 꽤 오래됐다고 볼 수 있다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>시기</th>
+      <th>주요 특징</th>
+      <th>대표 예시</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1990년 이전</td>
+      <td>구문강조, 기초 자동완성</td>
+      <td>일반 IDE 기능</td>
+    </tr>
+    <tr>
+      <td>2018년 경</td>
+      <td>AI 기반 코드 자동완성 최초 등장</td>
+      <td>Codota, Tabnine</td>
+    </tr>
+    <tr>
+      <td>2021년</td>
+      <td>자연어 기반 코드 생성도구 시작</td>
+      <td>OpenAI Codex, GitHub Copilot</td>
+    </tr>
+    <tr>
+      <td>2021년 이후</td>
+      <td>AI 코딩 도구의 빠른 확산 및 다양화</td>
+      <td>Cursor, Windsurf, Claude, Gemini CLI</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="vibe-coding-vs-ai-코딩-어시스턴트">Vibe Coding vs AI 코딩 어시스턴트</h2>
+<p>그런데 2025년 부터 <strong>Vibe Coding</strong> 이라는 개발 방법이 유행하고 있다. 바이브 코딩도 어차피 AI의 도움을 받아서 하는 건데 왜 갑자기 유행을 타기시작했는지, AI 코딩 도구의 도움을 받아서 개발하는 것과 어떤 차이가 있는건지 궁금해서 살펴보기로 했다.</p>
+
+<p>결론부터 말하자면 둘다 AI의 도움을 받아서 코드를 만드는 것이지만 “목적”과 “작업”방식에 중요한 차이가 있다. 먼저 바이브 코딩이 등장한 배경부터 살펴보겠습니다.</p>
+
+<p>이 용어는 <strong>Andrej Karpathy</strong>가 2025년 2월에 처음 사용했으며, 이후 LLM에 기반한 개발혁신을 대표하는 개념으로 자리잡았습니다. 그는 “분위기에 몸을 맞긴다”라는 감성적인 표현으로 이 패러다임을 설명습니다. 흔한 개발자(테슬라에서 인공지능과 오토파일럿 비전 책임자로 일했으며 오픈 AI 공동창립자이니 흔한 개발자가 아니긴 합니다.) 가 그럴듯하게 지어낸 용어로 기억에서 지워질 수 있었지만 LLM과 관련 가장 성공한 개념이 되었습니다.</p>
+
+<p>그 이유는 <strong>실제 코딩 지식 없이도 작동하는 프로그램을 만든 사례</strong> 들이 공유되면서 였습니다. 특히 <strong>비 개발자들이 자연어만으로 아이디어를 구현했다는 사례</strong>가 많은 주목을 받았습니다.</p>
+
+<div class="link-card-horizontal ">
+  
+  <div class="link-card-image">
+    <a href="https://medium.com/%40eperezarango1/vibe-coding-a-breakthrough-for-non-technical-builders-ready-to-build-the-next-wave-of-great-b20d92252ef9?utm_source=chatgpt.com" target="_blank" rel="noopener">
+      <img src="https://miro.medium.com/v2/resize:fit:1200/1*uEKTZDKagRbwqFSbIUf7_A.jpeg" alt="Vibe-Coding: A Breakthrough for Non-Technical Builders Ready to Build the Next Wave of Great…" />
+    </a>
+  </div>
+  
+  <div class="link-card-content">
+    <a href="https://medium.com/%40eperezarango1/vibe-coding-a-breakthrough-for-non-technical-builders-ready-to-build-the-next-wave-of-great-b20d92252ef9?utm_source=chatgpt.com" target="_blank" rel="noopener">
+      <div class="link-card-title">Vibe-Coding: A Breakthrough for Non-Technical Builders Ready to Build the Next Wave of Great…</div>
+      <div class="link-card-description">Several tools and platforms, from AI enhanced code editors to web based assistants, have been developed to support vibe coding, Zapier</div>
+      <div class="link-card-domain">medium.com</div>
+    </a>
+  </div>
+</div>
+
+<p>바이브 코딩의 결정적인 차이는 기존 AI 코딩 어시스턴트가 “똑똑한 조수” 나 “네비게이션” 같았다면, 바이브 코딩은 AI를 “프로젝트를 이해하는 팀원”처럼 대하는 것에 있습니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>기존 AI 코딩 어시스턴트</th>
+      <th>바이브 코딩</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>역할</td>
+      <td>코드 자동완성, 스니펫 제안</td>
+      <td>아이디어의 구체화, 기능단위의 개발</td>
+    </tr>
+    <tr>
+      <td>상호작용 수준</td>
+      <td>미시직: 이 함수의 다음 줄은 뭘까 ?</td>
+      <td>거시적: 로그인 페이지를 만들어줘</td>
+    </tr>
+    <tr>
+      <td>개발자의 역할</td>
+      <td>윤전자: 개발자가 직접 코드를 작성하며 방향을 제시</td>
+      <td>지휘자: 개발자는 전체적인 방향과 의도를 전달</td>
+    </tr>
+    <tr>
+      <td>소통 방식</td>
+      <td>단일 코드라인, 함수, 작은 코드 블록</td>
+      <td>여러 파일에 걸친 변경, 전체 기능, 컴포넌트 단위</td>
+    </tr>
+    <tr>
+      <td>목표</td>
+      <td>반복작업 감소, 타이핑 속도 향상</td>
+      <td>개발 사이클 단축, 프로토타이핑 가속화</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>요리로 비유해 보자면</p>
+<ul>
+  <li>기존 AI 코딩 어시스턴트: 요리사가 요리 할 때, 재료를 다듬어 주거나 다음 레시피를 알려주는 <strong>주방보조</strong> 입니다. 요리의 주체는 여전히 요리사 입니다.</li>
+  <li>바이브 코딩: 오늘의 스페셜 메뉴로 비프 웰링턴을 준비해.. 라고 지시하면 <strong>수석 쉐프</strong>가 조리 계획의 수립, 레시피 준비 부터 대부분의 조리 과정을 주도적으로 진행하는 것과 같습니다. 헤드 셰프는 중간 중간 맛을 보고 방향을 수정하고 최종 결과물을 책임집니다.</li>
+</ul>
+
+<h2 id="바이브-코딩-시작">바이브 코딩 시작</h2>
+<p>바이브 코딩에 사용한 툴은 구글의 <strong>Gemini CLI</strong> 입니다. Gemini 2.5 pro와 Gemini 2.5 flash를 이용해서 코드를 도와주는 툴인데, CLI 라는 이름 처럼 터미널에서 대화를 통해서 코딩을 지시 할 수 있습니다. 그리고 작성한 코드를 직접 파일로 만들고, 빌드하고 테스트하는 작업 모두를 지시 할 수 있습니다.</p>
+
+<h4 id="기술적-백그라운드">기술적 백그라운드</h4>
+<p>저의 기술적 백그라운드를 소개하겠습니다.</p>
+<ul>
+  <li>25년차 개발자</li>
+  <li>주요 언어: PHP, C, GoLang, Python</li>
+  <li>검색엔진, 웹 애플리케이션 개발, DevOps 엔지니어, Cloud 엔지니어, 생성-AI 엔지니어</li>
+  <li>전반적을 백앤드에 가깝습니다. 프론트앤드의 경우 PoC, 프로토타이핑을 할 수 있는 정도로 HTML, CSS, Javascript를 사용할 줄 아는 정도입니다. React.js 나 Vue.js 같은 현대적인 프레임워크의 사용 경험은 거의 없다</li>
+</ul>
+
+<h4 id="애플리케이션-소개">애플리케이션 소개</h4>
+<p>Chat 기능과 관리 기능을 가진 LLM Frontend 와 Frontend에 기능을 제공하는 API 서버를 개발했습니다.</p>
+
+<p><strong>LLM Frontend</strong>
+주요 기술셋으로 “Vue.js 3, Piana, TypeScript, Vite, Vitest, Bootstrap, markdown-it, vue-echart, axios”를 사용했습니다.</p>
+
+<p>가장 중요한 목표는 “프로덕트에 내놓을 수 있는 수준의 애플리케이션을 개발”이었습니다.</p>
+<ul>
+  <li>컴포넌트 주도 아키텍처: UI를 독립적이고 재사용 가능한 컴포넌트로 나누어서 조립</li>
+  <li>일관성 있는 프로젝트 구조: api, assets, components, composables, router, stores, style, utils, layout 등 공동작업자 누구나 파일의 위치와 역할을 쉽게 파악할 수 있는 예측 가능한 구조</li>
+  <li>중앙 집중식 상태관리: Pinia를 이용 도메인 단위로 Store를 분리</li>
+  <li>API 로직 분리 및 추상화: 컴포넌트로 부터 API 호출을 분리하여 api 디렉토리에서 중앙 관리</li>
+  <li>확장 가능한 라우팅 관리: 라우트 설정을 기능 단위로 분리</li>
+  <li>코드 스타일과 컨벤션 통일: GEMINI.md 코드 스타일과 컨벤션을 명시하여서 지키도록 지시</li>
+  <li>Unit Test 및 E2E Test: 모든 컴포넌트와 개별함수에 대한 테스트</li>
+  <li>환경변수 관리</li>
+  <li>컨테이너 기반 빌드 환경, 빌드 스크립트 정의</li>
+</ul>
+
+<p><strong>LLM Backend</strong>
+주요 기술셋으로 “fastapi, alembic, google-oauth2, langgraph, openai, pgvector” 등을 사용했습니다.</p>
+
+<p>Frontend와 마찬가지로 가장 중요한 목표는 “프로덕트에 내놓을 수 있는 수준의 애플리케이션을 개발”이었습니다.</p>
+<ul>
+  <li>기능별 모듈화(Vertical Slicing): 관련된 API 라우터, 스키마(Pydantic 모델), 비즈니스 로직, 데이터베이스 모델을 하나의 기능단위로 묶어서 관리</li>
+  <li>계층별 분리(Layerd Architecture): 각 모듈 내에서 역할의 명확한 분리</li>
+  <li>의존성 주입을 통합 테스트 용이성 확보 및 결합도 감소</li>
+  <li>Pydantic를 통합 데이터 유효성 검사, Request Body와 Response Model 정의</li>
+  <li>API 문서 자동화</li>
+  <li>Unit Test</li>
+  <li>코드 스타일과 컨벤션 통일: GEMINI.md 코드 스타일과 컨벤션을 명시하여서 지키도록 지시</li>
+  <li>미들웨어를 이용한 공통관심사의 분리: 요청/응답 로깅, 에러처리, 인증/인가 확인, 데이터베이스 세션관리, HTTP 헤더 추가 및 검증</li>
+</ul>
+
+<h4 id="중요하게-생각-한-것">중요하게 생각 한 것</h4>
+<p>제가 바이브 코드를 만들 때 어떤 것을 중요하게 생각하는지 눈치채셨을 겁니다. 저는 위의 원칙을 지키길 원했는데 왜냐하면 “바이브 코딩에 대한 환상을 버려야 한다”는 많은 사례들을 읽었기 때문입니다.</p>
+
+<ul>
+  <li>통제 가능한 복잡성: 바이브 코딩의 많은 성공 사례들이 <strong>하나의 작업을 수행하는 몇 개의 컴포넌트로 구성된 소규모 애플리케이션</strong> 들이었습니다.</li>
+  <li>구조 필요성 최소화: 정교한 아키텍처나 디자인 패턴 없이도 구현 가능한 애플리케이션 이었습니다.</li>
+  <li>협업의 부재 또는 최소화: 1인 개발 프로젝트 혹은 소규모의 긴밀한 팀에서 만들 수 있는 결과물들이었습니다.</li>
+  <li>프로토타입과 MVP에 최적화: 작 작동하는 결과물을 신속하게 만들 수 있다는 것에 목표를 두고 있는 애플리케이션이 많았습니다.</li>
+</ul>
+
+<p>위의 조건을 벗어나는 순간 유지/보수 불가능한 코드를 만들어 낸다는 많은 사례를 접할 수 있었습니다. 이러한 생성형-AI 관련한 저의 경험과 일치하기도 했습니다. 따라서 저는 리스크와 실패를 줄이기 위해서 “평소 제가 했던 방식”으로 원칙, 구조를 만드는 것 부터 진행을 했습니다.</p>
+
+<h4 id="mcp-툴">MCP 툴</h4>
+<p>LLM이 구조적으로 생각하도록 하기 위한 몇 가지 MCP 툴들도 사용하기로 했습니다. 수많은 툴들이 있던데 이 프로젝트에서는 2개의 툴만 이용했습니다.</p>
+<ul>
+  <li><strong>Context7</strong>: AI 모델이 최신의 정보를 참고하여 정확한 코드를 생성하도록 돕는 실시간 문서 검색 도구입니다. AI 모델은 특징 시점까지의 데이터로 학습하기 때문에, 최신 라이브러리나 프레임워크의 변경사항을 알지 못합니다. 이 때문에 이미 사라진 함수나 예전 방식의 코드를 만들어내는 경우가 많은데, 이를 방지합니다.</li>
+  <li><strong>Sequential-thinking</strong>: AI가 논리적인 단계로 문제를 분해하고 계획을 세워서 순차적으로 해결하도록 유도하는 도구입니다.</li>
+</ul>
+
+<h2 id="결과물">결과물</h2>
+
+<figure class="third ">
+  
+    
+      <a href="/assets/images/posts/2025/vibe-coding-02.png">
+          <img src="/assets/images/posts/2025/vibe-coding-02.png" alt="바이브-코딩 예제" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/posts/2025/vibe-coding-03.png">
+          <img src="/assets/images/posts/2025/vibe-coding-03.png" alt="바이브-코딩 예제" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/posts/2025/vibe-coding-04.png">
+          <img src="/assets/images/posts/2025/vibe-coding-04.png" alt="바이브-코딩 예제" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/posts/2025/vibe-coding-05.png">
+          <img src="/assets/images/posts/2025/vibe-coding-05.png" alt="바이브-코딩 예제" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/posts/2025/vibe-coding-06.png">
+          <img src="/assets/images/posts/2025/vibe-coding-06.png" alt="바이브-코딩 예제" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/posts/2025/vibe-coding-07.png">
+          <img src="/assets/images/posts/2025/vibe-coding-07.png" alt="바이브-코딩 예제" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/posts/2025/vibe-coding-08.png">
+          <img src="/assets/images/posts/2025/vibe-coding-08.png" alt="바이브-코딩 예제" />
+      </a>
+    
+  
+  
+    <figcaption>FrontEnd 개발 결과물
+</figcaption>
+  
+</figure>
+
+<p>디자인 능력은 없는지라 <a href="https://www.perplexity.ai/">퍼플랙시티</a> 의 디자인을 모방했습니다. 복잡하게 글로 설명하는 대신에, 퍼플랙시티 사이트를 스크린샷 뜬 다음, 스크린샷을 참조해서 레이아웃을 잡아달라고 지시했습니다. 화면에는 나오지 않지만 Fastapi 백앤드도 연동해서 기능을 만들었으며, 백앤드 API가 없는 경우 API 인터페이스를 가정해서 화면을 개발 했습니다.</p>
+<ol>
+  <li>API 명세서 개발: METHOD PATH, Request, Response 를 설계하고 문서화(Swagger, Postman Docs)</li>
+  <li>API 모듈과 Mock 데이터 생성: 실제 API 호출을 담당할 모듈을 만든다. 백앤드 API 개발이 완료되기 전에는 axios 요청 대신 미리 만들어둔 Mock 데이터를 반환하도록 처리</li>
+  <li>Pinia Store 구현: 상태관리를 위한 스토어를 만든다. 스토어 입장에서는 이 데이터가 실제 API에서 온 것인지 Mock 데이텅닌지 알 필요가 없습니다.</li>
+  <li>컴포넌트 개발: Vue 컴포넌트는 Pinina 스토어의 액션을 호출하고 상태를 사용하면 됩니다.</li>
+  <li>빌드/배포/테스트/문서확인을 위한 모든 툴들을 가지고 있습니다.</li>
+</ol>
+
+<p>이 과정 모두를 Gemini CLI에 맡겼습니다. 직접 코드 수정은 하지 않고 사소한 수정 내용까지 100% AI 모델에 맡겼습니다. <strong>하루 8시간씩 4일</strong> 정도 작업을 진행했습니다.</p>
+
+<h2 id="회고">회고</h2>
+<ol>
+  <li>AI 주도 개발을 하면서 겪는 대부분의 문제는 복잡성에서 비롯됩니다. 쪼개고 분해해서 해야 할 최사한의 기능을 개발하도록 지시하세요.</li>
+  <li>더 짧은 주기: 전통적인 개발 방법론은 2주 혹은 한달 단위의 긴 반복 주기를 가지고 있습니다. 이를 위한 스탠드업이나 스프린트 계획/회고와 같은 관행들이 생겨났습니다. AI의 경우 몇 시간 단위로 측정되는 훨씬 빠른 주기로 이어집니다. 짧은 코드를 만들고 실시간으로 검증 받고, 테스트하고 commit 하는 과정을 거쳐야 합니다. AWS에서는 스프린트 보다 더 짧은 주기를 볼트(Bolt)라고 부르고 있습니다.</li>
+  <li>AI 주도 개발: AI 계획을 수립하고 이를 이끌어가가 합니다. 인간은 각 시점에 결정을 승인하고 옵션을 선택하고 확인하는 역할을 합니다. AI 주도 접근 방식이라고 할 수 있겠습니다. “AI 주도”라고 하면 반감을 가질 수 있는데, 인간이 부수적인 역할을 한다는 의미가 아닙니다. 개발자는 가치 높은 의사 결정에 집중을 하고 AI가 계획, 작업 분해 및 자동화를 처리한다는 의미입니다.</li>
+  <li>낙관적인? 미래: AI 의 개발 능력 향상에 대해서 저는 낙관적으로 봅니다. AI의 업무 해석 능력, 분해 능력은 점점 더 좋아질 것이고, AI를 다루는 사람의 능력도 점점 더 좋아질 겁니다. 그리고 AI와의 협업은 AI 주도 개발로 가야 잠재력을 발휘 할 수 있을 겁니다. AI가 보강 역할만하는 개발 방식으로는 AI가 주도 하는 개발 방식의 효과를 따라가기 어렵게 될 겁니다.</li>
+  <li>소프트웨어 엔지니어링: 개발자는 방향을 설정하고 중요한 의사결정을 해야 하하며, 이를 위해서 도메인에 대한 지식 과 소프트웨어 엔지니어링에 대한 능력이 필요합니다. 개발을 이해하지 못한 상태에서 “정말 바이브”하게 만들어낼 수 있는 제품은 일반적인 제품이 아닙니다. 프로덕트의 90% 이상은 수많은 컴포넌트들의 조합으로 작동합니다. 개발자가 구조를 잡아주지 못한다면 소프트웨어는 빠르게 무너지게 될 겁니다.</li>
+  <li>테스트 주도: AI 전에도 우리 개발자는 “테스트의 중요성”을 알고 있었습니다만 납기일 준수, 낮은 성숙도 등 여러 이유로 테스트를 제대로 수행하지 못했습니다. AI에 테스트를 맡김으로써 간단하게 테스트 주도 개발을 할 수 있습니다. AI 모델은 경험 많은 시니어가 아니라 “세상의 모든 코드를 읽어 본 열정 넘치는 주니어 개발자” 입니다. 그러다 보니 AI 모델은 과잉 해서 생각하는 경향이 있습니다. 미래에 필요할지 모르는 인터페이스, 추상 클래스, 서비스 레이어, 패턴 등 모두를 포함한 어떤 것을 제안하려고 합니다. 개발자가 가이드라인을 정해주지 않으면, 알 수 없는 혼종이 생겨나게 됩니다. 이러한 문제는 기능의 분해, (쓸데 없는 짓 하지 말라는) 프롬프트 작성 등의 방법을 통해서 완화할 수 있는데, 유닛 테스트는 가장 효과적인 방법입니다.</li>
+  <li>구조 개선 -&gt; 코드 개선 -&gt; 구조 개선 의 작업을 계속 해나가야 하며, 이 과정을 짧은 주기(Bolt)로 수행해야 합니다. 그리고 이 둘이 섞이면 안됩니다. 구조 개선 할때는 코드 개선을 하지 않아야 하고, 코드 개선 할 때는 구조 개선을 하지 않아야 합니다.</li>
+  <li>수석 요리사라고 생각하고 AI와 함께 학습을 해나가야 합니다. 특히 저 같이 세부 구현보다 시스템 구성에 관심을 가진 개발자는 이러한 작업이 매우 재미있을 겁니다.(저는 이러한 작업이 매우 즐겁습니다.)</li>
+  <li>AI 모델은 기억을 하지 못합니다. 그러니 작업 지시와 작업 내용을 마크다운 형태로 저장을 해둬야 합니다. 저 같은 경우 llm-docs 디렉토리 밑에 파일 형태로 저장하고 있습니다. 그리고 프롬프트를 통해서 llm-docs에 있는 문서를 기반으로 작업을 이어나가도록 지시합니다.</li>
+</ol>
+
+<p>결과는 매우 만족스러웠습니다. AI 모델의 지원이 없었다면, 결고 이루어낼 수 없는 일을 이루어냈기 때문입니다. 앞으로도 AI 모델을 계속 사용 할 것 같습니다. AI 모델을 사용하기 전이라면 “할 수는 있지만 너무 많은 시간이 걸려서 하지 않았던(혹은 못했던)” 그런 작업을 이제는 혼자 할 수 있게 되었습니다. 이 환경은 많은 기회를 가져다 줄 것입니다.</p>
+
+<h2 id="프롬프트">프롬프트</h2>
+<p>처음에 작업 할 때는 “엄청나게 짜증”이 났습니다. 바이브 코딩 좀 해보시면 AI와 같이 일하는게 결코 바이브 하지 않다는 것을 알게 될겁니다. 수십번의 시행착오를 거치면서 AI 모델에게 숙지시켜야 할 프롬프트에 대한 나름대로의 노하우를 가지게 됐습니다.</p>
+
+<ul>
+  <li>당신은 경험 많은 소프트웨어 엔지니어 입니다. 작업을 수행하기 전에 계획을 세우고 계획의 각 단계에 대한 체크박스를 마크다운 파일에 작성해주세요.</li>
+  <li>미안하다고 말하지 마세요. 문제를 해결하는데 집중하세요.</li>
+  <li>중요한 결정을 스스로 내리지 마세요. 계획을 수립한 후 제 검토와 승인을 받아야 합니다.</li>
+  <li>게획은 “한번에 하나씩” 수행해야 합니다.</li>
+  <li>작업을 끝낼 때마다 check list를 완료한 것으로 표시하세요</li>
+  <li>요구사항.md 파일의 사용자 스토리를 참조해서 작업을 합니다. 독립적으로 구축 할 수 있는 여러 유닛으로 사용자 스토리를 그룹화 해주세요.</li>
+  <li>가장 간단한 방법으로, 추상화 없이, 불필요한 패턴 사용하지 말고 “oo” 기능을 개발해줘</li>
+  <li>Unit Test를 진행합니다. Unit Test 할 시나리오 계획을 수립해 주세요.</li>
+  <li>예외 사항에 대한 추가적인 Unit Test가 있는지 검토해 주세요.</li>
+</ul>
+
+<h2 id="바이브-소프트웨어-엔지니어링">바이브 소프트웨어 엔지니어링</h2>
+<p><a href="https://armandomaynez.substack.com/p/from-vibe-coding-to-vibe-software?r=557fs">‘From ‘Vibe Coding’ to ‘Vibe Software Engineering</a>에서 설명하는 AI 협업 애플리케이션 개발과정을 정리하는 것으로 글을 마무리 하려합니다.</p>
+
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vS9g-_uVdtTcYnFIALtwyfl5H7D5qJNcA4K3qvW15IpyrZE-Wuy-J6SubPlKo_dUE4wNJuHoMHH_R1i/pub?w=960&amp;h=720" alt="바이브 소프트웨어 엔지니어링" /></p>
+<h5 id="1-단계-기반-전략-수립foundation--strategy">1 단계: 기반 전략 수립(Foundation &amp; Strategy)</h5>
+<p>코드를 작성하기 전에 프로텍트의 “무엇을(What)”과 “왜(Why)”를 명확히 정의하여 탄탄한 기반을 마련합니다.</p>
+<ol>
+  <li>프로젝트 아이디어
+    *  모든 프로젝트의 시작점으로, 해결하고자 하는 문제나 구현하고 싶은 기능에 대한 최초의 구상입니다.</li>
+  <li>PRFAQ 초안 작성
+    * 본격적인 기획의 첫단계로, 아마존의 PRFAQ 방법론을 사용합니다. 인간이 아이디어의 핵심을 제공하면, AI가 고객에게 전달될 가상의 보도자료(PR)과 예상 질문/답변(FAQ)의 초안을 빠르게 생성합니다.
+    * 역할: AI는 구조화된 문서의 초안을 신속하게 작성하고, 인간은 비즈니스 목표와 고객 가치에 맞게 내용을 검토하고 수정하며 전략적 방향을 설정합니다.</li>
+  <li>시스템 설계
+    * PRFAQ를 통해 <strong>무엇을 만들지</strong> 가 정해지면, <strong>어떻게 만들지</strong>에 대한 기술적 청사진을 그립니다. 필요한 기술 스택, 데이터베이스 구조, 아키텍처 등을 정의 합니다.
+    * 역할: 인간이 핵심 요구사항을 제시하면, AI 표준적인 설계 패턴이나 기술 옵션을 제안합니다. 인간은 이를 바탕으로 프로젝트에 가장 적합한 기술적 결정을 내립니다.</li>
+  <li>사용자 스토리 작성
+    * 시스템 설계를 바탕으로 개발해야 할 기능들을 사용자 관점에서 구체적인 시나리오로 잘게 나눕니다.(예: 사용자는 이메일과 비밀번호로 로그인 할 수 있다.)
+    * 역할: AI가 PRFAQ와 시스템 설계 문서를 분석하여 필요한 사용자 스토리 목록의 초안을 생성하면 인간은 우선순위를 정하고 누락된 부분을 보완합니다.</li>
+</ol>
+
+<h5 id="2-단계-병렬적-실행">2 단계: 병렬적 실행</h5>
+<p><strong>트랙 - A</strong></p>
+<ol>
+  <li>반복적 코딩 및 테스트
+    * 유튜브에서 바이럴 마케팅하는 바이브코딩 처럼 한번에 모든 것을 만들려 하지 마세요. 잘게 나뉜 사용자 스토리 기반으로 기능 단위의 코드를 생성하고 즉시 테스트 합니다.
+    * 역할: AI가 특정 기능에 대한 코드를 생성하면, 인간은 그 코드를 즉시 테스트하고, 버그를 수정하면서 전체 시스템에 통합하는 역할을 반복합니다.</li>
+  <li>UI/UX 통합
+    * 작동하는 백앤드 코드에 사용자 UI/UX를 결합하여 실제 사용자가 조작할 수 있는 형태로 만듭니다.</li>
+</ol>
+
+<p><strong>트랙 - B</strong></p>
+<ol>
+  <li>마케팅 및 브랜딩 계획
+    * 개발과 동시에 제품의 정체성을 확립합니다. AI를 활용하여 타겟 고객, 시장 포지셔닝, 핵심 메시지, 톤앤매너 등을 포함한 마케팅 계획 초안을 만듭니다.</li>
+  <li>비주얼 스타일 가이드 제작
+    * 앱의 로고, 색상 팔레트, 폰트 등 시각적 정체성을 정의합니다. AI에게 다양한 디자인 컨셉 생성을 요청하고 인간이 최종 방향을 선택하여 가이드를 완성합니다.</li>
+</ol>
+
+<h5 id="3-단계-통합-및-출시">3 단계: 통합 및 출시</h5>
+<ol>
+  <li>최종 통합
+    <ul>
+      <li>개발 트랙에서 완성된 기능적 애플리케이션과 브랜딩 트랙에서 정의된 시각적/언어적 요소들을 하나로 합쳐 완전한 제품을 만듭니다.</li>
+    </ul>
+  </li>
+  <li>애플리케이션 출시
+    <ul>
+      <li>모든 통합과 테스트가 완료된 최종 결과물을 시장에 출시합니다.</li>
+    </ul>
+  </li>
+</ol>]]></content><author><name>Sang Bae YUN</name></author><category term="LLM" /><category term="생성형-AI" /><category term="AI-코딩" /><category term="Vibe-Coding" /><category term="소프트웨어-엔지니어링" /><summary type="html"><![CDATA[AI 코딩 어시스턴트 AI 어이스턴트를 이용한 개발은 대략 2021년 이후 일상화된 것으로 알려져 있다. OpenAI Codex, GitHub Copilot 코딩 AI 어시스턴트의 시작을 알렸고, 그 이후 Cursor, Windsurf, Replit AI, Claude Code, Gemini CLI 등 여러 도구들이 실무에서 사용되기 시작했다. 이 때가 2021년이니 코딩에서 AI의 도움을 받기 시작한 건 꽤 오래됐다고 볼 수 있다.]]></summary></entry><entry><title type="html">GPT-OSS 사용기</title><link href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/gpt-oss/ollama/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/chat-gpt-oss/" rel="alternate" type="text/html" title="GPT-OSS 사용기" /><published>2025-08-09T10:00:00+09:00</published><updated>2025-08-09T10:00:00+09:00</updated><id>/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/gpt-oss/ollama/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/chat-gpt-oss</id><content type="html" xml:base="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/gpt-oss/ollama/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/chat-gpt-oss/"><![CDATA[<h2 id="새로운-오픈소스-llm의-등장">새로운 오픈소스 LLM의 등장</h2>
+<p>OpenAI가 2019년 GPT-2를 시장에 내놓은 이후 6년만에 드디어 오픈소스 모델인 GPT-OSS(gpt-oss-20b, gpt-oss-120b)를 공개했습니다. OpenAI가 그동안 내놓았던 GPT-3, GPT-4는 모두 독점모델(Closed-source)이었기 때문에 왜 갑자기 오픈소스 모델을 공개했는지에 대한 여러 분석이 있었습니다.</p>
+
+<h4 id="치열해진-ai-시장에서의-주도권-경쟁">치열해진 AI 시장에서의 주도권 경쟁</h4>
+<p>역시 가장 큰 이유는 메타의 Llama, 구글 Gemma, 중국의 DeepSeek/Qwen과 같은 경쟁사들이 주도하는 오픈소스 AI 생태계의 급격한 성장에 대응하기 위한 필연적인 선택이었을 겁니다.</p>
+
+<h4 id="시장의-변화와-새로운-수요">시장의 변화와 새로운 수요</h4>
+<p>기업과 개발자들 사이에서 맞춤형 AI, 온프레미스 솔루션에 대한 요구가 증가한 것도 중요한 배경입니다.</p>
+
+<p>기업의 경우 내부 데이터를 외부 클라우드 API로 전송하기를 꺼리는 기업이 여전히 많습니다. 기술적으로는 클라우드에서도 충분한 보안을 제공한다는 것을 알지만 관성이라는게 쉽게 변하지는 않습니다. 기업 내부를 설득하는 것도 시간이 많이 걸리는 일이기도 합니다.</p>
+
+<p>또한 20B 이하의 작은 모델들도 <strong>특정 도메인을 좁힐 경우</strong> 충분한 성능을 보여주기 시작하고 있습니다. 모델의 크기가 작은 만큼 <strong>Fine-tuning</strong> 도 보다 쉽게 할 수 있으며, 비용도 관리할 수 있습니다. 20B 모델은 16GB 정도의 VRAM이면 실행 할 수 있기 때문에 접근성을 크게 높일 수 있습니다.</p>
+
+<h2 id="gpt-oss">GPT-OSS</h2>
+<p>GPT-OSS는 20b와 120b 두 가지의 모델을 오픈했습니다. 특징은 아래와 같습니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>모델</th>
+      <th>계층</th>
+      <th>총 파라미터</th>
+      <th>토큰당 활성 파라미터</th>
+      <th>총 전문가</th>
+      <th>토큰당 총 전문가</th>
+      <th>컨텍스트 길이</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gtp-oss 120b</td>
+      <td>36</td>
+      <td>1,170억</td>
+      <td>51억</td>
+      <td>128</td>
+      <td>4</td>
+      <td>128 k</td>
+    </tr>
+    <tr>
+      <td>gtp-oss 20b</td>
+      <td>24</td>
+      <td>210억</td>
+      <td>36억</td>
+      <td>32</td>
+      <td>4</td>
+      <td>128 k</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>공개된 성능 지표는 아래와 같습니다.</p>
+
+<p><img src="/assets/images/posts/chart.png" alt="Image" /></p>
+
+<p><img src="/assets/images/posts/gpt-oss-benchmarks-v0.webp" alt="Image" /></p>
+
+<p>실제 사용을 해봐야겠으나 인상적인 성능을 보여 주고 있습니다. 특히 이번에 사용해 볼 gpt-oss-20b 의 경우 매우 작은 크기에도 불구하고 성능이 높은 것을 확인할 수 있습니다.</p>
+
+<ul>
+  <li>도구를 활용한 수학 문제 해결 능력 AIME 2024, 2025 평가에서 96.8%, 98.7%라는 높은 정확도를 기록했는데 o3나 o4-mini 같은 모델을 능가했으며, 훨씬 큰 120b 모델의 성능에 근접하는 뛰어난 결과를 보여주고 있습니다.</li>
+  <li>대학수준 시험: MMLU의 경우 o3나 o4-mini에는 미치지 못하지만 85.3%라는 높은 수치를 보여주고 있습니다.</li>
+  <li>박사 수준의 과학문제(GPQA)나 전문가 수준의 질문(HLE)에서는 성능 격차가 9% 정도 벌어지고 있는데, 이 부분은 약점으로 보입니다.</li>
+</ul>
+
+<p>한마디로 gpt-oss-2b는 <strong>효율성에 초점을 맞춘 가성비 모델</strong> 이라고 정의할 수 있을 것입니다. 범용적으로 모든 질문에 높은 성능으로 답하는 AI 보다는 애플리케이션 개발, 코드 생성, 계산 문제 해결 등에 가성비 측면에서 사용하고자 할 때 매력적인 선택지가 될 수 있습니다.</p>
+
+<h2 id="gpt-oss-20b-핵심-특징">GPT-OSS 20b 핵심 특징</h2>
+<p>테스트 할 모델인 GPT-OSS 20b의 주요 특징들입니다. 참고해주세요.</p>
+<ul>
+  <li>Mixture of Experts(MoE)구조
+    <ul>
+      <li>128 전문가 중 4개 활성화: 성능을 유지하며 추론 비용 절감</li>
+      <li>FlashAttention, 128k 토큰 지원, YaRN 포함</li>
+    </ul>
+  </li>
+  <li>16GB GPU 환경에서도 실행 가능(Apple Silicon) 포함</li>
+  <li>HuggingFace, vLLM, Ollama 등과 즉시 호환 가능</li>
+  <li>RL 기반 추론 정합성 강화</li>
+  <li>Deliberative Alignment 도입</li>
+  <li>의도적 악용에도 높은 위험의 출력을 생성하지 않습니다.</li>
+</ul>
+
+<h2 id="ollama-이용한-테스트">Ollama 이용한 테스트</h2>
+<p>테스트 환경은 아래와 같습니다.</p>
+<ul>
+  <li>OS: 우분투 리눅스 24.10</li>
+  <li>CPU: Ryzen 5 5600X 6-Core</li>
+  <li>Memory: 32G</li>
+  <li>GPU: NVIDIA GeForce RTX 4060Ti 16G</li>
+</ul>
+
+<p>Ollama는 로컬 컴퓨터에서 Llama 3, Mistral, Gemma와 같은 언어 모델을 쉽게 다운로드하고 실행 할 수 있도록 해주는 <strong>오픈소스 툴</strong>입니다. gpt-oss를 오픈하면서, ollama와 파트너 관계를 맺었기 때문에 앞으로도 잘 지원해 줄 것으로 예상됩니다.</p>
+
+<p><img src="/assets/images/posts/ollama-openai.png" alt="Image" /></p>
+
+<ul>
+  <li><a href="https://ollama.com/download">ollama 다운로드 및 설치</a></li>
+</ul>
+
+<p>ollama를 이용해서 로컬 PC에 다운로드 해서 테스트를 진행했습니다.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ollama run gpt-oss:20b
+</code></pre></div></div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0tUjmust0FM?si=-ZJNkXXw3skmg3rZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+<p>(LLM 모델 돌리기에는) PC 사양이 좋지 않음에도 토큰 출력이 매우 빠른 것을 알 수 있습니다. 또한 생각의 사슬(Chain-of-Thought)능력을 이용해서 출력 품질을 조절하는 것을 확인할 수 있습니다.</p>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        마크다운으로 테이블 예시를 만들어줘.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<h2 id="과일-가격표">과일 가격표</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">과일</th>
+      <th style="text-align: left">가격</th>
+      <th style="text-align: left">수량</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">사과 🍎</td>
+      <td style="text-align: left">1,000원</td>
+      <td style="text-align: left">5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">바나나 🍌</td>
+      <td style="text-align: left">1,500원</td>
+      <td style="text-align: left">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">오렌지 🍊</td>
+      <td style="text-align: left">2,000원</td>
+      <td style="text-align: left">2</td>
+    </tr>
+  </tbody>
+</table>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<h4 id="추론-능력">추론 능력</h4>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        다단계 추론: A, B, C, D, E 다섯 명이 회의실에 있다. A는 B에게만 거짓말을 하고, B는 C에게만 거짓말을 한다. C는 D에게만 거짓말을 하고, D는 E에게만 거짓말을 한다. 이때 A가 ‘나는 E에게 거짓말을 한다’고 말했다면, 이 말이 사실일 가능성이 있는가? 단계별로 생각의 과정을 설명해줘.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p><strong>문제 재정리</strong></p>
+
+<ul>
+  <li>A는 <strong>B에게만</strong> 거짓말을 하고, 다른 사람에게는 진실을 말한다.</li>
+  <li>B는 <strong>C에게만</strong> 거짓말을 하고, 그 외에는 진실을 말한다.</li>
+  <li>C는 <strong>D에게만</strong> 거짓말을 하고, 그 외에는 진실을 말한다.</li>
+  <li>D는 <strong>E에게만</strong> 거짓말을 하고, 그 외에는 진실을 말한다.</li>
+</ul>
+
+<p>A가 “나는 E에게 거짓말을 한다.” 라고 말했을 때,<br />
+이 말이 <strong>사실</strong>일 가능성이 있는지 단계별로 검토하자.</p>
+
+<hr />
+
+<h2 id="1단계-a의-거짓말-대상-정리">1단계: A의 거짓말 대상 정리</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>사람</th>
+      <th>거짓말 대상</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>(없음)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>즉, A는 <strong>E에게 진실</strong>을 말해야 한다.<br />
+E는 A의 거짓말 대상이 아니므로 A가 E에게 거짓말을 할 수 없다는 점을 기억한다.</p>
+
+<hr />
+
+<h2 id="2단계-말의-내용이-사실인지-판별">2단계: 말의 내용이 사실인지 판별</h2>
+
+<p>말의 내용: <strong>“나는 E에게 거짓말을 한다.”</strong></p>
+
+<ul>
+  <li>A는 E에게 <strong>진실</strong>을 말해야 하므로,</li>
+  <li>실제로 A는 E에게 거짓말을 하지 않는다.</li>
+</ul>
+
+<p>따라서 <strong>말의 내용은 거짓</strong>이다.</p>
+
+<hr />
+
+<h2 id="3단계-a가-말할-때-어떤-대상이냐에-따라-가능-여부-판단">3단계: A가 말할 때 어떤 대상이냐에 따라 가능 여부 판단</h2>
+
+<ol>
+  <li><strong>대상이 B일 때</strong>
+    <ul>
+      <li>A는 B에게 거짓말을 해야 한다.</li>
+      <li>말의 내용이 거짓이므로, A는 B에게 거짓말을 하고 있다.</li>
+      <li>→ 이 경우에는 <strong>가능</strong> (A가 B에게 거짓말을 하는 상황에 맞음).</li>
+    </ul>
+  </li>
+  <li><strong>대상이 B가 아닐 때</strong>
+    <ul>
+      <li>A는 B가 아닌 사람에게 진실을 말해야 한다.</li>
+      <li>그런데 말의 내용은 거짓이므로, A가 진실을 말할 수 없다.</li>
+      <li>→ 이 경우에는 <strong>불가능</strong>.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>따라서 A가 이 말을 <strong>말할 수 있는 상황</strong>은 오직 B에게 말할 때뿐이며, 그때는 <strong>거짓말</strong>이 된다.</p>
+
+<hr />
+
+<h2 id="4단계-이-말이-사실일-가능성에-대한-결론">4단계: “이 말이 사실일 가능성”에 대한 결론</h2>
+
+<ul>
+  <li>A가 “나는 E에게 거짓말을 한다.” 라는 말의 <strong>내용</strong>은 언제나 거짓이다.</li>
+  <li>A가 이 말을 진실로 말할 수 있는 대상이 없으므로,<br />
+<strong>그 말이 사실</strong>일 가능성은 전혀 없다.</li>
+</ul>
+
+<h3 id="정리">정리</h3>
+<blockquote>
+  <p><strong>A가 “나는 E에게 거짓말을 한다.” 라고 말했을 때, 그 말이 사실일 가능성은 없다.</strong></p>
+
+  <p>다만, A가 이 말을 <strong>B에게 말</strong>한다면, A는 거짓말을 하고 있으므로 문장이 거짓이 되는 상황이 존재한다는
+ 점은 참고할 가치가 있다.</p>
+</blockquote>
+
+<hr />
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<hr />
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        양동이에 10리터의 물이 있다. 3리터짜리 빈 통과 7리터짜리 빈 통을 사용해서 정확히 5리터의 물만 남기려면 어떻게 해야 하는가? 최소한의 횟수로 과정을 설명해줘.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p><strong>목표</strong><br />
+10 리터 양동이(10 L)에 정확히 5 리터만 남기고,  3 리터 통(3 L)과 7 리터 통(7 L)은 비워 두는 것.</p>
+
+<p>가능한 최소 단계 수는 <strong>9회</strong>입니다. 아래 단계별로 필요한 동작(이동·비우기·채우기)을 정리했습니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>단계</th>
+      <th>동작</th>
+      <th>결과 (10 L, 3 L, 7 L)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>10 L → 7 L (7 L 통을 가득 채움)</td>
+      <td>(3, 0, 7)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>7 L → 3 L (3 L 통을 가득 채움)</td>
+      <td>(3, 3, 4)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3 L 통 비우기</td>
+      <td>(3, 0, 4)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>7 L → 3 L (3 L 통을 가득 채움)</td>
+      <td>(3, 3, 1)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3 L 통 비우기</td>
+      <td>(3, 0, 1)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>7 L → 3 L (3 L 통을 가득 채움)</td>
+      <td>(3, 1, 0)</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>10 L → 7 L (7 L 통을 가득 채움)</td>
+      <td>(0, 1, 7)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>7 L → 3 L (3 L 통을 가득 채움)</td>
+      <td>(0, 3, 5)</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>7 L → 10 L (7 L 통을 비우면서 10 L에 5 L 넣음)</td>
+      <td>(5, 0, 0)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>```
+<strong>설명</strong></p>
+
+<ol>
+  <li>
+    <p><strong>10 L → 7 L</strong><br />
+10 L에서 7 L을 부어 7 L 통을 채우면 10 L에는 3 L가 남는다.</p>
+  </li>
+  <li>
+    <p><strong>7 L → 3 L</strong><br />
+7 L 통의 3 L를 3 L 통에 붓는다. 7 L 통에는 4 L가 남는다.</p>
+  </li>
+  <li>
+    <p><strong>3 L 통 비우기</strong><br />
+3 L 통을 비운다.</p>
+  </li>
+  <li>
+    <p><strong>7 L → 3 L</strong><br />
+남은 4 L를 3 L 통에 붓고 3 L를 채운다. 7 L 통에는 1 L가 남는다.</p>
+  </li>
+  <li>
+    <p><strong>3 L 통 비우기</strong><br />
+3 L 통을 비운다.</p>
+  </li>
+  <li>
+    <p><strong>7 L → 3 L</strong><br />
+1 L를 3 L 통에 붓는다.</p>
+  </li>
+  <li>
+    <p><strong>10 L → 7 L</strong><br />
+10 L에 남은 3 L를 7 L 통으로 옮긴다. 10 L은 비게 되고 7 L은 7 L이 된다.</p>
+  </li>
+  <li>
+    <p><strong>7 L → 3 L</strong><br />
+7 L 통의 3 L를 3 L 통에 붓는다. 7 L 통에는 4 L가 남는다.</p>
+  </li>
+  <li>
+    <p><strong>7 L → 10 L</strong><br />
+10 L이 비어 있으므로 7 L 통의 5 L(4 L + 1 L)을 10 L에 부어 10 L에 5 L가 정확히 남는다.</p>
+  </li>
+</ol>
+
+<p>이제 10 L에 5 L만 남고 3 L·7 L은 모두 비워졌으므로 요구 조건을 만족합니다.<br />
+총 9회의 동작으로 해결되는 최소 단계 수입니다.</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<hr />
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        한 스타트업이 MZ세대를 타겟으로 하는 새로운 SNS 앱을 출시하려고 한다. 현재 시장에는 인스타그램, 틱톡, 스레드가 있다. 이 스타트업이 성공하기 위한 3가지 핵심 전략을 제시하고, 각 전략이 왜 중요한지 그 이유를 논리적으로 설명해줘.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p><strong>3가지 핵심 전략과 그 중요성</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>전략</th>
+      <th>핵심 포인트</th>
+      <th>논리적 근거</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td><strong>AI‑driven “초‑맞춤형 콘텐츠 피드”</strong></td>
+      <td>1️⃣ 컨텐츠 추천 알고리즘은 개인의 취향, 행동, 심지어 ‘감정 상태’를 분석<br />2️⃣ 알고리즘 투명성(설명 가능 AI) → 개인정보 보호와 신뢰 확보</td>
+      <td>1. <strong>콘텐츠 과 부하(Information Overload)</strong>가 MZ 세대의 가장 큰 고민이다. 맞춤형 피드가 없으면 사용자가 ‘집중력 저하’ 를 경험하고 이탈한다.<br />2. 개인정보에 민감한 MZ 세대는 알고리즘이 자신을 ‘조종’한다는 인식을 꺼려한다 . 투명한 AI가 이러한 두려움을 해소하고, ‘공정성’·‘신뢰성’을 부여해 사용자 충성도를 높인다.</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td><strong>“Micro‑Community + Authentic Voice” 플랫폼</strong></td>
+      <td>1️⃣ 정성적, 정량적 피드백을 바탕으로 작은 주제별(하위)커뮤니티를 자동 생성<br />2️⃣ 유저가 직접 커뮤니티 운영을 할 수 있는 관리 도구 제공</td>
+      <td>1. <strong>인 스타·틱톡</strong>과는 달리 ‘네트워크 효과’가 거대 커뮤니티에만 집중된다. 작은 커뮤니티는 사용자들 사이에 ‘ 소속감’을 높여 재방문율을 올린다.<br />2. MZ 세대는 “진정성(Authenticity)”을 최우선 가치로 두며, 대규모 광고와 스팸이 적은 환경을 선호한다. 이 전략은 정신건강·자기표현(Well‑being)과도 직결된다.</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td><strong>Creator‑Economy + Integrated Commerce</strong></td>
+      <td>1️⃣ 크리에이터가 손쉽게 스토어, 라이브 쇼핑, 티켓 , 멤버십 등 마케팅·매출 기능을 활용<br />2️⃣ ‘소액 결제(1‑2 USD) → 매출’ 구조를 통해 수익을 극대화</td>
+      <td>1. <strong>콘텐츠 제작이 수익 창출</strong>으로 연결되면, 플랫폼에 머무는 유인력이 증가한다. 인스타·틱톡의 “ Creator Fund”가 성공적인 사례지만, 직접 수익을 얻는 경로가 한정적이다.<br />2. MZ 세대는 ‘크리에이터와의 직거래’와 ‘소규모 브랜드·팝업스토어’를 선호한다. 이 전략은 플랫폼과 크리에이터, 브랜드가 함께 성장 할 수 있는 ‘네트워크 효과’를 만들며, ARPU를 끌어올린다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>전략별 세부 실행 로드맵</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>단계</th>
+      <th>핵심 액션</th>
+      <th>KPI 예시</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>AI‑맞춤형 피드</strong></td>
+      <td>• 딥러닝 기반 감정‑행동 예측 모델 개발<br />• 사용자의 ‘피드 상호작용’ 기록을 실시간으로 학습<br />• AI 투명성 대시보드(왜 해당 게시물이 보여졌는가?)</td>
+      <td>• 일일 평균 체류시간 + 20%↑ <br />• 재방문율(DAU/MAU) +15%↑</td>
+    </tr>
+    <tr>
+      <td><strong>마이크로 커뮤니티</strong></td>
+      <td>• 주제‑태그 기반 자동 클러스터링<br />• 커뮤니티 리더(Moderator) 교육 프로그램 제공<br />• “커뮤니티 피드백 루프” (질문 → 개선 → 재배포)</td>
+      <td>• 커뮤니티 활성화 비율(커뮤니티당 평균 게시글) +25%↑<br />• NPS(순추천지수) +10점↑</td>
+    </tr>
+    <tr>
+      <td><strong>크리에이터‑경제</strong></td>
+      <td>• One‑click 스토어 설계(구글·아마존 연동)<br />• 실시간 결제 + 자동 수수료 배분 시스템<br />• “Creator Dashboard”(수익·분석·프로모션)</td>
+      <td>• 크리에이터 수당(월간) +30%↑<br />• 유료 전환율(결제 사용자 비율) +5%↑</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>마무리 요약</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>전략</th>
+      <th>왜 성공 가능성이 높은가?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>AI‑맞춤형 피드</strong></td>
+      <td><em>개인화</em>는 사용자 참여를, <em>투명성</em>은 신뢰를 키우며, 이는 곧 이탈률을 감소시킨다 .</td>
+    </tr>
+    <tr>
+      <td><strong>마이크로 커뮤니티</strong></td>
+      <td><em>소속감</em>·<em>정체성</em>은 장기 사용을 유도하고, 소수의 ‘소규모 영향력’이 플랫폼을 독특하게 만든다.</td>
+    </tr>
+    <tr>
+      <td><strong>크리에이터‑경제</strong></td>
+      <td><em>수익성</em>·<em>직거래</em>가 결합된 모델은 크리에이터와 사용자 모두에게 매력을 제공해 지 속가능한 생태계를 구축한다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>이 세 전략은 서로 시너지 효과를 낸다. 예컨대, AI가 추천하는 게시물은 마이크로 커뮤니티 내부에서 생성될 수 있고, 크리에이터는 그 게시물에 ‘스토어링크’를 삽입해 수익을 창출한다. 따라서 이 스타트업은 <strong>기존 플랫폼과 차별화된 경험</strong>을 제공하면서 <strong>사용자·크리에이터·브랜드가 함께 성장</strong>하는 통합 생태계를 만들 수 있다.</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        최근 발표된 연구에 따르면 명상이 스트레스 감소에 미치는 영향은 위약 효과(placebo effect)에 불과하다는 주장이 있다. 이 주장에 대한 반박 논리를 3가지 제시해줘.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p><strong>반박 논리 3가지</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>반박 논리</th>
+      <th>근거·설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><strong>객관적 생리학적 지표의 변화</strong></td>
+      <td>① <strong>자율신경계(ANS)</strong> – 명상 전후 심박변동성(HRV) 증가, 교감/부교감 균형 개선이 보고됩니다. <br />② <strong>호르몬</strong> – 코르티솔 분비 감소, 코르티코트로픽성황체호르몬(CORT) 반응 완화가 나타납니다. <br />③ <strong>염증 지표</strong> – CRP, IL‑6 등 염증성 사이토카인 수치가 명상군에서 통계적으로 유의하게 감소했습니다. <br />이들 지표는 주관적 감정과 독립적이므로 위약 효과와 구분됩니다.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><strong>뇌 기능·구조의 신경생물학적 변화</strong></td>
+      <td>① <strong>fMRI</strong> – 주의, 감정 조절과 관련된 전전두엽, 편도체, 해마의 활성화 패턴이 명상 이후 변형됩니다. <br />② <strong>뇌파</strong> – 알파·세타파가 증가하고 베타파가 감소해 이완 상태를 반영합니다. <br />③ <strong>연구</strong>: 12주, 8주, 4주 등 다양한 기간의 명상 프로그램에서 뇌 부피가 증가하거나 시냅스 가소성이 향상된 사례가 다수 보고되었습니다. <br />신경이미지 결과는 placebo 대비 특이적이며, 위약은 이러한 구조적 변화를 일으키지 못합니다.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><strong>무작위 대조군 연구(RCT)의 일관된 결과</strong></td>
+      <td>① <strong>다중 연구 메타분석</strong> – 50개 이상의 RCT에서 명상이 스트레스 지표(주관적 스트레스, 피지컬 스트레스 검사 등)와 객관적 지표(코르티솔, 면역 반응 등) 모두에서 유의미한 개선을 보였음. <br />② <strong>장기적 효과</strong> – 6개월, 12개월 이상의 추적조사에서 명상 그룹이 위약 대비 지속적으로 낮은 스트레스 수준을 유지함. <br />③ <strong>배양성 효과</strong> – dose‑response 관계가 관찰되어 명상 빈도·기간이 높을수록 효과가 커지는 패턴이 나타남. <br />이러한 일관성과 반복성은 단순한 placebo 효과보다 신뢰도가 높습니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p><strong>신뢰도 평가</strong><br />
+<strong>신뢰도: 9/10</strong></p>
+<ul>
+  <li><strong>이유</strong>: 반박 논리는 최신 연구 결과와 다수의 RCT, 메타분석을 바탕으로 구성되었습니다. 다만, 아직도 일부 연구에서 노이즈나 편향이 존재할 수 있으므로 완전한 확정이라고 보기는 어려우며, 이는 10점에 다소 미치지 못하도록 하였습니다.</li>
+</ul>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<h4 id="코딩-능력">코딩 능력</h4>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        Python을 사용해서, 주어진 숫자 리스트에서 두 번째로 큰 숫자를 찾는 함수를 작성해줘. 단, sort() 함수는 사용하지 말고 구현해줘<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p>아래는 <strong><code class="language-plaintext highlighter-rouge">sort()</code></strong> 함수를 전혀 사용하지 않고, 리스트에서 두 번째로 큰 숫자를 찾아 반환하는 파이썬 함수 예시입니다.<br />
+핵심 아이디어는 한 번의 순회를 통해 현재 가장 큰 값(<code class="language-plaintext highlighter-rouge">max1</code>)과 두 번째 큰 값(<code class="language-plaintext highlighter-rouge">max2</code>)을 동시에 갱신해 나가는 것입니다.</p>
+
+<p>def second_largest(nums):
+    “””
+    리스트 nums에서 두 번째로 큰 값을 반환합니다.
+    리스트에 2개 미만의 서로 다른 값이 있을 경우 None을 반환합니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Parameters
+----------
+nums : list of numbers
+    순회할 숫자 리스트
+
+Returns
+-------
+number or None
+    두 번째로 큰 숫자, 없을 경우 None
+"""
+if not nums:
+    return None          # 빈 리스트
+
+# 무한대보다 작은 값으로 초기화
+max1 = float('-inf')
+max2 = float('-inf')
+
+for n in nums:
+    if n &gt; max1:            # 새로운 최대값 발견
+        max2 = max1
+        max1 = n
+    elif n != max1 and n &gt; max2:   # max1과 다른 값 중 두 번째 최대값
+        max2 = n
+
+# max2가 여전히 -inf이면, 서로 다른 두 개 이상의 숫자가 없다는 뜻
+if max2 == float('-inf'):
+    return None
+
+return max2
+</code></pre></div></div>
+
+<h3 id="사용-예시">사용 예시</h3>
+
+<p>numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+print(second_largest(numbers))   # 출력: 6</p>
+
+<h3 id="핵심-포인트">핵심 포인트</h3>
+
+<ol>
+  <li><strong>시간 복잡도</strong>
+    <ul>
+      <li>한 번의 <code class="language-plaintext highlighter-rouge">for</code> 루프로 리스트를 순회하므로 <strong>O(n)</strong> 입니다.</li>
+    </ul>
+  </li>
+  <li><strong>공간 복잡도</strong>
+    <ul>
+      <li>상수 공간(<code class="language-plaintext highlighter-rouge">max1</code>, <code class="language-plaintext highlighter-rouge">max2</code> 두 변수)만 사용하므로 <strong>O(1)</strong> 입니다.</li>
+    </ul>
+  </li>
+  <li><strong>경계 상황 처리</strong>
+    <ul>
+      <li>리스트가 비어 있거나, 모든 원소가 동일한 경우 <code class="language-plaintext highlighter-rouge">None</code>을 반환합니다.</li>
+      <li>필요에 따라 <code class="language-plaintext highlighter-rouge">ValueError</code> 를 던지거나 다른 값을 반환하도록 수정할 수 있습니다.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>이렇게 하면 <code class="language-plaintext highlighter-rouge">sort()</code>를 호출하거나 중간에 임시 리스트를 생성하지 않고도 원하는 결과를 얻을 수 있습니다. 필요에 따라 코드 주석을 보완하거나, 입력 검증을 추가해 보세요.</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        <br />
+def calculate_average(numbers):<br />
+  total = 0<br />
+  for i in numbers:<br />
+    total = i<br />
+  return total / len(numbers)<br />
+위 파이썬 코드의 문제점을 찾고, 왜 문제가 되는지 설명한 뒤, 올바르게 수정한 코드를 보여줘.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<h2 id="문제점과-그-원인">문제점과 그 원인</h2>
+
+<p>def calculate_average(numbers):
+    total = 0
+    for i in numbers:
+        total = i          # ← 여기서 문제가 발생
+    return total / len(numbers)</p>
+
+<ol>
+  <li>
+    <p><strong>합계 누적이 안 됨</strong><br />
+<code class="language-plaintext highlighter-rouge">for</code> 루프 안에서 <code class="language-plaintext highlighter-rouge">total = i</code> 가 실행되기 때문에<br />
+<code class="language-plaintext highlighter-rouge">total</code> 은 <strong>마지막 원소</strong>만 남게 되고, 실제 합계가 아닌 <em>마지막</em> 값으로 나누어집니다.<br />
+예: <code class="language-plaintext highlighter-rouge">numbers = [1, 2, 3]</code> 이면 <code class="language-plaintext highlighter-rouge">total</code> 은 3이 되고, 반환값은 <code class="language-plaintext highlighter-rouge">3 / 3 = 1</code> 가 됩니다.<br />
+실제 평균은 <code class="language-plaintext highlighter-rouge">6 / 3 = 2</code> 이어야 합니다.</p>
+  </li>
+  <li>
+    <p><strong>빈 리스트에서 0으로 나누기</strong><br />
+<code class="language-plaintext highlighter-rouge">len(numbers)</code> 가 0이면 <code class="language-plaintext highlighter-rouge">ZeroDivisionError</code> 가 발생합니다.</p>
+  </li>
+  <li>
+    <p><strong>타입 검증이 없음</strong><br />
+<code class="language-plaintext highlighter-rouge">numbers</code> 가 숫자가 아닌 객체(문자열, None 등)를 포함하면 <code class="language-plaintext highlighter-rouge">TypeError</code> 가 발생할 수 있지만, 문제의 핵심은 위 두 가지입니다.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="올바르게-수정한-코드">올바르게 수정한 코드</h2>
+
+<p>def calculate_average(numbers):
+    “””
+    numbers 리스트에 들어 있는 모든 숫자의 평균을 반환합니다.
+    리스트가 비어 있으면 ValueError 를 발생시킵니다.
+    “””
+    if not numbers:                     # 빈 리스트 검사
+        raise ValueError(“Empty list has no average”)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>total = 0
+for n in numbers:                   # 합계 누적
+    total += n
+
+return total / len(numbers)
+</code></pre></div></div>
+
+<h3 id="주요-변경-사항">주요 변경 사항</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>변경 내용</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">total += n</code></td>
+      <td>원소를 누적합에 더합니다.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">if not numbers:</code></td>
+      <td>리스트가 비어 있으면 명시적으로 예외를 발생시켜 호출자에게 알립니다.</td>
+    </tr>
+    <tr>
+      <td>docstring 추가</td>
+      <td>함수 목적과 동작, 예외 상황을 문서화했습니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="사용-예시">사용 예시</h2>
+
+<p>print(calculate_average([1, 2, 3, 4, 5]))   # 3.0
+print(calculate_average([10, 20, 30]))      # 20.0</p>
+
+<p>빈 리스트에 대해:</p>
+
+<p>calculate_average([])   # ValueError: Empty list has no average</p>
+
+<hr />
+
+<h3 id="추가-팁">추가 팁</h3>
+
+<ul>
+  <li><strong>내장 함수 사용</strong>: <code class="language-plaintext highlighter-rouge">sum(numbers) / len(numbers)</code> 로 훨씬 간단히 구현할 수 있지만, 루프를 직접 쓰는 학습 목적이라면 위와 같이 작성하면 됩니다.</li>
+  <li><strong>형식 검사</strong>: <code class="language-plaintext highlighter-rouge">if not all(isinstance(x, (int, float)) for x in numbers):</code> 와 같은 검사를 추가하면 비숫자 값이 들어오는 경우를 방지할 수 있습니다.</li>
+  <li><strong>반환형</strong>: 필요에 따라 <code class="language-plaintext highlighter-rouge">float(total) / len(numbers)</code> 으로 명시적으로 부동소수점 나눗셈을 할 수도 있습니다. (Python 3에서는 자동).</li>
+</ul>
+
+<p>이제 평균을 정확히 계산하고, 빈 리스트에 대한 안전한 처리가 가능해졌습니다.</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        Ollama API를 사용하여 로컬에 설치된 gpt-oss-20b 모델에 요청을 보내고 응답을 받아 출력하는 간단한 Javascript 코드를 작성해줘.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<h2 id="-ollamaapi로-로컬-gptoss20b-모델-호출하기-javascript">📌 Ollama API로 로컬 <code class="language-plaintext highlighter-rouge">gpt‑oss‑20b</code> 모델 호출하기 (JavaScript)</h2>
+
+<blockquote>
+  <p><strong>필수 사전 준비</strong></p>
+  <ol>
+    <li>Ollama이 로컬에서 실행 중(기본 포트 11434)</li>
+    <li><code class="language-plaintext highlighter-rouge">gpt-oss-20b</code> 모델을 이미 <code class="language-plaintext highlighter-rouge">ollama pull gpt-oss-20b</code> 로 내려받았음</li>
+    <li>Node ≥ 18 (또는 Node &lt; 18이라면 <code class="language-plaintext highlighter-rouge">node-fetch</code> 설치 필요)</li>
+  </ol>
+</blockquote>
+
+<hr />
+
+<h3 id="1-코드-예시">1. 코드 예시</h3>
+
+<p>// 파일명 : ollama_demo.js
+// 실행:   node ollama_demo.js</p>
+
+<p>(async () =&gt; {
+  // ① 요청 바디(JSON) 구성
+  const requestBody = {
+    model: “gpt-oss-20b”,
+    messages: [
+      {
+        role: “user”,
+        content: “안녕하세요! 양자 터널링이란 무엇인지 간단히 설명해 주세요.”
+      }
+    ]
+  };</p>
+
+<p>// ② Ollama 로컬 API에 POST 요청
+  const response = await fetch(“http://localhost:11434/api/chat”, {
+    method: “POST”,
+    headers: { “Content-Type”: “application/json” },
+    body: JSON.stringify(requestBody)
+  });</p>
+
+<p>// ③ 오류 처리
+  if (!response.ok) {
+    const err = await response.text();
+    console.error(<code class="language-plaintext highlighter-rouge">❌ Ollama API 오류 ${response.status}: ${err}</code>);
+    process.exit(1);
+  }</p>
+
+<p>// ④ 응답 파싱 &amp; 출력
+  const data = await response.json();
+  const reply = data.choices?.[0]?.message?.content ?? “<응답 없음="">";
+  console.log("🤖 GPT‑OSS‑20B의 답변:");
+  console.log(reply);
+})();</응답></p>
+
+<hr />
+
+<h3 id="2-동작-흐름">2. 동작 흐름</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>단계</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>①</td>
+      <td>JSON 형태의 <strong>chat</strong> 요청 본문을 만든다. (모델명, 사용자 메시지 포함)</td>
+    </tr>
+    <tr>
+      <td>②</td>
+      <td><code class="language-plaintext highlighter-rouge">fetch</code> 를 사용해 <code class="language-plaintext highlighter-rouge">http://localhost:11434/api/chat</code> 로 POST 요청을 보낸다.</td>
+    </tr>
+    <tr>
+      <td>③</td>
+      <td><code class="language-plaintext highlighter-rouge">response.ok</code> 로 성공 여부를 판단하고, 실패 시 에러 메시지를 출력한다.</td>
+    </tr>
+    <tr>
+      <td>④</td>
+      <td>정상 응답이면 JSON을 파싱해 <code class="language-plaintext highlighter-rouge">choices[0].message.content</code> 를 꺼내어 콘솔에 출력한다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="3-node18-환경에서의-팁">3. Node &lt; 18 환경에서의 팁</h3>
+
+<p>Node 16 이하에서는 기본 <code class="language-plaintext highlighter-rouge">fetch</code>가 없으므로 <code class="language-plaintext highlighter-rouge">node-fetch</code> 를 설치해 사용합니다.</p>
+
+<p>npm install node-fetch</p>
+
+<p>그후 코드 상단에 <code class="language-plaintext highlighter-rouge">import fetch from 'node-fetch';</code> 를 추가하면 됩니다.</p>
+
+<hr />
+
+<h3 id="4-간단히-실행해-보기">4. 간단히 실행해 보기</h3>
+
+<p>node ollama_demo.js</p>
+
+<p>콘솔에 다음과 같은 출력이 나타나면 성공입니다.</p>
+
+<p>🤖 GPT‑OSS‑20B의 답변:
+양자 터널링은 … (모델이 생성한 문장)</p>
+
+<p>필요에 따라 <code class="language-plaintext highlighter-rouge">messages</code> 배열에 여러 개의 질문/답변 쌍을 넣어 대화형 세션을 구성할 수 있습니다.</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<h4 id="창의적-글쓰기">창의적 글쓰기</h4>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        제주도산 유기농 말차를 사용한 ‘제주 말차 라떼’ 신메뉴를 출시했다. 인스타그램에 올릴 감성적인 홍보 문구 3가지를 각각 다른 스타일로 작성해줘<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p><strong>1️⃣ 🌿 “제주 바람이 담긴 한 모금”</strong><br />
+제주산 유기농 말차로 담아낸 라떼, 한 모금에 바람을 마신 듯 상쾌한 감성을 경험해 보세요.</p>
+
+<p><strong>2️⃣ ☕️ “매일이 녹차 하루”</strong><br />
+새벽 바다 소리처럼 부드러운 녹차 향, 제주 말차 라떼 한 잔이면 평범한 일상이 특별해집니다.</p>
+
+<p><strong>3️⃣ ✨ “청춘의 그린 스펙트럼”</strong><br />
+유기농 말차가 입안에서 반짝이는 순간, 젊음이 녹아든 그린 스펙트럼을 느껴보세요.</p>
+
+<blockquote>
+  <p>🌸 <strong>제주 말차 라떼</strong> – 자연이 선물한 한 모금의 행복.<br />
+📸 #제주말차라떼 #일상속의초록 #유기농맛집</p>
+</blockquote>
+
+<hr />
+<p>다양한 감성으로 스타일을 나누어, 인스타그램 팔로워들의 마음을 사로잡아 보세요!</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        주제: ‘우주를 여행하던 고양이가 길을 잃고 낯선 행성에 불시착했다.’ 이 주제로 단편 영화의 오프닝 장면을 대본 형식으로 작성해줘. 한글로 작성해줘.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p><strong>FADE IN:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EXT. 우주 – 별빛이 반짝이는 무한한 공간
+</code></pre></div></div>
+
+<p><em>천체의 조화로운 빛이 깜박이는 사이, 은빛의 작은 우주선이 무중력 속에서 헤엄친다. 한 줄기 은빛 광선이 은하수를 가르며 지나가고, 우주선의 창문에서 미소 짓는 고양이 ‘미
+치’가 보인다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INT. 우주선 – 조종석
+</code></pre></div></div>
+
+<p><em>미치는 미니멀한 은빛 헬멧을 쓰고, 눈부신 별들을 바라보며 작은 핸드레버를 돌리고 있다. 조종석은 부드러운 파란빛에 감싸여 있고, 은하의 반짝임이 선글라스처럼 비친다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VOICE‑OVER (미치)
+</code></pre></div></div>
+
+<p>미치 (V.O.)<br />
+<em>(살짝 두근거리며)</em>
+“우주… 무한하고 빛나는 공간. 그리고… 거기, 작은 반짝임이 있었어.”</p>
+
+<p><em>미치의 눈이 별 지도에서 스무드하게 반응한다. 순간적으로 그린 크리스탈이 깜박이며, 지도에 무언가가 깜빡인다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MICH
+</code></pre></div></div>
+
+<p>미치<br />
+<em>(핸드레버를 휘두르며)</em>
+“어? 이게?”</p>
+
+<p><em>좌석에 놓인 경로 표시기가 깜빡이며 예상치 못한 경로를 나타낸다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EXT. 우주 – 충돌 장면
+</code></pre></div></div>
+
+<p><em>우주선이 급격히 회전하며, 파란‑초록 혜성의 꼬리를 따라갑니다. 별빛이 깜빡이며, 충격이 발생한다. 우주선 외부 패널이 흔들리고 구부러진다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INT. 우주선 – 조종석 – 연속
+</code></pre></div></div>
+
+<p><em>미치의 작은 발가락이 핸드레버를 꼭 잡는다. 눈은 크게 뜨고, 심장이 두근거린다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MICH
+</code></pre></div></div>
+
+<p>미치<br />
+<em>(조심스럽게)</em>
+“미안…미안…미안…”</p>
+
+<p><em>빨간 빛이 번쩍인다. 엔진이 끊긴다. 기계음이 울리고, 창문이 열리며, 초록빛이 차오른다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EXT. 낯선 행성 – 초록빛 행성 표면
+</code></pre></div></div>
+
+<p><em>무엇이든 모르는 행성의 표면에 우주선이 부드럽게 착지한다. 초록빛 공기와 은은한 빛이 흘러나온다. 미치는 조용히 관측하며, 눈에 띄는 외계 식물들을 바라본다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INT. 우주선 – 충돌 현장
+</code></pre></div></div>
+
+<p><em>우주선의 문이 열리고, 부드러운 초록빛이 새어나온다. 미치는 조용히 창문을 넘어 나온다. 뒤에서 우주선의 외관은 그대로지만, 외계 행성의 빛이 눈부시다.</em></p>
+
+<p>미치<br />
+<em>(속삭이며)</em>
+“어디…?”</p>
+
+<p><em>거대한 초원 속에서, 부드러운 메아리 소리가 울리며, 크리스탈의 멜로디가 흐른다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EXT. 낯선 행성 – 초록빛 대지
+</code></pre></div></div>
+
+<p><em>광대한 초원, 우주선이 거대한 크리스탈 화분 속에서 부드럽게 착지한다. 미치는 한 조각의 외계 대지를 향해 몸을 기울이며, 새벽의 별빛에 눈이 반짝인다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CUT TO:
+</code></pre></div></div>
+
+<p><em>검은 화면. 타이틀이 은빛 글자로 나타난다.</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>제목:  "미치의 궤도 탈출: 별빛 고양이의 새로운 행성"
+</code></pre></div></div>
+
+<p><strong>END OF OPENING</strong></p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        최근 발표된 ‘GPT-OSS’ 모델을 리눅스 환경에 Ollama로 설치하는 과정을 담은 블로그 글의 서론 부분을 작성해줘. 독자의 흥미를 유발하고 따라 하고 싶게 만드는 내용으로 부탁해.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<blockquote>
+  <p>“오늘, 한 줄의 명령어로 전 세계가 만든 <strong>언어 모델</strong>을 내게 가져갈 수 있다면?”</p>
+</blockquote>
+
+<p>한 번 상상해 보세요.</p>
+<ul>
+  <li><strong>데이터</strong>를 외부에서 <strong>구매</strong>하거나, <strong>클라우드</strong>에 <strong>접속</strong>해 서비스가 무한대로 제공되는 대신,</li>
+  <li><strong>자신의 PC</strong> 혹은 <strong>서버</strong>에 <strong>전부</strong> 설치해, <strong>비용</strong> 없이 무한히 활용할 수 있는 환경이 완성된다.</li>
+</ul>
+
+<p>그것이 바로 <strong>GPT‑OSS</strong>입니다. 최신 GPT‑OSS 모델은 “오픈 소스 인공지능을 누구에게나 열어준다”는 선언 아래 공개된 최초의 <strong>완전 무료</strong> 대형 언어 모델입니다. 이 모델을
+ 활용해 챗봇을 만들거나, 텍스트 요약, 코드 자동 완성, 학습 보조 등 <strong>무한한 가능성</strong>을 현실로 구현해 볼 차례입니다.</p>
+
+<p>그리고 가장 큰 매력? <strong>Ollama</strong>라는 경량 컨테이너 플랫폼을 이용하면, 복잡한 종속성 설치 없이 단 몇 분 만에 모델을 <strong>Linux</strong> 환경에 바로 띄울 수 있다는 것입니다.</p>
+<blockquote>
+  <p><strong>Ollama</strong>는 Docker나 Singularity 없이도 실행 가능한 <strong>컨테이너 런타임</strong>을 제공해,</p>
+  <ul>
+    <li><strong>GPU</strong>와 <strong>CPU</strong> 모두에서 신속하게 작동</li>
+    <li><strong>배포가 쉬워</strong> (명령어 한 줄)</li>
+    <li><strong>컨피그</strong>는 자동화되어 있어 설정 실수 걱정이 최소</li>
+  </ul>
+</blockquote>
+
+<p>이 글에서는 <strong>Ubuntu / Debian 기반</strong> 리눅스 환경을 예시로,</p>
+<ol>
+  <li><strong>필요한 패키지 설치</strong> →</li>
+  <li><strong>Ollama 설치</strong> →</li>
+  <li><strong>GPT‑OSS 모델 다운로드</strong> →</li>
+  <li><strong>모델 실행</strong> →</li>
+  <li><strong>간단한 테스트</strong>까지, 순서대로 따라가면 끝!</li>
+</ol>
+
+<p><strong>왜 내가 따라야 할까?</strong></p>
+<ul>
+  <li><strong>무료</strong>: 상업용 서비스에 대한 비용을 아껴, 실험 및 프로토타입 제작이 가능</li>
+  <li><strong>커스터마이징</strong>: 오픈소스이므로 필요에 따라 코드를 직접 수정, 모델 파인튜닝까지 자유롭게</li>
+  <li><strong>보안</strong>: 데이터를 클라우드에 전송하지 않아 개인정보 보호 강화</li>
+  <li><strong>생산성 향상</strong>: GPT‑OSS로 바로 API 호출 없이 로컬에서 문서 정리, 코딩 보조, 아이디어 발상까지</li>
+</ul>
+
+<p>지금 바로 이 절차를 따라하면, 여러분은 <strong>“나만의 언어 모델”</strong>을 손쉽게 만들고, <strong>다음 프로젝트</strong>를 위한 <strong>강력한 기초</strong>를 마련하게 됩니다.</p>
+<blockquote>
+  <p><strong>준비</strong>: 리눅스 환경이 준비돼 있다면, 다음 단계에서 <strong>Ollama</strong>를 설치하고 GPT‑OSS를 바로 실행해 볼 차례입니다.<br />
+<strong>도전</strong>: 명령어 한 줄, 그리고 몇 초 안에 AI가 여러분의 컴퓨터 속에서 생명을 얻습니다.</p>
+</blockquote>
+
+<p>다음 블로그 포스트에서는 <strong>“Ollama 설치부터 GPT‑OSS 모델 실행까지”</strong>를 단계별로 안내할 예정이니, <strong>지금 바로 시작해 보세요!</strong><br />
+궁금한 점이나 오류가 생기면 댓글로 남겨 주시면, 함께 해결해 드리겠습니다.</p>
+
+<hr />
+<p><strong>Ollama + GPT‑OSS</strong> – 이 조합이 여러분의 개발 스택에 가져다 줄 놀라운 변화를 기대해 보세요!</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        <br />
+아래 문장을 버역해주세요.<br />
+<br />
+These metrics are still used today, but mostly when the model produces a single, easily comparable “right” answer.<br />
+<br />
+Take classification, for example, where the task is to assign each text a single label. To test this, we can use accuracy by comparing the label assigned by the model to the reference label in the eval dataset to see if it got it right.<br />
+<br />
+It’s very clear-cut: if it assigns the wrong label, it gets a 0; if it assigns the correct label, it gets a 1.<br />
+<br />
+This means if we build a classifier for a spam dataset with 1,000 emails, and the model labels 910 of them correctly, the accuracy would be 0.91.<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p>이 지표들은 여전히 오늘날에도 사용되고 있지만, 주로 모델이 <strong>한 개의</strong> 명확히 비교 가능한 “정답”을 낼 때 사용됩니다.</p>
+
+<p>예를 들어, 텍스트마다 하나의 레이블만 부여해야 하는 <strong>분류</strong> 과제를 들 수 있습니다. 이를 검증하기 위해서는 <strong>정확도(accuracy)</strong> 를 사용할 수 있습니다. 모델이 부여한 레
+이블을 평가용(eval) 데이터셋에 있는 참조(레퍼런스) 레이블과 비교해, 모델이 올바르게 맞췄는지 확인하는 방식이죠.</p>
+
+<p>정말 직관적입니다:</p>
+<ul>
+  <li>잘못된 레이블을 부여하면 점수는 <strong>0</strong>;</li>
+  <li>올바른 레이블을 부여하면 점수는 <strong>1</strong>.</li>
+</ul>
+
+<p>즉, 스팸 데이터셋에 1,000개의 이메일이 있을 때, 모델이 그 중 910개를 정확히 라벨링했다면, 정확도는 <strong>0.91</strong>이 됩니다.</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div class="chat-prompt">
+        <strong>👤 User:</strong>
+        <br />
+고객의 제품 서비스에 대한 댓글의 감정을 분석해주세요. 점수는 0~5점 입니다. 0은 가장 불만족, 5는 최고 만족 수준입니다. 평가 근거도 함께 제시해 주세요.<br />
+<br />
+“결과물의 퀄리티는 만족스럽습니다. 그런데 응답 속도가 너무 느려서 가끔 답답하네요. 성능이랑 속도 둘 다 잡을 순 없었나요?<br />
+
+    </div>
+    <div class="chat-response">
+        <details>
+            <summary>
+                <strong>🤖 LLM:</strong>
+                <span>응답 보기 / 숨기기</span>
+            </summary>
+            <div class="response-content">
+                
+<p><strong>감정 점수</strong> : <strong>3.0 / 5</strong></p>
+
+<hr />
+
+<h3 id="1-평가-근거">1. 평가 근거</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>항목</th>
+      <th>내용</th>
+      <th>점수 영향</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>품질 만족도</strong></td>
+      <td>“결과물의 퀄리티는 만족스럽습니다.” → 고객이 서비스의 핵심 가치를 인식하고 긍정적으로 평가함</td>
+      <td>+1.5</td>
+    </tr>
+    <tr>
+      <td><strong>응답 속도 불만</strong></td>
+      <td>“응답 속도가 너무 느려서 가끔 답답하네요.” → 속도에 대한 실망감이 명시적</td>
+      <td>–1.0</td>
+    </tr>
+    <tr>
+      <td><strong>추가 기대</strong></td>
+      <td>“성능이랑 속도 둘 다 잡을 순 없었나요?” → 현재 한계에 대한 불만 및 개선 요청</td>
+      <td>–0.5</td>
+    </tr>
+    <tr>
+      <td><strong>전반적 균형</strong></td>
+      <td>품질은 높지만 속도는 떨어져, 전반적인 만족도는 중간 수준</td>
+      <td>+0.5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>총합계: <strong>+1.5 – 1.0 – 0.5 + 0.5 = 0.5</strong><br />
+(기본 2.5점에 0.5를 더해 <strong>3.0</strong>점으로 조정)</p>
+
+<hr />
+
+<h3 id="2-해석">2. 해석</h3>
+
+<ul>
+  <li><strong>긍정적인 부분</strong>: 제품/서비스의 결과물(품질)이 기대를 충족했으며, 이는 고객이 핵심 가치를 인지했다는 강한 시그널입니다.</li>
+  <li><strong>부정적인 부분</strong>: 응답 속도가 느려 일상적인 사용에 지장이 있었고, “성능과 속도 두 마리 토끼”를 잡을 수 없다는 불만이 나타났습니다. 이로 인해 만족도가 완벽히 높지 
+못한 수준입니다.</li>
+</ul>
+
+<hr />
+
+<h3 id="3-개선-제안">3. 개선 제안</h3>
+
+<ol>
+  <li><strong>응답 속도 최적화</strong>
+    <ul>
+      <li>서버 캐싱, 로드 밸런싱 도입</li>
+      <li>프론트엔드 최적화(비동기 로딩, 지연 로딩)</li>
+    </ul>
+  </li>
+  <li><strong>고객 커뮤니케이션</strong>
+    <ul>
+      <li>속도 개선 일정 공개 및 진행 상황 공유</li>
+      <li>대체 옵션(예: ‘빠른 모드’ 제공) 안내</li>
+    </ul>
+  </li>
+  <li><strong>피드백 루프 강화</strong>
+    <ul>
+      <li>정기적인 만족도 설문과 속도에 대한 별도 항목 포함</li>
+      <li>실시간 문제 보고 채널 마련</li>
+    </ul>
+  </li>
+</ol>
+
+<p>이러한 조치를 통해 <strong>점수 4–5</strong> 수준까지 끌어올릴 수 있을 것입니다.</p>
+
+            </div>
+        </details>
+    </div>
+</div>
+
+<h2 id="결론과-전망">결론과 전망</h2>
+<p>오늘은 Ollama를 이용해서 GPT-OSS 20b 모델을 설치하고 테스트를 해봤습니다. 시간이 되신다면 <strong><a href="https://openwebui.com/">openwebui</a></strong> 를 이용해서 GUI 환경에서 테스트해보시기 바랍니다.</p>
+
+<p>LLM 시장을 개척한 OpenAI가 공개한 모델이다 보니, 다양한 커뮤니티 반응이 있었습니다. 반응들 소개하고 오늘의 포스팅을 마무리하겠습니다.</p>
+
+<p>GPT-OSS 공개 직후 레딧의 <em>r/LocalLLaMa</em> 나 <em>r/MachineLearning</em>는 그야말로 축제 분위기였습니다. 개발자와 AI 애호가들의 반응을 요약하자면</p>
+
+<ul>
+  <li>
+    <p>열광: 드디어 진짜가 나타났다
+가장 지배적인 반응은 “OpenAI”가 드디어 오픈 모델을 내놨다는 흥분이었습니다. 특히 <strong>Ollama 덕분에</strong> ‘ollama run gpt-oss:20b’ 단 한줄로 설치가 끝난다는 간편함에 감탄하는 분위기였습니다. 내 맥북에서도 ? RTX 4070 에서도 이런 쾌적하을 !? 같은 구동 후기가 공유되고 있습니다.</p>
+
+    <p>위에 제가 테스트한 영상을 보시면 아시겠지만 4060 Ti 에서도 매우 빠르게 구동되는 것을 확인할 수 있었습니다.</p>
+  </li>
+  <li>
+    <p>성능 논쟁: 그래서 Llama 3와 비교하면 누가 더 나은지에 대한
+코딩, 수학 문제풀이, 창의적 글쓰기 등 특정 작업에서의 성능을 두고 Llama 3, Mistral, Qwen 같은 모델과 비교하는 벤치마크 결과가 올라오고 있습니다. 일반적인 분위기는 <strong>추론과 도구활용 능력에서 강점</strong>을 보인다는 평가입니다.</p>
+  </li>
+  <li>
+    <p>활용사례 찾기
+20b라는 작은 크기로 특정 데이터를 이용해서 미세조정(Fine-tuning)하거나 자신만의 챗봇 만들기, RAG 파이프라인에 통합 등 다양한 실험과 프로젝트가 공유되고 있습니다.</p>
+  </li>
+</ul>
+
+<p>OpenAI의 최근 행보에 대해서 의심의 눈초리를 보내는 개발자들이 많기는 합니다만, 이번 GPT-OSS의 발표가 오픈소스 AI 생태계 전체에 새로운 활력을 불어넣고 있는 것은 분명한 사실입니다. 개인적으로 마음에 들었던 것은 <strong>한글 출력</strong>이었습니다. 30b 이하의 모델에서 한글 출력이 문제 없는 모델은 Qwen 2.5/3, Gemma 3 정도였는데 여기에 또 하나가 추가되었습니다.</p>]]></content><author><name>Sang Bae YUN</name></author><category term="LLM" /><category term="생성형-AI" /><category term="GPT-OSS" /><category term="Ollama" /><category term="AI-트렌드" /><summary type="html"><![CDATA[새로운 오픈소스 LLM의 등장 OpenAI가 2019년 GPT-2를 시장에 내놓은 이후 6년만에 드디어 오픈소스 모델인 GPT-OSS(gpt-oss-20b, gpt-oss-120b)를 공개했습니다. OpenAI가 그동안 내놓았던 GPT-3, GPT-4는 모두 독점모델(Closed-source)이었기 때문에 왜 갑자기 오픈소스 모델을 공개했는지에 대한 여러 분석이 있었습니다.]]></summary></entry></feed>
