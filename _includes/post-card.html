@@ -1,0 +1,32 @@
+{% assign post = include.post %}
+<article class="post-card">
+  <div class="post-card__content">
+    <h2 class="post-card__title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    {% if post.card_description or post.excerpt %}
+      <div class="post-card__excerpt">
+        {% if post.card_description %}
+          {{ post.card_description | strip_html | truncate: 150 }}
+        {% else %}
+          {{ post.excerpt | strip_html | truncate: 150 }}
+        {% endif %}
+      </div>
+    {% endif %}
+    <div class="post-card__meta">
+      <div class="post-card__categories">
+        {% if post.categories %}
+          {% for category in post.categories %}
+            <a href="{{ category | slugify | prepend: '/categories/' | relative_url }}" class="category-badge">{{ category }}</a>
+          {% endfor %}
+        {% endif %}
+      </div>
+      <div class="post-card__date-author">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        {% if post.author %}
+          <span class="post-card__author">by {{ post.author }}</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</article>

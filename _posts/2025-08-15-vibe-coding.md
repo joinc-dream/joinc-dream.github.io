@@ -4,6 +4,7 @@ title: "Vibe 코딩 한달살이"
 date: 2025-08-10 10:00:00 +0900
 author: sangbaeyun 
 categories: LLM 생성형-AI AI-코딩 Vibe-Coding 소프트웨어-엔지니어링 
+card_description: "AI 코딩 어시스턴트를 넘어선 '바이브 코딩'의 개념과 Gemini CLI를 활용한 한 달간의 개발 경험을 공유합니다. AI 주도 개발의 실제와 미래를 탐색합니다."
 gallery:
   - url: /assets/images/posts/2025/vibe-coding-02.png
     image_path: /assets/images/posts/2025/vibe-coding-02.png
