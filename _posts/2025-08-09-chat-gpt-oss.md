@@ -2,7 +2,8 @@
 layout: single 
 title: "GPT-OSS 사용기"
 date: 2025-08-09 10:00:00 +0900
-categories: LLM sLLM 생성형-AI 
+categories: LLM 생성형-AI GPT-OSS Ollama AI-트렌드 
+author: sangbaeyun 
 ---
 
 ## 새로운 오픈소스 LLM의 등장

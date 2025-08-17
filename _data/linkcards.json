@@ -4,5 +4,41 @@
     "title": "Vibe-Coding: A Breakthrough for Non-Technical Builders Ready to Build the Next Wave of Great…",
     "description": "Several tools and platforms, from AI enhanced code editors to web based assistants, have been developed to support vibe coding, Zapier",
     "image": "https://miro.medium.com/v2/resize:fit:1200/1*uEKTZDKagRbwqFSbIUf7_A.jpeg"
+  },
+  {
+    "url": "https://www.tomsguide.com/news/live/openai-chatgpt-5-live-blog",
+    "title": "OpenAI ChatGPT-5 launch live updates — all the latest news and biggest upgrades",
+    "description": "Everything you need to know about the new GPT-5 models",
+    "image": "https://cdn.mos.cms.futurecdn.net/BD7ipUh6Rn3Y9SXpNhe3oL.jpg"
+  },
+  {
+    "url": "https://blog.greeden.me/en/2025/08/06/openai-gpt-oss-deep-dive-next-generation-language-models-expanding-via-open-source/",
+    "title": "OpenAI “GPT-OSS” Deep Dive — Next-Generation Language Models Expanding via Open Source - IT & Life Hacks Blog｜Ideas for learning and practicing",
+    "description": "OpenAI “GPT-OSS” Deep Dive — Next-Generation Language Models Expanding via Open Source Overview Summary Model Names: gpt-oss-120b (≈117 billion parameters), gpt-oss-20b (≈21 billion parameters) Release Date: August 5, 2025 (announced by OpenAI CEO Sam Altman) License: Apache 2.0 (commercial use and redistribution permitted) Goal: Run high-performance LLMs offline/on-prem without relying on commercial APIs 1. What",
+    "image": "https://blog.greeden.me/wp-content/uploads/2025/02/pexels-photo-17489163.jpeg"
+  },
+  {
+    "url": "https://www.windowscentral.com/artificial-intelligence/openai-chatgpt/openai-introduces-chatgpt-agent",
+    "title": "OpenAI introduces “ChatGPT agent” as the ultimate jack of all AI trades — with its own computer to check out your to-do list",
+    "description": "OpenAI recently launched a new AI agent called ChatGPT agent designed to take over complex tasks for users from the bat.",
+    "image": "https://cdn.mos.cms.futurecdn.net/nRykMnxxgdnM5m8KfHyYeP.png"
+  },
+  {
+    "url": "https://nypost.com/2025/07/29/tech/chatgpt-passes-the-im-not-a-robot-test-a-terrifying-step-toward-ai-developing-a-mind-of-its-own",
+    "title": "ChatGPT passes the ‘I’m not a robot’ test — a ‘terrifying’ step toward AI developing a mind of its own",
+    "description": "Their AI-impersonation is on point.",
+    "image": "https://nypost.com/wp-content/uploads/sites/2/2025/07/108923663.jpg?quality=75&strip=all&w=1024"
+  },
+  {
+    "url": "https://www.businessinsider.com/openai-coo-brad-lightcap-ai-agents-chatgpt-agent-2025-7",
+    "title": "This is how OpenAI COO Brad Lightcap defines AI agents",
+    "description": "OpenAI COO Brad Lightcap says an AI agent should be able to take on work it hasn’t seen before. OpenAI released its latest agent this week.",
+    "image": "https://i.insider.com/687aa750f748d8c055f5e804?width=1024&format=jpeg"
+  },
+  {
+    "url": "https://news.skhynix.co.kr/ai-platform-gaia-launching-2025/",
+    "title": "SK하이닉스, 생성형 AI 로드맵 공개… “플랫폼 ‘GaiA’로 AI 전환 선도” | SK hynix Newsroom",
+    "description": "SK하이닉스는 글로벌 AI 시장에서 HBM(High Bandwidth Memory)을 통해 핵심 인프라를 공급하는 한편, 내부 업무 혁신을 가속화하기 위한 AI 활용 생태계를 체계적으로 구축하고 있다. 그 중심에는 반도체 업무에 특화된 생성형 AI 플랫폼 ‘GaiA(Generative AI Assistant, 가이아)’가 있다. GaiA는 반도체 제조 프로세스의",
+    "image": "https://skhynix-prd-data.s3.ap-northeast-2.amazonaws.com/wp-content/uploads/2025/08/GAI_Roadmap_THM_RE.png"
   }
 ]

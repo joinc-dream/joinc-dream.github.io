@@ -2,7 +2,8 @@
 layout: single 
 title: "Vibe 코딩 한달살이"
 date: 2025-08-10 10:00:00 +0900
-categories: LLM sLLM 생성형-AI 
+author: sangbaeyun 
+categories: LLM 생성형-AI AI-코딩 Vibe-Coding 소프트웨어-엔지니어링 
 gallery:
   - url: /assets/images/posts/2025/vibe-coding-02.png
     image_path: /assets/images/posts/2025/vibe-coding-02.png

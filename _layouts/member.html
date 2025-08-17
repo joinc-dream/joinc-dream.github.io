@@ -12,6 +12,13 @@ layout: single
     margin-top: 0;
     padding-top: 0;
   }
+  .highlight {
+    font-style: normal;            /* 기본 이탤릭 해제 */
+    font-size: 20px;
+    padding: 0 4px;                /* 텍스트와 배경 여백 */
+    border-radius: 6px;            /* 모서리 둥글게 */
+    transition: background 0.2s, color 0.2s;
+  }
 
   .portfolio-content h2 { /* Section headers */
     font-family: "Raleway", sans-serif;
@@ -233,7 +240,9 @@ layout: single
   <section id="about">
     <h2>About</h2>
     <h3>{{ portfolio.about.title }}</h3>
-    <p><em>{{ portfolio.about.description }}</em></p>
+    <div class="highlight">
+    {{ portfolio.about.description }}
+    </div>
     <ul>
     {% for item in portfolio.about.details %}
       <li><strong>{{ item.key }}:</strong> {{ item.value }}</li>
