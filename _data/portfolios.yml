@@ -36,18 +36,51 @@ sangbaeyun:
       name: "Sang Bae Yun"
       description: "Innovative and deadline-driven Software Engineer with 25+ years of experience designing and developing user-centered applications."
     experience:
-      - title: "Senior Software Engineer"
-        period: "2020 - Present"
-        company: "Awesome Tech Inc., Seoul, KR"
+      - title: "AI Lead Engineer"
+        period: "2024 - Present"
+        company: "ITCEN CLOIT, Seoul, KR"
         duties:
-          - "Lead in the design, development, and implementation of applications."
-          - "Delegate tasks to the 7 members of the design team."
-      - title: "Software Engineer"
+          - "Lead in the design, development, and implementation of GEN - AI applications."
+          - "Delegate tasks to the 7 members of the AI Application team."
+      - title: "Technical Account Manager"
+        period: "2023 - 2024"
+        company: "Amazon, Seoul, KR"
+        duties:
+          - "AWS Cloud, Enterprise Customer Technical Support"
+      - title: "Block Chain Product Owner"
+        period: "2022 - 2023"
+        company: "Medium Inc."
+        duties:
+          - "DAO(Decentralized Autonomous Organization) Blockchain Production Development Lead Engineer"
+          - "Delegate tasks to the 25 members of the Block Chain Application team"
+      - title: "Block Chain Lead Engineer"
+        period: "2019 - 2022"
+        company: "HANWHA LIFE INSURANCE CO., LTD"
+        duties:
+          - "Blockchain-based Stable Coin System Architecture and Construction"
+          - "DevOps Engineering, AWS-based data pipeline design/build. EWA/On-Demand-Pay design/Dev"
+      - title: "Cloud Architect and DevOps Team Leader"
         period: "2018 - 2019"
-        company: "Startup Heroes, Pangyo, KR"
+        company: "KAKAO Stage 5"
         duties:
-          - "Developed numerous marketing programs."
-          - "Managed up to 5 projects or tasks at a given time."
+          - "Building a payment infrastructure for phone billing services"
+          - "Establishing a cloud security system/network separation system for BCP establishment and ISO 27001 compliance."
+      - title: "Cloud Architect, Software Engineer, Project Manager"
+        period: "2016 - 2018"
+        company: "NaverLabs"
+        duties:
+          - "IVI backend service development"
+          - "Design and Development of a Wi-Fi-Based Indoor Positioning System"
+      - title: "IoT Lead Engineer, Cloud Architect"
+        period: "2013 - 2015"
+        company: "LG Electronics"
+        duties:
+          - "HomeChat IoT Global Service Design and Development"
+      - title: "Cloud Architect/Engineer"
+        period: "2013 - 2015"
+        company: "KT Cloudware"
+        duties:
+          - "KT's in-house private cloud system construction"
 
 soonsin:
   about:
