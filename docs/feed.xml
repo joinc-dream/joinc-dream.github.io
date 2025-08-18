@@ -1,4 +1,483 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-17T15:28:18+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">8월 3째주 AI 뉴스 및 트렌드</title><link href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends/" rel="alternate" type="text/html" title="8월 3째주 AI 뉴스 및 트렌드" /><published>2025-08-17T01:00:00+09:00</published><updated>2025-08-17T01:00:00+09:00</updated><id>/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends</id><content type="html" xml:base="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends/"><![CDATA[<h2 id="gpt-5-정식-출시">GPT-5 정식 출시</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-18T12:20:34+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">Gemini 사용에 대한 코드 정리(VertexAI vs GenAI)</title><link href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use/" rel="alternate" type="text/html" title="Gemini 사용에 대한 코드 정리(VertexAI vs GenAI)" /><published>2025-08-17T21:00:00+09:00</published><updated>2025-08-17T21:00:00+09:00</updated><id>/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use</id><content type="html" xml:base="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use/"><![CDATA[<h1 id="라이브러리-import">라이브러리 Import</h1>
+<ul>
+  <li>공통적으로 사용하는 라이브러리를 불러옵니다.</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">os</span>
+<span class="kn">from</span> <span class="n">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+</code></pre></div></div>
+
+<h2 id="기존-vertexai-sdk-사용">기존 VertexAI SDK 사용</h2>
+<ul>
+  <li>google.oauth2의 service_account를 활용</li>
+  <li>GCP의 Credential 파일을 통해 별도 로그인 없이 VertexAI 사용</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">google.oauth2</span> <span class="kn">import</span> <span class="n">service_account</span>
+<span class="kn">import</span> <span class="n">vertexai</span>
+<span class="kn">from</span> <span class="n">vertexai.generative_models</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">GenerativeModel</span><span class="p">,</span> 
+    <span class="n">GenerationConfig</span><span class="p">,</span>
+    <span class="n">Tool</span><span class="p">,</span>
+    <span class="n">grounding</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>VERTEXAI_PROJECT_ID: Vertex AI 사용 권한이 있는 GCP 프로젝트의 ID</li>
+  <li>VERTEXAI_CREDENTIALS_PATH: Vertex AI에 접근 권한이 있는 서비스 계정의 “JSON 키 파일” 경로</li>
+  <li><strong>별도 Client를 받아 올 필요없이, init 한 번으로 호출 끝</strong></li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">load_dotenv</span><span class="p">()</span>
+
+<span class="n">project_id</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">VERTEXAI_PROJECT_ID</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">credential_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">VERTEXAI_CREDENTIALS_PATH</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">credentials</span> <span class="o">=</span> <span class="n">service_account</span><span class="p">.</span><span class="n">Credentials</span><span class="p">.</span><span class="nf">from_service_account_file</span><span class="p">(</span><span class="n">credential_path</span><span class="p">)</span>
+
+<span class="n">vertexai</span><span class="p">.</span><span class="nf">init</span><span class="p">(</span>
+    <span class="n">project</span><span class="o">=</span><span class="n">project_id</span><span class="p">,</span> 
+    <span class="n">credentials</span><span class="o">=</span><span class="n">credentials</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="vertex-ai-답변-생성-함수">Vertex AI 답변 생성 함수</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">vertexai_generate</span><span class="p">(</span>
+    <span class="n">prompt</span><span class="p">,</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="sh">"</span><span class="s">gemini-1.5-flash</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">generation_config</span><span class="o">=</span><span class="nc">GenerationConfig</span><span class="p">(),</span>
+    <span class="n">tools</span><span class="o">=</span><span class="bp">None</span>
+<span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="nc">GenerativeModel</span><span class="p">(</span>
+        <span class="n">model_name</span><span class="o">=</span><span class="n">model_name</span><span class="p">,</span>
+        <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">,</span>
+        <span class="n">generation_config</span><span class="o">=</span><span class="n">generation_config</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">response</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">generate_content</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span><span class="p">.</span><span class="n">text</span>
+</code></pre></div></div>
+
+<ul>
+  <li>기본 값(Default)으로 답변</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">vertexai_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result:  아직 2025년 한국 대통령이 누가 될지는 알 수 없습니다.  2022년 대선 이후로는  대한민국 대통령 선거가 5년마다 치러지기 때문에 다음 대선은 2027년에 있을 예정입니다.  따라서 2025년에는 현직 대통령이 계속해서 직무를 수행할 것입니다.
+</code></pre></div></div>
+
+<ul>
+  <li>최신 모델(gemini 2.5 버전) 사용</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">gemini-2.5-flash</span><span class="sh">"</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">vertexai_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">model_name</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result:  2025년 한국 대통령은 현재와 동일하게 **윤석열** 대통령입니다.
+
+윤석열 대통령은 2022년 5월 10일에 취임했으며, 대한민국 대통령의 임기는 5년 단임이므로 2027년 5월까지 재임하게 됩니다.
+</code></pre></div></div>
+
+<ul>
+  <li>Config 변경</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">generation_config</span> <span class="o">=</span> <span class="nc">GenerationConfig</span><span class="p">(</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">top_p</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span>
+    <span class="n">top_k</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">candidate_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">seed</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">model_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">gemini-2.5-flash</span><span class="sh">"</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">vertexai_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">generation_config</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result:  현재 대한민국 대통령은 **윤석열 대통령**입니다.
+
+대한민국 대통령의 임기는 5년 단임이며, 윤석열 대통령은 2022년 5월에 취임했습니다.
+
+따라서 **2025년에도 윤석열 대통령이 재임 중일 것입니다.** 다음 대통령 선거는 2027년에 치러질 예정입니다.
+</code></pre></div></div>
+
+<ul>
+  <li>Tools 사용(Google 웹 검색)
+    <ul>
+      <li>Vertex AI에서 2.0 이상 모델은 사용 가능하지만, <strong>웹 검색은 1.5 버전까지만 지원</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">google_search_retrieval</span> <span class="o">=</span> <span class="n">grounding</span><span class="p">.</span><span class="nc">GoogleSearchRetrieval</span><span class="p">()</span>
+<span class="n">tools</span> <span class="o">=</span> <span class="p">[</span><span class="n">Tool</span><span class="p">.</span><span class="nf">from_google_search_retrieval</span><span class="p">(</span><span class="n">google_search_retrieval</span><span class="p">)]</span>
+<span class="n">generation_config</span> <span class="o">=</span> <span class="nc">GenerationConfig</span><span class="p">(</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">top_p</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span>
+    <span class="n">top_k</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">candidate_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">seed</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">model_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">gemini-2.5-flash</span><span class="sh">"</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">vertexai_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">generation_config</span><span class="p">,</span> <span class="n">tools</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---------------------------------------------------------------------------
+
+_InactiveRpcError                         Traceback (most recent call last)
+
+File ~/miniconda3/lib/python3.12/site-packages/google/api_core/grpc_helpers.py:76, in _wrap_unary_errors.&lt;locals&gt;.error_remapped_callable(*args, **kwargs)
+     75 try:
+---&gt; 76     return callable_(*args, **kwargs)
+     77 except grpc.RpcError as exc:
+
+
+File ~/miniconda3/lib/python3.12/site-packages/grpc/_interceptor.py:277, in _UnaryUnaryMultiCallable.__call__(self, request, timeout, metadata, credentials, wait_for_ready, compression)
+    268 def __call__(
+    269     self,
+    270     request: Any,
+   (...)
+    275     compression: Optional[grpc.Compression] = None,
+    276 ) -&gt; Any:
+--&gt; 277     response, ignored_call = self._with_call(
+    278         request,
+    279         timeout=timeout,
+    280         metadata=metadata,
+    281         credentials=credentials,
+    282         wait_for_ready=wait_for_ready,
+    283         compression=compression,
+    284     )
+    285     return response
+
+
+File ~/miniconda3/lib/python3.12/site-packages/grpc/_interceptor.py:332, in _UnaryUnaryMultiCallable._with_call(self, request, timeout, metadata, credentials, wait_for_ready, compression)
+    329 call = self._interceptor.intercept_unary_unary(
+    330     continuation, client_call_details, request
+    331 )
+--&gt; 332 return call.result(), call
+
+
+File ~/miniconda3/lib/python3.12/site-packages/grpc/_channel.py:440, in _InactiveRpcError.result(self, timeout)
+    439 """See grpc.Future.result."""
+--&gt; 440 raise self
+
+
+File ~/miniconda3/lib/python3.12/site-packages/grpc/_interceptor.py:315, in _UnaryUnaryMultiCallable._with_call.&lt;locals&gt;.continuation(new_details, request)
+    314 try:
+--&gt; 315     response, call = self._thunk(new_method).with_call(
+    316         request,
+    317         timeout=new_timeout,
+    318         metadata=new_metadata,
+    319         credentials=new_credentials,
+    320         wait_for_ready=new_wait_for_ready,
+    321         compression=new_compression,
+    322     )
+    323     return _UnaryOutcome(response, call)
+
+
+File ~/miniconda3/lib/python3.12/site-packages/grpc/_channel.py:1198, in _UnaryUnaryMultiCallable.with_call(self, request, timeout, metadata, credentials, wait_for_ready, compression)
+   1192 (
+   1193     state,
+   1194     call,
+   1195 ) = self._blocking(
+   1196     request, timeout, metadata, credentials, wait_for_ready, compression
+   1197 )
+-&gt; 1198 return _end_unary_response_blocking(state, call, True, None)
+
+
+File ~/miniconda3/lib/python3.12/site-packages/grpc/_channel.py:1006, in _end_unary_response_blocking(state, call, with_call, deadline)
+   1005 else:
+-&gt; 1006     raise _InactiveRpcError(state)
+
+
+_InactiveRpcError: &lt;_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Unable to submit request because google_search_retrieval is not supported; please use google_search field instead. Learn more: https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/gemini"
+	debug_error_string = "UNKNOWN:Error received from peer ipv4:142.250.76.10:443 {grpc_message:"Unable to submit request because google_search_retrieval is not supported; please use google_search field instead. Learn more: https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/gemini", grpc_status:3, created_time:"2025-08-17T15:56:13.024487793+09:00"}"
+&gt;
+
+
+The above exception was the direct cause of the following exception:
+
+
+InvalidArgument                           Traceback (most recent call last)
+
+Cell In[29], line 15
+     12 model_name = "gemini-2.5-flash"
+     13 prompt = "2025년 한국 대통령 누구야?"
+---&gt; 15 result = generate_response(prompt, model_name, generation_config, tools)
+     16 print("result: ", result, flush=True)
+
+
+Cell In[26], line 13, in generate_response(prompt, model_name, generation_config, tools)
+      1 def generate_response(
+      2     prompt,
+      3     model_name="gemini-1.5-flash",
+      4     generation_config=GenerationConfig(),
+      5     tools=None
+      6 ):
+      7     model = GenerativeModel(
+      8         model_name=model_name,
+      9         tools=tools,
+     10         generation_config=generation_config,
+     11     )
+---&gt; 13     response = model.generate_content(prompt)
+     14     return response.text
+
+
+File ~/miniconda3/lib/python3.12/site-packages/vertexai/generative_models/_generative_models.py:695, in _GenerativeModel.generate_content(self, contents, generation_config, safety_settings, tools, tool_config, labels, stream)
+    686     return self._generate_content_streaming(
+    687         contents=contents,
+    688         generation_config=generation_config,
+   (...)
+    692         labels=labels,
+    693     )
+    694 else:
+--&gt; 695     return self._generate_content(
+    696         contents=contents,
+    697         generation_config=generation_config,
+    698         safety_settings=safety_settings,
+    699         tools=tools,
+    700         tool_config=tool_config,
+    701         labels=labels,
+    702     )
+
+
+File ~/miniconda3/lib/python3.12/site-packages/vertexai/generative_models/_generative_models.py:820, in _GenerativeModel._generate_content(self, contents, generation_config, safety_settings, tools, tool_config, labels)
+    793 """Generates content.
+    794 
+    795 Args:
+   (...)
+    810     A single GenerationResponse object
+    811 """
+    812 request = self._prepare_request(
+    813     contents=contents,
+    814     generation_config=generation_config,
+   (...)
+    818     labels=labels,
+    819 )
+--&gt; 820 gapic_response = self._prediction_client.generate_content(request=request)
+    821 return self._parse_response(gapic_response)
+
+
+File ~/miniconda3/lib/python3.12/site-packages/google/cloud/aiplatform_v1/services/prediction_service/client.py:2275, in PredictionServiceClient.generate_content(self, request, model, contents, retry, timeout, metadata)
+   2272 self._validate_universe_domain()
+   2274 # Send the request.
+-&gt; 2275 response = rpc(
+   2276     request,
+   2277     retry=retry,
+   2278     timeout=timeout,
+   2279     metadata=metadata,
+   2280 )
+   2282 # Done; return the response.
+   2283 return response
+
+
+File ~/miniconda3/lib/python3.12/site-packages/google/api_core/gapic_v1/method.py:131, in _GapicCallable.__call__(self, timeout, retry, compression, *args, **kwargs)
+    128 if self._compression is not None:
+    129     kwargs["compression"] = compression
+--&gt; 131 return wrapped_func(*args, **kwargs)
+
+
+File ~/miniconda3/lib/python3.12/site-packages/google/api_core/grpc_helpers.py:78, in _wrap_unary_errors.&lt;locals&gt;.error_remapped_callable(*args, **kwargs)
+     76     return callable_(*args, **kwargs)
+     77 except grpc.RpcError as exc:
+---&gt; 78     raise exceptions.from_grpc_error(exc) from exc
+
+
+InvalidArgument: 400 Unable to submit request because google_search_retrieval is not supported; please use google_search field instead. Learn more: https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/gemini
+</code></pre></div></div>
+
+<ul>
+  <li>1.5 버전으로 모델 변경 후 재실행</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">google_search_retrieval</span> <span class="o">=</span> <span class="n">grounding</span><span class="p">.</span><span class="nc">GoogleSearchRetrieval</span><span class="p">()</span>
+<span class="n">tools</span> <span class="o">=</span> <span class="p">[</span><span class="n">Tool</span><span class="p">.</span><span class="nf">from_google_search_retrieval</span><span class="p">(</span><span class="n">google_search_retrieval</span><span class="p">)]</span>
+<span class="n">generation_config</span> <span class="o">=</span> <span class="nc">GenerationConfig</span><span class="p">(</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">top_p</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span>
+    <span class="n">top_k</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">candidate_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">seed</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">model_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">gemini-1.5-flash</span><span class="sh">"</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">vertexai_generate</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">generation_config</span><span class="p">,</span> <span class="n">tools</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result:  2025년 대한민국 대통령은 이재명입니다.  2025년 6월 3일에 치러진 제21대 대통령 선거에서 당선되었습니다.  윤석열 전 대통령의 탄핵으로 인한 조기 대선이었습니다.
+</code></pre></div></div>
+
+<h2 id="신규-genai-sdk-사용">신규 GenAI SDK 사용</h2>
+<ul>
+  <li>GenAI SDK는 GEMINI API를 사용하지만, 기존 VertexAI API를 필요에 따라 끌어 올 수 있다.</li>
+  <li>google.oauth2의 service_account 필요 없음</li>
+  <li><strong>Gemini API Key를 통해 Client 호출</strong></li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">google</span> <span class="kn">import</span> <span class="n">genai</span>
+<span class="kn">from</span> <span class="n">google.genai.types</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">Content</span><span class="p">,</span>
+    <span class="n">Part</span><span class="p">,</span>
+    <span class="n">GoogleSearch</span><span class="p">,</span>
+    <span class="n">GenerateContentConfig</span><span class="p">,</span>
+    <span class="n">Tool</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>1) VertexAI API 사용 시
+    - VERTEXAI_USE: Vertex AI 사용 유무
+    - VERTEXAI_PROJECT_ID: Vertex AI 사용 권한이 있는 GCP 프로젝트의 ID
+    - VERTEXAI_LOCATION: Vertex AI에 접근 권한이 있는 GCP 프로젝트의 LOCATION</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">load_dotenv</span><span class="p">()</span>
+
+<span class="c1"># 반드시 해줘야 함
+</span><span class="n">os</span><span class="p">.</span><span class="n">environ</span><span class="p">[</span><span class="sh">"</span><span class="s">GOOGLE_APPLICATION_CREDENTIALS</span><span class="sh">"</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">VERTEXAI_CREDENTIALS_PATH</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">genai</span><span class="p">.</span><span class="nc">Client</span><span class="p">(</span>
+    <span class="n">vertexai</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">project</span><span class="o">=</span><span class="sh">"</span><span class="s">gai-llm-poc</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">location</span><span class="o">=</span><span class="sh">"</span><span class="s">us-central1</span><span class="sh">"</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>2) 순수 GEMINI API 사용 시
+    - GENAI_API_KEY: GEMINI API 활성화 시 발급된 API Key</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">load_dotenv</span><span class="p">()</span>
+
+<span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="nf">getenv</span><span class="p">(</span><span class="sh">"</span><span class="s">GENAI_API_KEY</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">genai</span><span class="p">.</span><span class="nc">Client</span><span class="p">(</span>
+    <span class="n">vertexai</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+    <span class="n">api_key</span><span class="o">=</span><span class="n">api_key</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="gen-ai-답변-생성-함수">Gen AI 답변 생성 함수</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">genai_generate</span><span class="p">(</span>
+    <span class="n">client</span><span class="p">,</span>
+    <span class="n">prompt</span><span class="p">,</span>
+    <span class="n">model_name</span><span class="o">=</span><span class="sh">"</span><span class="s">gemini-1.5-flash</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">generation_config</span><span class="o">=</span><span class="nc">GenerateContentConfig</span><span class="p">(),</span>
+<span class="p">):</span>
+    <span class="n">contents</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">contents</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span>
+        <span class="nc">Content</span><span class="p">(</span>
+            <span class="n">role</span><span class="o">=</span><span class="sh">"</span><span class="s">user</span><span class="sh">"</span><span class="p">,</span>
+            <span class="n">parts</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">Part</span><span class="p">.</span><span class="nf">from_text</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+            <span class="p">]</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="n">models</span><span class="p">.</span><span class="nf">generate_content</span><span class="p">(</span>
+        <span class="n">model</span><span class="o">=</span><span class="n">model_name</span><span class="p">,</span>
+        <span class="n">contents</span><span class="o">=</span><span class="n">contents</span><span class="p">,</span>
+        <span class="n">config</span><span class="o">=</span><span class="n">generation_config</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span><span class="p">.</span><span class="n">text</span>
+</code></pre></div></div>
+
+<ul>
+  <li>기본 값(Default)으로 답변</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">genai_generate</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">prompt</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result:  2025년 한국 대통령은 아직 결정되지 않았습니다.  2022년 대통령 선거에서 윤석열 후보가 당선되었고, 그의 임기는 2022년 5월 10일부터 2027년 5월 9일까지 입니다. 따라서 2025년에도 윤석열 대통령이 한국의 대통령일 것입니다.
+</code></pre></div></div>
+
+<ul>
+  <li>최신 모델(gemini 2.5 버전) 사용</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">model_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">gemini-2.5-flash</span><span class="sh">"</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">genai_generate</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">model_name</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result:  2025년 한국 대통령은 **윤석열 대통령**입니다.
+
+윤석열 대통령은 2022년 5월에 취임했으며, 대한민국 대통령의 임기는 5년 단임이기 때문에 2027년 5월까지가 그의 임기입니다. 따라서 2025년에도 윤석열 대통령이 재임 중입니다.
+</code></pre></div></div>
+
+<ul>
+  <li>Config 변경</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">generation_config</span> <span class="o">=</span> <span class="nc">GenerateContentConfig</span><span class="p">(</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">top_p</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span>
+    <span class="n">top_k</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">candidate_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">seed</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">model_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">gemini-2.5-flash</span><span class="sh">"</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">genai_generate</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">generation_config</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result:  2025년에도 **윤석열** 대통령입니다.
+
+대한민국 대통령의 임기는 5년 단임제이며, 윤석열 대통령은 2022년 5월 10일에 취임했으므로, 임기는 2027년 5월 9일까지입니다. 따라서 2025년에는 윤석열 대통령이 재임 중입니다.
+</code></pre></div></div>
+
+<ul>
+  <li>Tools 사용(Google 웹 검색)
+    <ul>
+      <li><strong>2.0 이상 모델 또한 웹 검색 사용 가능</strong></li>
+      <li>Tools가 GenerateContentConfig 안에 포함되는 구조</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">google_search</span> <span class="o">=</span> <span class="nc">GoogleSearch</span><span class="p">()</span>
+<span class="n">tools</span> <span class="o">=</span> <span class="p">[</span><span class="nc">Tool</span><span class="p">(</span><span class="n">google_search</span><span class="o">=</span><span class="n">google_search</span><span class="p">)]</span>
+<span class="n">generation_config</span> <span class="o">=</span> <span class="nc">GenerateContentConfig</span><span class="p">(</span>
+    <span class="n">temperature</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">top_p</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span>
+    <span class="n">top_k</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+    <span class="n">candidate_count</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">seed</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">tools</span><span class="o">=</span><span class="n">tools</span>  <span class="c1"># 안에 포함됨
+</span><span class="p">)</span>
+<span class="n">model_name</span> <span class="o">=</span> <span class="sh">"</span><span class="s">gemini-2.5-flash</span><span class="sh">"</span>
+<span class="n">prompt</span> <span class="o">=</span> <span class="sh">"</span><span class="s">2025년 한국 대통령 누구야?</span><span class="sh">"</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="nf">genai_generate</span><span class="p">(</span><span class="n">client</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">generation_config</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">result: </span><span class="sh">"</span><span class="p">,</span> <span class="n">result</span><span class="p">,</span> <span class="n">flush</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>result:  2025년 대한민국의 대통령은 이재명입니다. 그는 2025년 6월 3일에 치러진 제21대 대통령 선거에서 당선되었으며, 임기는 2025년 6월 4일부터 2030년 6월 3일까지입니다. 이 선거는 윤석열 전 대통령의 탄핵으로 인해 조기에 실시되었습니다.
+</code></pre></div></div>]]></content><author><name>sangwoonam</name></author><category term="LLM" /><category term="생성형-AI" /><category term="Quick" /><category term="Lab" /><summary type="html"><![CDATA[라이브러리 Import 공통적으로 사용하는 라이브러리를 불러옵니다.]]></summary></entry><entry><title type="html">8월 3째주 AI 뉴스 및 트렌드</title><link href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends/" rel="alternate" type="text/html" title="8월 3째주 AI 뉴스 및 트렌드" /><published>2025-08-17T01:00:00+09:00</published><updated>2025-08-17T01:00:00+09:00</updated><id>/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends</id><content type="html" xml:base="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends/"><![CDATA[<h2 id="gpt-5-정식-출시">GPT-5 정식 출시</h2>
 
 <div class="link-card-horizontal ">
   

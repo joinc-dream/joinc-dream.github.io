@@ -28,4 +28,10 @@ var store = [{
         "tags": [],
         "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ai-agent/vertical-ai/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/ai-trends/",
         "teaser": null
+      },{
+        "title": "Gemini 사용에 대한 코드 정리(VertexAI vs GenAI)",
+        "excerpt":"라이브러리 Import 공통적으로 사용하는 라이브러리를 불러옵니다. import os from dotenv import load_dotenv 기존 VertexAI SDK 사용 google.oauth2의 service_account를 활용 GCP의 Credential 파일을 통해 별도 로그인 없이 VertexAI 사용 from google.oauth2 import service_account import vertexai from vertexai.generative_models import ( GenerativeModel, GenerationConfig, Tool, grounding, ) VERTEXAI_PROJECT_ID: Vertex AI 사용 권한이 있는 GCP...","categories": ["LLM","생성형-AI","Quick","Lab"],
+        "tags": [],
+        "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use/",
+        "teaser": null
       }]
