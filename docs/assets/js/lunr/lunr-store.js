@@ -34,4 +34,10 @@ var store = [{
         "tags": [],
         "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use/",
         "teaser": null
+      },{
+        "title": "Local LLM 호스팅을 위한 ollma 가이드",
+        "excerpt":"Ollama ? Ollama는 LLM(거대 언어 모델)을 쉽고 편리하게 실행하고 관리 할 수 있도록 도와주는 추론엔진을 포함한 종합적인 플랫폼입니다. LLM의 전체 생명주기는 학습(Training) 과 추론(Interence)로 나누어 볼 수 있습니다. 메타나 구글, OpenAI 등에서 학습한 LLM을 배포하면, 추론 엔진을 이용해서 사용하는 방식입니다. 즉 추론이란 이미 만들어서 배포한 모델을 활용해 사용자의 질문에 답하거나...","categories": [],
+        "tags": [],
+        "url": "/ollala-101/",
+        "teaser": null
       }]
