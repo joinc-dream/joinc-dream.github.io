@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-22T18:38:35+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">Local LLM 호스팅을 위한 ollma 가이드</title><link href="/ollala-101/" rel="alternate" type="text/html" title="Local LLM 호스팅을 위한 ollma 가이드" /><published>2025-08-19T01:00:00+09:00</published><updated>2025-08-19T01:00:00+09:00</updated><id>/ollala-101</id><content type="html" xml:base="/ollala-101/"><![CDATA[<h2 id="ollama-">Ollama ?</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-22T18:54:51+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">Local LLM 호스팅을 위한 ollma 가이드</title><link href="/ollala-101/" rel="alternate" type="text/html" title="Local LLM 호스팅을 위한 ollma 가이드" /><published>2025-08-19T01:00:00+09:00</published><updated>2025-08-19T01:00:00+09:00</updated><id>/ollala-101</id><content type="html" xml:base="/ollala-101/"><![CDATA[<h2 id="ollama-">Ollama ?</h2>
 <p>Ollama는 LLM(거대 언어 모델)을 쉽고 편리하게 실행하고 관리 할 수 있도록 도와주는 <strong>추론엔진을 포함한 종합적인 플랫폼</strong>입니다.</p>
 
 <p>LLM의 전체 생명주기는 학습(Training) 과 추론(Interence)로 나누어 볼 수 있습니다. 메타나 구글, OpenAI 등에서 학습한 LLM을 배포하면, <strong>추론</strong> 엔진을 이용해서 사용하는 방식입니다. 즉 추론이란 이미 만들어서 배포한 모델을 활용해 사용자의 질문에 답하거나 글을 요약하는 등 <strong>실질적인 작업을 수행</strong> 하는 것이라고 보면 됩니다. Ollama 같은 툴을 사용하면 LLM을 쉽게 사용 하는 환경을 만들 수 있습니다.</p>
@@ -99,38 +99,38 @@ ollama rm gemma3:4b
 </ul>
 
 <p>예를 들어서 <code class="language-plaintext highlighter-rouge">GET /api/tags</code> API를 이용하면 모델 목록을 가져올 수 있습니다.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://localhost:11434/api/tags | json_pp
-{
-   "models" : [
-      {
-         "details" : {
-            "families" : [
-               "gemma3"
-            ],
-            "family" : "gemma3",
-            "format" : "gguf",
-            "parameter_size" : "4.3B",
-            "parent_model" : "",
-            "quantization_level" : "Q4_K_M"
-         },
-         "digest" : "a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a",
-         "model" : "gemma3:4b",
-         "modified_at" : "2025-08-17T22:57:08.540920901+09:00",
-         "name" : "gemma3:4b",
-         "size" : 3338801804
-      },
-      {
-         "details" : {
-            "families" : [
-               "gptoss"
-            ],
-            "family" : "gptoss",
-            "format" : "gguf",
-            "parameter_size" : "20.9B",
-            "parent_model" : "",
-            "quantization_level" : "MXFP4"
-         },
-... 생략
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">curl</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">11434</span><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="n">tags</span> <span class="o">|</span> <span class="n">json_pp</span>
+<span class="p">{</span>
+   <span class="sh">"</span><span class="s">models</span><span class="sh">"</span> <span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+         <span class="sh">"</span><span class="s">details</span><span class="sh">"</span> <span class="p">:</span> <span class="p">{</span>
+            <span class="sh">"</span><span class="s">families</span><span class="sh">"</span> <span class="p">:</span> <span class="p">[</span>
+               <span class="sh">"</span><span class="s">gemma3</span><span class="sh">"</span>
+            <span class="p">],</span>
+            <span class="sh">"</span><span class="s">family</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">gemma3</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">format</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">gguf</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">parameter_size</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">4.3B</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">parent_model</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">""</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">quantization_level</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">Q4_K_M</span><span class="sh">"</span>
+         <span class="p">},</span>
+         <span class="sh">"</span><span class="s">digest</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">a2af6cc3eb7fa8be8504abaf9b04e88f17a119ec3f04a3addf55f92841195f5a</span><span class="sh">"</span><span class="p">,</span>
+         <span class="sh">"</span><span class="s">model</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">gemma3:4b</span><span class="sh">"</span><span class="p">,</span>
+         <span class="sh">"</span><span class="s">modified_at</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">2025-08-17T22:57:08.540920901+09:00</span><span class="sh">"</span><span class="p">,</span>
+         <span class="sh">"</span><span class="s">name</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">gemma3:4b</span><span class="sh">"</span><span class="p">,</span>
+         <span class="sh">"</span><span class="s">size</span><span class="sh">"</span> <span class="p">:</span> <span class="mi">3338801804</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+         <span class="sh">"</span><span class="s">details</span><span class="sh">"</span> <span class="p">:</span> <span class="p">{</span>
+            <span class="sh">"</span><span class="s">families</span><span class="sh">"</span> <span class="p">:</span> <span class="p">[</span>
+               <span class="sh">"</span><span class="s">gptoss</span><span class="sh">"</span>
+            <span class="p">],</span>
+            <span class="sh">"</span><span class="s">family</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">gptoss</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">format</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">gguf</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">parameter_size</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">20.9B</span><span class="sh">"</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">parent_model</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">""</span><span class="p">,</span>
+            <span class="sh">"</span><span class="s">quantization_level</span><span class="sh">"</span> <span class="p">:</span> <span class="sh">"</span><span class="s">MXFP4</span><span class="sh">"</span>
+         <span class="p">},</span>
+<span class="p">...</span> <span class="n">생략</span>
 
 </code></pre></div></div>
 
@@ -163,28 +163,28 @@ ai_response = chat_with_ai("서울에서 가장 유명한 관광지 3군데 알�
 </ol>
 
 <p><strong>Ollama Package</strong>를 이용해서 코드를 만들 수도 있습니다.</p>
-<pre><code class="language-Python"># -*- coding: utf-8 -*-
-from ollama import chat
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># -*- coding: utf-8 -*-
+</span><span class="kn">from</span> <span class="n">ollama</span> <span class="kn">import</span> <span class="n">chat</span>
 
-# First call - No memory
-response = chat(model='gemma3:4b', messages=[
-    {'role': 'user', 'content': '왜 하늘은 파란가요?'}
-])
-print(response.message.content)
-</code></pre>
+<span class="c1"># First call - No memory
+</span><span class="n">response</span> <span class="o">=</span> <span class="nf">chat</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="sh">'</span><span class="s">gemma3:4b</span><span class="sh">'</span><span class="p">,</span> <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
+    <span class="p">{</span><span class="sh">'</span><span class="s">role</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">user</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">content</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">왜 하늘은 파란가요?</span><span class="sh">'</span><span class="p">}</span>
+<span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">message</span><span class="p">.</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>물론 <strong>LangChain</strong> 도 지원한다.</p>
-<pre><code class="language-Python"># -*- coding: utf-8 -*-
-from langchain_community.llms import Ollama
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># -*- coding: utf-8 -*-
+</span><span class="kn">from</span> <span class="n">langchain_community.llms</span> <span class="kn">import</span> <span class="n">Ollama</span>
 
-# Initialize Ollama with your chosen model
-llm = Ollama(model="gemma3:4b")
+<span class="c1"># Initialize Ollama with your chosen model
+</span><span class="n">llm</span> <span class="o">=</span> <span class="nc">Ollama</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="sh">"</span><span class="s">gemma3:4b</span><span class="sh">"</span><span class="p">)</span>
 
-prompt_1 = '상대성 이론에 대해서 설명해주세요'
+<span class="n">prompt_1</span> <span class="o">=</span> <span class="sh">'</span><span class="s">상대성 이론에 대해서 설명해주세요</span><span class="sh">'</span>
 
-response = llm.invoke(prompt_1)
-print(response)
-</code></pre>
+<span class="n">response</span> <span class="o">=</span> <span class="n">llm</span><span class="p">.</span><span class="nf">invoke</span><span class="p">(</span><span class="n">prompt_1</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</code></pre></div></div>
 
 <h2 id="openwebui">OpenWebUI</h2>
 <p>OpenWebUI는 LLM 사용과 테스트를 도와주는 웹 애플리케이션입니다. OpenWebUI를 이용하면 OpenAI, Gemini 뿐만 아니라 Ollama 까지 손쉽게 사용 할 수 있습니다.</p>
