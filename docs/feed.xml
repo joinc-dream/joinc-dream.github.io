@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-22T19:03:41+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">Local LLM 호스팅을 위한 ollma 가이드</title><link href="/ollala-101/" rel="alternate" type="text/html" title="Local LLM 호스팅을 위한 ollma 가이드" /><published>2025-08-19T01:00:00+09:00</published><updated>2025-08-19T01:00:00+09:00</updated><id>/ollala-101</id><content type="html" xml:base="/ollala-101/"><![CDATA[<h2 id="ollama-">Ollama ?</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-22T19:09:39+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">Local LLM 호스팅을 위한 ollma 가이드</title><link href="/llm/ollama/sllm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ollala-101/" rel="alternate" type="text/html" title="Local LLM 호스팅을 위한 ollma 가이드" /><published>2025-08-19T01:00:00+09:00</published><updated>2025-08-19T01:00:00+09:00</updated><id>/llm/ollama/sllm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ollala-101</id><content type="html" xml:base="/llm/ollama/sllm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ollala-101/"><![CDATA[<h2 id="ollama-">Ollama ?</h2>
 <p>Ollama는 LLM(거대 언어 모델)을 쉽고 편리하게 실행하고 관리 할 수 있도록 도와주는 <strong>추론엔진을 포함한 종합적인 플랫폼</strong>입니다.</p>
 
 <p>LLM의 전체 생명주기는 학습(Training) 과 추론(Interence)로 나누어 볼 수 있습니다. 메타나 구글, OpenAI 등에서 학습한 LLM을 배포하면, <strong>추론</strong> 엔진을 이용해서 사용하는 방식입니다. 즉 추론이란 이미 만들어서 배포한 모델을 활용해 사용자의 질문에 답하거나 글을 요약하는 등 <strong>실질적인 작업을 수행</strong> 하는 것이라고 보면 됩니다. Ollama 같은 툴을 사용하면 LLM을 쉽게 사용 하는 환경을 만들 수 있습니다.</p>
@@ -137,6 +137,7 @@ ollama rm gemma3:4b
 <p>기본적으로 Ollama의 API는 상태 비저장입니다. 즉, 모든 요청은 완전히 새로운 대화입니다. 사람처럼 대화하는 <strong>멀티턴</strong> 대화가 필요하다면, 코드로 이를 구현해야 합니다. 간단한 Python 코드 만들어보겠습니다.</p>
 
 <h2 id="ollama-api를-이용한-llm-애플리케이션">Ollama API를 이용한 LLM 애플리케이션</h2>
+
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">requests</span>
 
 <span class="c1"># Ollama's default API endpoint
@@ -307,7 +308,7 @@ ollama rm gemma3:4b
   <li>LangChain/LanGraph의 retrieval, agents, memory 기능을 이용해서 LLM 애플리케이션을 만들어보세요.</li>
   <li>Gemma3 270M 같은 작은 모델을 이용해서 파인튜닝 해보세요.</li>
   <li>팀을 위한 로컬 기반의 챗봇을 배포해보세요.</li>
-</ul>]]></content><author><name>Sang Bae YUN</name></author><summary type="html"><![CDATA[Ollama ? Ollama는 LLM(거대 언어 모델)을 쉽고 편리하게 실행하고 관리 할 수 있도록 도와주는 추론엔진을 포함한 종합적인 플랫폼입니다.]]></summary></entry><entry><title type="html">Gemini 사용에 대한 코드 정리(VertexAI vs GenAI)</title><link href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use/" rel="alternate" type="text/html" title="Gemini 사용에 대한 코드 정리(VertexAI vs GenAI)" /><published>2025-08-17T21:00:00+09:00</published><updated>2025-08-17T21:00:00+09:00</updated><id>/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use</id><content type="html" xml:base="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use/"><![CDATA[<h1 id="라이브러리-import">라이브러리 Import</h1>
+</ul>]]></content><author><name>Sang Bae YUN</name></author><category term="LLM" /><category term="ollama" /><category term="sLLM" /><category term="생성형-AI" /><summary type="html"><![CDATA[Ollama ? Ollama는 LLM(거대 언어 모델)을 쉽고 편리하게 실행하고 관리 할 수 있도록 도와주는 추론엔진을 포함한 종합적인 플랫폼입니다.]]></summary></entry><entry><title type="html">Gemini 사용에 대한 코드 정리(VertexAI vs GenAI)</title><link href="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use/" rel="alternate" type="text/html" title="Gemini 사용에 대한 코드 정리(VertexAI vs GenAI)" /><published>2025-08-17T21:00:00+09:00</published><updated>2025-08-17T21:00:00+09:00</updated><id>/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use</id><content type="html" xml:base="/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/gemini-use/"><![CDATA[<h1 id="라이브러리-import">라이브러리 Import</h1>
 <ul>
   <li>공통적으로 사용하는 라이브러리를 불러옵니다.</li>
 </ul>
