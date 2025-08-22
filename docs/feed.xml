@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-22T18:54:51+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">Local LLM 호스팅을 위한 ollma 가이드</title><link href="/ollala-101/" rel="alternate" type="text/html" title="Local LLM 호스팅을 위한 ollma 가이드" /><published>2025-08-19T01:00:00+09:00</published><updated>2025-08-19T01:00:00+09:00</updated><id>/ollala-101</id><content type="html" xml:base="/ollala-101/"><![CDATA[<h2 id="ollama-">Ollama ?</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-22T19:03:41+09:00</updated><id>/feed.xml</id><title type="html">JOINC AI TeamBlog</title><subtitle>An amazing website.</subtitle><author><name>World Explorer</name><email>joinc.dream@gmail.com</email></author><entry><title type="html">Local LLM 호스팅을 위한 ollma 가이드</title><link href="/ollala-101/" rel="alternate" type="text/html" title="Local LLM 호스팅을 위한 ollma 가이드" /><published>2025-08-19T01:00:00+09:00</published><updated>2025-08-19T01:00:00+09:00</updated><id>/ollala-101</id><content type="html" xml:base="/ollala-101/"><![CDATA[<h2 id="ollama-">Ollama ?</h2>
 <p>Ollama는 LLM(거대 언어 모델)을 쉽고 편리하게 실행하고 관리 할 수 있도록 도와주는 <strong>추론엔진을 포함한 종합적인 플랫폼</strong>입니다.</p>
 
 <p>LLM의 전체 생명주기는 학습(Training) 과 추론(Interence)로 나누어 볼 수 있습니다. 메타나 구글, OpenAI 등에서 학습한 LLM을 배포하면, <strong>추론</strong> 엔진을 이용해서 사용하는 방식입니다. 즉 추론이란 이미 만들어서 배포한 모델을 활용해 사용자의 질문에 답하거나 글을 요약하는 등 <strong>실질적인 작업을 수행</strong> 하는 것이라고 보면 됩니다. Ollama 같은 툴을 사용하면 LLM을 쉽게 사용 하는 환경을 만들 수 있습니다.</p>
@@ -137,23 +137,23 @@ ollama rm gemma3:4b
 <p>기본적으로 Ollama의 API는 상태 비저장입니다. 즉, 모든 요청은 완전히 새로운 대화입니다. 사람처럼 대화하는 <strong>멀티턴</strong> 대화가 필요하다면, 코드로 이를 구현해야 합니다. 간단한 Python 코드 만들어보겠습니다.</p>
 
 <h2 id="ollama-api를-이용한-llm-애플리케이션">Ollama API를 이용한 LLM 애플리케이션</h2>
-<pre><code class="language-Python">import requests
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">requests</span>
 
-# Ollama's default API endpoint
-OLLAMA_URL = "http://localhost:11434/api/generate"
+<span class="c1"># Ollama's default API endpoint
+</span><span class="n">OLLAMA_URL</span> <span class="o">=</span> <span class="sh">"</span><span class="s">http://localhost:11434/api/generate</span><span class="sh">"</span>
 
-def chat_with_ai(prompt, model="gemma3:4b"):
-    payload = {
-        "model": model,
-        "prompt": prompt,
-        "stream": False  # Disable streaming for simplicity
-    }
-    response = requests.post(OLLAMA_URL, json=payload)
-    return response.json()["response"]
+<span class="k">def</span> <span class="nf">chat_with_ai</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="sh">"</span><span class="s">gemma3:4b</span><span class="sh">"</span><span class="p">):</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">model</span><span class="sh">"</span><span class="p">:</span> <span class="n">model</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">prompt</span><span class="sh">"</span><span class="p">:</span> <span class="n">prompt</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">stream</span><span class="sh">"</span><span class="p">:</span> <span class="bp">False</span>  <span class="c1"># Disable streaming for simplicity
+</span>    <span class="p">}</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">OLLAMA_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span><span class="p">.</span><span class="nf">json</span><span class="p">()[</span><span class="sh">"</span><span class="s">response</span><span class="sh">"</span><span class="p">]</span>
 
-# Example usage
-ai_response = chat_with_ai("서울에서 가장 유명한 관광지 3군데 알려줘.")
-</code></pre>
+<span class="c1"># Example usage
+</span><span class="n">ai_response</span> <span class="o">=</span> <span class="nf">chat_with_ai</span><span class="p">(</span><span class="sh">"</span><span class="s">서울에서 가장 유명한 관광지 3군데 알려줘.</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
 <p>🤖 AI says: 서울에서 가장 유명한 관광지 3곳은 다음과 같습니다.</p>
 <ol>
   <li><strong>경복궁 (Gyeongbokgung Palace):</strong> 조선 시대의 대표적인 궁궐로, 아름다운 건축물과 넓은 정원을 자랑합니다. 한복을 입고 궁궐을 거닐며 한국의 역사와 문화를 느껴볼 수 있습니다. 특히, 계절마다 다른 아름다움을 느낄 수 있는 꽃청춘 행사나 다양한 축제가 열리는 곳입니다.</li>

@@ -425,23 +425,23 @@ ollama rm gemma3:4b
 <p>기본적으로 Ollama의 API는 상태 비저장입니다. 즉, 모든 요청은 완전히 새로운 대화입니다. 사람처럼 대화하는 <strong>멀티턴</strong> 대화가 필요하다면, 코드로 이를 구현해야 합니다. 간단한 Python 코드 만들어보겠습니다.</p>
 
 <h2 id="ollama-api를-이용한-llm-애플리케이션">Ollama API를 이용한 LLM 애플리케이션</h2>
-<pre><code class="language-Python">import requests
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">requests</span>
 
-# Ollama's default API endpoint
-OLLAMA_URL = "http://localhost:11434/api/generate"
+<span class="c1"># Ollama's default API endpoint
+</span><span class="n">OLLAMA_URL</span> <span class="o">=</span> <span class="sh">"</span><span class="s">http://localhost:11434/api/generate</span><span class="sh">"</span>
 
-def chat_with_ai(prompt, model="gemma3:4b"):
-    payload = {
-        "model": model,
-        "prompt": prompt,
-        "stream": False  # Disable streaming for simplicity
-    }
-    response = requests.post(OLLAMA_URL, json=payload)
-    return response.json()["response"]
+<span class="k">def</span> <span class="nf">chat_with_ai</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="sh">"</span><span class="s">gemma3:4b</span><span class="sh">"</span><span class="p">):</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="sh">"</span><span class="s">model</span><span class="sh">"</span><span class="p">:</span> <span class="n">model</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">prompt</span><span class="sh">"</span><span class="p">:</span> <span class="n">prompt</span><span class="p">,</span>
+        <span class="sh">"</span><span class="s">stream</span><span class="sh">"</span><span class="p">:</span> <span class="bp">False</span>  <span class="c1"># Disable streaming for simplicity
+</span>    <span class="p">}</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">OLLAMA_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">response</span><span class="p">.</span><span class="nf">json</span><span class="p">()[</span><span class="sh">"</span><span class="s">response</span><span class="sh">"</span><span class="p">]</span>
 
-# Example usage
-ai_response = chat_with_ai("서울에서 가장 유명한 관광지 3군데 알려줘.")
-</code></pre>
+<span class="c1"># Example usage
+</span><span class="n">ai_response</span> <span class="o">=</span> <span class="nf">chat_with_ai</span><span class="p">(</span><span class="sh">"</span><span class="s">서울에서 가장 유명한 관광지 3군데 알려줘.</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
 <p>🤖 AI says: 서울에서 가장 유명한 관광지 3곳은 다음과 같습니다.</p>
 <ol>
   <li><strong>경복궁 (Gyeongbokgung Palace):</strong> 조선 시대의 대표적인 궁궐로, 아름다운 건축물과 넓은 정원을 자랑합니다. 한복을 입고 궁궐을 거닐며 한국의 역사와 문화를 느껴볼 수 있습니다. 특히, 계절마다 다른 아름다움을 느낄 수 있는 꽃청춘 행사나 다양한 축제가 열리는 곳입니다.</li>
