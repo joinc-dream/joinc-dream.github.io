@@ -21,7 +21,7 @@ deploy-gh-pages: build
 	@# git stash save --keep-index --include-untracked
 
 	git checkout gh-pages
-	git rm -rf .
+	git rm -rf --ignore-unmatch .
 	cp -r _site/. .
 	git add .
 	git commit -m "Deploy latest build to gh-pages"

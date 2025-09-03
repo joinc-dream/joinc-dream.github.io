@@ -2,7 +2,7 @@
 layout: single 
 title: "GPT-OSS 사용기"
 date: 2025-08-09 10:00:00 +0900
-categories: LLM 생성형-AI GPT-OSS Ollama AI-트렌드 
+categories: LLM 생성형-AI GPT-OSS ollama AI-트렌드 
 card_description: "OpenAI의 첫 오픈소스 모델 GPT-OSS의 특징과 Ollama를 활용한 로컬 환경 테스트 경험을 공유합니다. 비용 효율적인 AI 개발의 가능성을 탐색해보세요."
 author: sangbaeyun 
 card_description: "OpenAI의 첫 오픈소스 모델 GPT-OSS의 특징과 Ollama를 활용한 로컬 환경 테스트 경험을 공유합니다. 비용 효율적인 AI 개발의 가능성을 탐색해보세요."
