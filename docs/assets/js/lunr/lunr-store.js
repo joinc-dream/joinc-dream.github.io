@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "GPT-OSS 사용기",
-        "excerpt":"새로운 오픈소스 LLM의 등장 OpenAI가 2019년 GPT-2를 시장에 내놓은 이후 6년만에 드디어 오픈소스 모델인 GPT-OSS(gpt-oss-20b, gpt-oss-120b)를 공개했습니다. OpenAI가 그동안 내놓았던 GPT-3, GPT-4는 모두 독점모델(Closed-source)이었기 때문에 왜 갑자기 오픈소스 모델을 공개했는지에 대한 여러 분석이 있었습니다. 치열해진 AI 시장에서의 주도권 경쟁 역시 가장 큰 이유는 메타의 Llama, 구글 Gemma, 중국의 DeepSeek/Qwen과 같은...","categories": ["LLM","생성형-AI","GPT-OSS","Ollama","AI-트렌드"],
+        "excerpt":"새로운 오픈소스 LLM의 등장 OpenAI가 2019년 GPT-2를 시장에 내놓은 이후 6년만에 드디어 오픈소스 모델인 GPT-OSS(gpt-oss-20b, gpt-oss-120b)를 공개했습니다. OpenAI가 그동안 내놓았던 GPT-3, GPT-4는 모두 독점모델(Closed-source)이었기 때문에 왜 갑자기 오픈소스 모델을 공개했는지에 대한 여러 분석이 있었습니다. 치열해진 AI 시장에서의 주도권 경쟁 역시 가장 큰 이유는 메타의 Llama, 구글 Gemma, 중국의 DeepSeek/Qwen과 같은...","categories": ["LLM","생성형-AI","GPT-OSS","ollama","AI-트렌드"],
         "tags": [],
         "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/gpt-oss/ollama/ai-%ED%8A%B8%EB%A0%8C%EB%93%9C/chat-gpt-oss/",
         "teaser": null
@@ -39,5 +39,11 @@ var store = [{
         "excerpt":"Ollama ? Ollama는 LLM(거대 언어 모델)을 쉽고 편리하게 실행하고 관리 할 수 있도록 도와주는 추론엔진을 포함한 종합적인 플랫폼입니다. LLM의 전체 생명주기는 학습(Training) 과 추론(Interence)로 나누어 볼 수 있습니다. 메타나 구글, OpenAI 등에서 학습한 LLM을 배포하면, 추론 엔진을 이용해서 사용하는 방식입니다. 즉 추론이란 이미 만들어서 배포한 모델을 활용해 사용자의 질문에 답하거나...","categories": ["LLM","ollama","sLLM","생성형-AI"],
         "tags": [],
         "url": "/llm/ollama/sllm/%EC%83%9D%EC%84%B1%ED%98%95-ai/ollala-101/",
+        "teaser": null
+      },{
+        "title": "AI를 이용한 바이브 스터디",
+        "excerpt":"바이브 스터디를 해보면 어떨까 ? 1999년, 제 개발 여정은 PHP로 시작해 C, C++, Python, Ruby, Javascript, Go 등 다양한 언어를 거쳐왔습니다. 다채로운 언어만큼이나 경험한 분야도 넓습니다. 웹 프로그래밍부터 시스템/네트워크 프로그래밍, 검색엔진, 블록체인, 빅데이터, 데이터베이스, 클라우드, DevOps, 그리고 최근에는 생성형 AI까지, 여러 영역을 넘나들며 개발해 왔습니다. AI 분야에서 일하다 보니 자연스럽게...","categories": ["LLM","생성형-AI","바이브코딩"],
+        "tags": [],
+        "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/%EB%B0%94%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9/study-ml-with-llm/",
         "teaser": null
       }]
