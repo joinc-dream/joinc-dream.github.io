@@ -70,11 +70,6 @@ yarn global add @google/gemini-cli
 
 gemini cli를 다시 실행하고 자신의 역할을 이해하고 있는지 확인해 보겠습니다. 
 ```
-Tips for getting started:
-1. Ask questions, edit files, or run commands.
-2. Be specific for the best results.
-3. /help for more information.
-
 > 당신의 역할을 알려주세요. 
 
 ✦ 저는 Google Vertex AI 기반으로 머신러닝(ML) 학습을 돕는 AI 어시스턴트입니다.
