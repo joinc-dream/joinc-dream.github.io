@@ -765,7 +765,7 @@ AI 모델은 다음 단계로 EDA를 하면 된다는 것을 알려줬으며, �
 
 ```
 코드 실행 결과는 아래와 같습니다. 
-![EDA 실행 결과](https://docs.google.com/drawings/d/1mKWboPiElVWvH5LgYGQikzAz_XqYaZVMTu-X4fouGB4/edit?usp=sharing)
+![EDA 실행 결과](https://docs.google.com/drawings/d/e/2PACX-1vSXs-bhYIn0FM-JjlHWJd1VMixgxK7i1fgx81mRw1J_GGTT-yAZoZb1J4owdlVakx1hI9PLJkAD5wIG/pub?w=960&h=720)
 
 이제 데이터를 분석 할 차례입니다. 그래프 중 Product A와 Product B의 Sales Distribution에 대한 분석을 요청했습니다.
 
