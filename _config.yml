@@ -194,6 +194,11 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - venv
+  - venv/**
+  - node_modules
+  - vendor
+future: true
 keep_files:
   - .git
   - .svn
