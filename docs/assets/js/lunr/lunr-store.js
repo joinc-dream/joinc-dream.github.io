@@ -46,4 +46,10 @@ var store = [{
         "tags": [],
         "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/%EB%B0%94%EC%9D%B4%EB%B8%8C%EC%BD%94%EB%94%A9/study-ml-with-llm/",
         "teaser": null
+      },{
+        "title": "Gemini의 멀티모달 기능 활용",
+        "excerpt":"개요 Gemini를 활용한 다양한 멀티모달 사용 사례를 탐색. 구글 클라우드 교육에 사용되는 노트북 코드를 기반으로 작성. 사용 LLM: Gemini Flash Gemini Flash는 Pro에 비해 비용과 시간이 최적화되어 있는 모델. 모든 모달리티에 대해 최대 100만 개의 토큰 컨텍스트 창을 가짐. 목표 Python용 Gen AI SDK를 사용하여 아래의 작업을 순차적으로 수행. 텍스트...","categories": ["LLM","생성형-AI","Quick","Lab"],
+        "tags": [],
+        "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/multimodal/",
+        "teaser": null
       }]
