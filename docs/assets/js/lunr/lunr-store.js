@@ -52,4 +52,10 @@ var store = [{
         "tags": [],
         "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/multimodal/",
         "teaser": null
+      },{
+        "title": "Imagen 4 모델을 활용한 이미지 생성",
+        "excerpt":"개요 Imagen 4 를 활용한 이미지 생성 사례를 탐색. 구글 클라우드 교육에 사용되는 노트북 코드를 기반으로 작성. 사용 LLM: Imagen 4, Imagen 4 Fast 및 Imagen 4 Ultra 모델 목표 Python용 Gen AI SDK를 사용하여 아래의 방식을 테스트. 스타일 다양성 다국어 프롬프트 지원 및 향상 고품질 사실적 표현 텍스트 렌더링...","categories": ["LLM","생성형-AI","Quick","Lab"],
+        "tags": [],
+        "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/image_generation/",
+        "teaser": null
       }]
