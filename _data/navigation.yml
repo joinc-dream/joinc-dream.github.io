@@ -1,9 +1,15 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
-  - title: "Blog"
-    url: /blog/
+  - title: "AI Intelligence"
+    url: /categories/ai-intelligence/
+  - title: "Generative AI"
+    url: /categories/generative-ai/
+  - title: "Practical Lab"
+    url: /categories/practical-lab/
+  - title: "AI Engineering"
+    url: /categories/ai-engineering/
+  - title: "Tech Strategy"
+    url: /categories/tech-strategy/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
