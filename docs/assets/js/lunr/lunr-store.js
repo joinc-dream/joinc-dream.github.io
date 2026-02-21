@@ -58,4 +58,10 @@ var store = [{
         "tags": [],
         "url": "/llm/%EC%83%9D%EC%84%B1%ED%98%95-ai/quick/lab/image_generation/",
         "teaser": null
+      },{
+        "title": "2026 2월 AI 트렌드 리포트: '에이전틱 분석'의 표준화와 버티컬 AX 전략",
+        "excerpt":"📝 본 포스팅은 최근 급격히 변화하고 있는 생성형 AI 시장의 기술 동향을 분석하고, 엔터프라이즈 환경에서 실질적인 비즈니스 가치를 창출하기 위한 전략적 로드맵을 공유하기 위해 작성되었습니다. 1. 주목해야 할 기술: ‘에이전틱 분석’의 표준화와 인간의 개입(Human-in-the-loop) 2026년 AI 기술의 패러다임은 ‘완전 자율’에 대한 환상을 넘어, 인간과 AI가 복잡한 워크플로우를 어떻게 최적으로 분담할...","categories": ["AI Trends","Tech Strategy"],
+        "tags": ["AgenticAnalytics","BigTech","HybridGrounding","VerticalAX","NL2SQL"],
+        "url": "/ai%20trends/tech%20strategy/agentgo-market-strategy-intelligence-vol01/",
+        "teaser": null
       }]
