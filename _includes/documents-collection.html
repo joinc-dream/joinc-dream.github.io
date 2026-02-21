@@ -8,7 +8,7 @@
   {% assign entries = entries | reverse %}
 {% endif %}
 
-<div class="post-card-grid">
+<div class="post-card-list">
 {%- for post in entries -%}
   {% include post-card.html post=post %}
 {%- endfor -%}

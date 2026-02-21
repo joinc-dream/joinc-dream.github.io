@@ -2,7 +2,9 @@
 layout: single 
 title: "Gemini의 멀티모달 기능 활용"
 date: 2025-12-17 21:00:00 +0900
-categories: LLM 생성형-AI Quick Lab
+categories:
+  - Generative AI
+  - Practical Lab
 card_description: "Gemini의 멀티모달 기능을 활용하여 텍스트/문서/이미지/비디오/오디오를 분석하고 결과를 도출하는 코드입니다. Gemini-2.5-Flash 모델을 통해 실습해보세요."
 author: sangwoonam
 ---

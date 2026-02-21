@@ -2,7 +2,7 @@
 title: "2026 2월 AI 트렌드 리포트: '에이전틱 분석'의 표준화와 버티컬 AX 전략"
 date: 2026-02-21 16:00:00 +0900
 categories:
-  - AI Trends
+  - AI Intelligence
   - Tech Strategy
 tags:
   - AgenticAnalytics

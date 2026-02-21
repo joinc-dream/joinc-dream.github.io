@@ -2,7 +2,8 @@
 layout: single
 title: "AI를 이용한 바이브 스터디"
 date: 2025-09-03 01:00:00 +0900
-categories: LLM 생성형-AI 바이브코딩
+categories:
+  - AI Engineering
 card_description: "AI를 단순한 도구가 아닌 동료처럼 활용하는 방법을 제시하는 개발자용 블로그 포스팅입니다. AI를 '똑똑한 계산기'로만 사용하는 것의 한계를 지적하고, AI와의 협력을 통해 얻을 수 있는 관점의 확장, 창의성 증폭 등 실질적인 이점을 소개합니다."
 author: sangbaeyun
 ---

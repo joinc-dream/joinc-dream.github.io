@@ -2,7 +2,8 @@
 layout: single 
 title: "Gemini 사용에 대한 코드 정리(VertexAI vs GenAI)"
 date: 2025-08-17 21:00:00 +0900
-categories: LLM 생성형-AI Quick Lab
+categories:
+  - Practical Lab
 card_description: "GCP에서 크게 두가지 방법으로 Gemini 언어 모델을 사용할 수 있습니다. 기존 Vertex AI API를 사용하는 방식과 GEMINI API를 사용하는 최신 방식을 빠르게 실행해보세요."
 author: sangwoonam
 ---

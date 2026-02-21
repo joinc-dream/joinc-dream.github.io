@@ -2,7 +2,9 @@
 layout: single 
 title: "Imagen 4 모델을 활용한 이미지 생성"
 date: 2025-12-23 21:00:00 +0900
-categories: LLM 생성형-AI Quick Lab
+categories:
+  - Generative AI
+  - Practical Lab
 card_description: Imagen 4 모델을 활용하여 이미지를 생성하는 코드입니다. 다양한 버전의 Imagen 모델을 통해 실습해보세요."
 author: sangwoonam
 ---
