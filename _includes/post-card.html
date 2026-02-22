@@ -17,7 +17,8 @@
       <div class="post-card__categories">
         {% if post.categories %}
           {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/categories/' | relative_url }}" class="category-badge">{{ category }}</a>
+            {% assign cat_slug = category | slugify %}
+            <a href="{{ category | slugify | prepend: '/categories/' | relative_url }}" class="category-badge cat-{{ cat_slug }}">{{ category }}</a>
           {% endfor %}
         {% endif %}
       </div>

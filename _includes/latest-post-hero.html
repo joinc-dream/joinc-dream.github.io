@@ -1,4 +1,14 @@
 {% assign featured_post = site.posts.first %}
+<style>
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0px); }
+    }
+    .latest-post-hero {
+        animation: float 6s ease-in-out infinite;
+    }
+</style>
 <div class="latest-post-hero" style="
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
@@ -11,18 +21,6 @@
     border: 1px solid rgba(14, 165, 233, 0.1);
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
 ">
-    <!-- Subtle Ambient Glow -->
-    <div style="
-        position: absolute;
-        top: -50px;
-        right: -50px;
-        width: 200px;
-        height: 200px;
-        background: radial-gradient(circle, rgba(14, 165, 233, 0.05) 0%, transparent 70%);
-        border-radius: 50%;
-        z-index: 0;
-    "></div>
-
     <div style="position: relative; z-index: 1;">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
             <div style="display: flex; align-items: center; gap: 0.5rem;">
@@ -31,7 +29,8 @@
             </div>
             <div style="display: flex; gap: 0.4rem;">
                 {% for category in featured_post.categories %}
-                <span style="font-size: 0.6rem; font-weight: 700; color: #64748b; text-transform: uppercase; padding: 0.15rem 0.5rem; background: rgba(255, 255, 255, 0.8); border-radius: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.05);">#{{ category }}</span>
+                {% assign cat_slug = category | slugify %}
+                <a href="{{ category | slugify | prepend: '/categories/' | relative_url }}" class="category-badge cat-{{ cat_slug }}" style="margin-right: 0;">#{{ category }}</a>
                 {% endfor %}
             </div>
         </div>
