@@ -96,7 +96,12 @@
 
 <body
   class="layout--home"
-  dir="ltr">
+  dir="ltr" style="position: relative; overflow-x: hidden;">
+
+  <!-- Ambient Glow Background Spots (Subtle) -->
+  <div style="position: fixed; top: -20%; left: -15%; width: 70%; height: 70%; background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 80%); z-index: -1; pointer-events: none;"></div>
+  <div style="position: fixed; bottom: -20%; right: -15%; width: 80%; height: 80%; background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 80%); z-index: -1; pointer-events: none;"></div>
+  <div style="position: fixed; top: 20%; right: -10%; width: 50%; height: 50%; background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, transparent 80%); z-index: -1; pointer-events: none;"></div>
 
   <div class="initial-content">
     
@@ -162,6 +167,17 @@
       <h1 id="page-title" class="page__title"></h1>
     
     
+<style>
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+        100% { transform: translateY(0px); }
+    }
+    .latest-post-hero {
+        animation: float 6s ease-in-out infinite;
+    }
+</style>
+
 <div class="latest-post-hero" style="
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
@@ -174,18 +190,6 @@
     border: 1px solid rgba(14, 165, 233, 0.1);
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
 ">
-    <!-- Subtle Ambient Glow -->
-    <div style="
-        position: absolute;
-        top: -50px;
-        right: -50px;
-        width: 200px;
-        height: 200px;
-        background: radial-gradient(circle, rgba(14, 165, 233, 0.05) 0%, transparent 70%);
-        border-radius: 50%;
-        z-index: 0;
-    "></div>
-
     <div style="position: relative; z-index: 1;">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
             <div style="display: flex; align-items: center; gap: 0.5rem;">
@@ -194,9 +198,11 @@
             </div>
             <div style="display: flex; gap: 0.4rem;">
                 
-                <span style="font-size: 0.6rem; font-weight: 700; color: #64748b; text-transform: uppercase; padding: 0.15rem 0.5rem; background: rgba(255, 255, 255, 0.8); border-radius: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.05);">#AI Intelligence</span>
                 
-                <span style="font-size: 0.6rem; font-weight: 700; color: #64748b; text-transform: uppercase; padding: 0.15rem 0.5rem; background: rgba(255, 255, 255, 0.8); border-radius: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.05);">#Tech Strategy</span>
+                <a href="/categories/ai-intelligence" class="category-badge cat-ai-intelligence" style="margin-right: 0;">#AI Intelligence</a>
+                
+                
+                <a href="/categories/tech-strategy" class="category-badge cat-tech-strategy" style="margin-right: 0;">#Tech Strategy</a>
                 
             </div>
         </div>
@@ -247,9 +253,11 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/ai-intelligence" class="category-badge">AI Intelligence</a>
+            
+            <a href="/categories/ai-intelligence" class="category-badge cat-ai-intelligence">AI Intelligence</a>
           
-            <a href="/categories/tech-strategy" class="category-badge">Tech Strategy</a>
+            
+            <a href="/categories/tech-strategy" class="category-badge cat-tech-strategy">Tech Strategy</a>
           
         
       </div>
@@ -276,9 +284,11 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/generative-ai" class="category-badge">Generative AI</a>
+            
+            <a href="/categories/generative-ai" class="category-badge cat-generative-ai">Generative AI</a>
           
-            <a href="/categories/practical-lab" class="category-badge">Practical Lab</a>
+            
+            <a href="/categories/practical-lab" class="category-badge cat-practical-lab">Practical Lab</a>
           
         
       </div>
@@ -307,9 +317,11 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/generative-ai" class="category-badge">Generative AI</a>
+            
+            <a href="/categories/generative-ai" class="category-badge cat-generative-ai">Generative AI</a>
           
-            <a href="/categories/practical-lab" class="category-badge">Practical Lab</a>
+            
+            <a href="/categories/practical-lab" class="category-badge cat-practical-lab">Practical Lab</a>
           
         
       </div>
@@ -338,7 +350,8 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/ai-engineering" class="category-badge">AI Engineering</a>
+            
+            <a href="/categories/ai-engineering" class="category-badge cat-ai-engineering">AI Engineering</a>
           
         
       </div>
@@ -367,9 +380,11 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/practical-lab" class="category-badge">Practical Lab</a>
+            
+            <a href="/categories/practical-lab" class="category-badge cat-practical-lab">Practical Lab</a>
           
-            <a href="/categories/generative-ai" class="category-badge">Generative AI</a>
+            
+            <a href="/categories/generative-ai" class="category-badge cat-generative-ai">Generative AI</a>
           
         
       </div>
@@ -398,7 +413,8 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/practical-lab" class="category-badge">Practical Lab</a>
+            
+            <a href="/categories/practical-lab" class="category-badge cat-practical-lab">Practical Lab</a>
           
         
       </div>
@@ -427,7 +443,8 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/ai-intelligence" class="category-badge">AI Intelligence</a>
+            
+            <a href="/categories/ai-intelligence" class="category-badge cat-ai-intelligence">AI Intelligence</a>
           
         
       </div>
@@ -456,9 +473,11 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/ai-engineering" class="category-badge">AI Engineering</a>
+            
+            <a href="/categories/ai-engineering" class="category-badge cat-ai-engineering">AI Engineering</a>
           
-            <a href="/categories/tech-strategy" class="category-badge">Tech Strategy</a>
+            
+            <a href="/categories/tech-strategy" class="category-badge cat-tech-strategy">Tech Strategy</a>
           
         
       </div>
@@ -487,9 +506,11 @@
       <div class="post-card__categories">
         
           
-            <a href="/categories/generative-ai" class="category-badge">Generative AI</a>
+            
+            <a href="/categories/generative-ai" class="category-badge cat-generative-ai">Generative AI</a>
           
-            <a href="/categories/practical-lab" class="category-badge">Practical Lab</a>
+            
+            <a href="/categories/practical-lab" class="category-badge cat-practical-lab">Practical Lab</a>
           
         
       </div>
