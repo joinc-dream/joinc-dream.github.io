@@ -64,4 +64,10 @@ var store = [{
         "tags": ["AgenticAnalytics","BigTech","HybridGrounding","VerticalAX","NL2SQL"],
         "url": "/ai%20intelligence/tech%20strategy/agentgo-market-strategy-intelligence-vol01/",
         "teaser": null
+      },{
+        "title": "생성형 AI API 서비스에 대한 통합 인터페이스 (Google Gen AI SDK)",
+        "excerpt":"개요 구글의 생성형 AI API 서비스에 대한 통합 인터페이스 (Google Gen AI SDK) 사용. 구글 클라우드 교육에 사용되는 노트북 코드를 기반으로 작성. 목표 Python용 Google Gen AI SDK의 주요 기능 텍스트 프롬프트 전송 멀티모달 프롬프트 전송 시스템 지시 설정 모델 매개변수 구성 안전 필터 구성 다중 턴(multi-turn) 채팅 시작 생성된...","categories": ["Generative AI","Practical Lab"],
+        "tags": [],
+        "url": "/generative%20ai/practical%20lab/intro_genai_sdk/",
+        "teaser": null
       }]
