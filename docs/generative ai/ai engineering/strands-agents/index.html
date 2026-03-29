@@ -1,0 +1,733 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>AWS Strands Agents SDK 소개 - JOINC AI TeamBlog</title>
+<meta name="description" content="AWS Strands Agents SDK 소개 및 주요 프레임워크 비교">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="JOINC AI TeamBlog">
+<meta property="og:title" content="AWS Strands Agents SDK 소개">
+<meta property="og:url" content="/generative%20ai/ai%20engineering/strands-agents/">
+
+
+  <meta property="og:description" content="AWS Strands Agents SDK 소개 및 주요 프레임워크 비교">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-03-29T22:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/generative%20ai/ai%20engineering/strands-agents/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="JOINC AI TeamBlog Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+  <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body
+  class="layout--single"
+  dir="ltr" style="position: relative; overflow-x: hidden;">
+
+  <!-- Ambient Glow Background Spots (Subtle) -->
+  <div style="position: fixed; top: -20%; left: -15%; width: 70%; height: 70%; background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 80%); z-index: -1; pointer-events: none;"></div>
+  <div style="position: fixed; bottom: -20%; right: -15%; width: 80%; height: 80%; background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 80%); z-index: -1; pointer-events: none;"></div>
+  <div style="position: fixed; top: 20%; right: -10%; width: 50%; height: 50%; background: radial-gradient(circle, rgba(16, 185, 129, 0.05) 0%, transparent 80%); z-index: -1; pointer-events: none;"></div>
+
+  <div class="initial-content">
+    
+  
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          JOINC AI TeamBlog
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/categories/ai-intelligence/"
+                
+                
+              >AI Intelligence</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/generative-ai/"
+                
+                
+              >Generative AI</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/practical-lab/"
+                
+                
+              >Practical Lab</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/ai-engineering/"
+                
+                
+              >AI Engineering</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/tech-strategy/"
+                
+                
+              >Tech Strategy</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="/" itemprop="url"></a>
+    </h3>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="AWS Strands Agents SDK 소개">
+    <meta itemprop="description" content="AWS Strands Agents SDK 소개 및 주요 프레임워크 비교">
+    <meta itemprop="datePublished" content="2026-03-29T22:00:00+09:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="/generative%20ai/ai%20engineering/strands-agents/" itemprop="url">AWS Strands Agents SDK 소개
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="aws-strands-agents-sdk-소개-및-주요-프레임워크-비교">AWS Strands Agents SDK 소개 및 주요 프레임워크 비교</h1>
+
+<p>Amazon Neptune을 활용한 Graph RAG 애플리케이션 구축 시, 아키텍처에 <strong>Strands Agents SDK</strong>가 있어서 소개해드리려고 합니다.</p>
+
+<p>최근 AWS에서 오픈소스로 공개한 <strong>Strands Agents SDK</strong>는 기존 프레임워크들의 복잡성을 덜어내고, LLM 자체의 추론 능력에 기반한 가볍고 강력한 대안으로 주목받고 있습니다.</p>
+
+<h2 id="1-strands-agents-sdk-간략-소개">1. Strands Agents SDK 간략 소개</h2>
+
+<p><a href="https://strandsagents.com/">Strands Agents SDK</a>는 복잡한 워크플로우를 하드코딩하는 대신, <strong>모델 중심(Model-driven) 접근 방식</strong>을 채택하여 단 몇 줄의 코드만으로 프로덕션 레벨의 AI 에이전트를 구축할 수 있는 오픈소스 프레임워크입니다.</p>
+
+<h3 id="-핵심-특징">🌟 핵심 특징</h3>
+
+<ol>
+  <li>
+    <p><strong>모델 중심 오케스트레이션 (Model-driven):</strong> 개발자가 노드(Node)와 엣지(Edge)를 일일이 그리는 대신, LLM이 스스로 계획(Plan)하고, 생각을 연결(Chain of thought)하며, 도구를 선택하도록 위임합니다.</p>
+  </li>
+  <li>
+    <p><strong>압도적인 코드 간결성:</strong> <code class="language-plaintext highlighter-rouge">Model</code>, <code class="language-plaintext highlighter-rouge">Prompt</code>, <code class="language-plaintext highlighter-rouge">Tools</code> 세 가지 요소만 선언하면 에이전트 루프가 자동으로 동작합니다. Python 함수 위에 <code class="language-plaintext highlighter-rouge">@tool</code> 데코레이터만 붙이면 즉시 LLM이 사용할 수 있는 도구로 변환됩니다.</p>
+  </li>
+  <li>
+    <p><strong>MCP(Model Context Protocol) 기본 지원:</strong> 수천 개의 사전 구축된 MCP 서버(Notion, Confluence, Graph DB 등)와 즉시 연결할 수 있어, Neptune 데이터베이스 쿼리 도구를 쉽게 확장할 수 있습니다.</p>
+  </li>
+  <li>
+    <p><strong>유연한 생태계 (Model Agnostic):</strong> Amazon Bedrock 뿐만 아니라 OpenAI, Anthropic, 로컬 모델(Ollama) 등 대부분의 LLM을 자유롭게 교체하며 사용할 수 있습니다.</p>
+  </li>
+</ol>
+
+<hr />
+<h2 id="2-단순-sdk-사용성-관점에서의-비교-developer-experience">2. 단순 SDK 사용성 관점에서의 비교 (Developer Experience)</h2>
+
+<p>목적과 설계 철학을 깊게 파고들기 전에, 순수한 개발 라이브러리(SDK) 관점만 놓고 보면 Strands Agents는 기존 인기 프레임워크들의 장점을 훌륭하게 흡수하여 직관적인 개발 경험을 제공합니다.</p>
+
+<ul>
+  <li>
+    <p><strong>LangChain과의 유사성 (간편한 도구 결합):</strong> LangChain이 <code class="language-plaintext highlighter-rouge">@tool</code> 데코레이터나 <code class="language-plaintext highlighter-rouge">bind_tools()</code>를 통해 일반 파이썬 함수를 LLM 도구로 쉽게 변환하듯, Strands Agents 역시 복잡한 클래스 상속이나 추상화 없이 가장 파이썬다운(Pythonic) 방식으로 Agent와 Tool을 즉각적으로 연결합니다.</p>
+  </li>
+  <li>
+    <p><strong>LiteLLM과의 유사성 (통합 모델 인터페이스):</strong> LiteLLM이 수많은 LLM 벤더의 복잡한 API를 하나의 표준 형식으로 묶어주듯, Strands Agents도 단일 인터페이스로 여러 모델을 호출합니다. 각 벤더의 API 규격을 따로 학습할 필요 없이, 코드 한 줄 변경(<code class="language-plaintext highlighter-rouge">model="anthropic.claude-3"</code> -&gt; <code class="language-plaintext highlighter-rouge">model="amazon.titan"</code>)만으로 모델 스위칭이 가능합니다.</p>
+  </li>
+</ul>
+
+<hr />
+<h2 id="3-목적-및-설계-철학-중심의-주요-프레임워크-비교">3. 목적 및 설계 철학 중심의 주요 프레임워크 비교</h2>
+
+<p>단순한 기능 호출을 넘어 애플리케이션의 <strong>오케스트레이션 아키텍처</strong>를 구성할 때, Strands Agents는 시중의 유명 SDK들과 비교하여 뚜렷한 포지셔닝을 가집니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>비교 항목</th>
+      <th>Strands Agents (AWS)</th>
+      <th>LangChain / LangGraph</th>
+      <th>ADK (CrewAI, AutoGen 등)</th>
+      <th>LiteLLM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>설계 철학</strong></td>
+      <td><strong>Model-driven</strong> (모델의 자율적 추론 우선)</td>
+      <td><strong>Graph/Workflow-driven</strong> (명시적 상태 머신 통제)</td>
+      <td><strong>Role/Conversation-driven</strong> (에이전트 간 대화와 역할극)</td>
+      <td><strong>I/O Standardization</strong> (API 프록시 및 표준화)</td>
+    </tr>
+    <tr>
+      <td><strong>오케스트레이션  방식</strong></td>
+      <td>LLM이 프롬프트와 도구 목록을 보고 스스로 실행 루프(Loop) 결정</td>
+      <td>개발자가 State, Node, Conditional Edge를 코드로 직접 설계</td>
+      <td>에이전트들에게 페르소나를 부여하고 순차적/계층적 대화로 작업 수행</td>
+      <td>(에이전트 프레임워크가 아님) 100+개 LLM의 API 호출 형식을 OpenAI 규격으로 통일</td>
+    </tr>
+    <tr>
+      <td><strong>학습 곡선 및  코드 복잡도</strong></td>
+      <td><strong>매우 낮음</strong> (단 5줄 내외의 코드로 기본 에이전트 구동 가능)</td>
+      <td><strong>매우 높음</strong> (개념이 방대하고 상태 관리 구조가 복잡함)</td>
+      <td><strong>보통</strong> (태스크와 에이전트 정의 위주로 직관적임)</td>
+      <td><strong>낮음</strong> (단순 라우팅 및 프록시 설정용)</td>
+    </tr>
+    <tr>
+      <td><strong>도구(Tool)  통합 방식</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">@tool</code> 데코레이터 및 <strong>MCP(Model Context Protocol)</strong> 네이티브 지원</td>
+      <td>자체 <code class="language-plaintext highlighter-rouge">Tool</code> 클래스 래핑 및 방대한 커뮤니티 통합(Integrations) 패키지</td>
+      <td>LangChain 도구 호환 또는 자체 커스텀 함수 사용</td>
+      <td>도구 통합 기능보다는 함수 호출(Function Calling) 파싱에 집중</td>
+    </tr>
+    <tr>
+      <td><strong>Graph RAG /  AWS 연동성</strong></td>
+      <td><strong>최상</strong> (Bedrock, S3 Vector, Lambda 등과 네이티브 통합, MCP로 Neptune 연동 용이)</td>
+      <td>우수 (다양한 Graph DB 라이브러리가 존재하나 구조가 무거워질 수 있음)</td>
+      <td>보통 (Multi-Agent로 Cypher 검증 루프 설계는 좋으나 구현이 까다로움)</td>
+      <td>해당 없음 (보통 Strands나 LangChain 내부에서 모델 호출용으로 쓰임)</td>
+    </tr>
+    <tr>
+      <td><strong>적합한  사용 사례(Use Case)</strong></td>
+      <td>AWS 환경에서 빠르게 프로덕션 배포가 필요한 챗봇, 자율 도구 실행 에이전트</td>
+      <td>복잡한 승인 절차(Human-in-the-loop)나 엄격한 순서 제어가 필요한 시스템</td>
+      <td>마케팅 컨텐츠 작성, 코드 리뷰 등 여러 페르소나의 협업이 필요한 작업</td>
+      <td>하나의 앱에서 OpenAI, Claude, Llama 등을 동적으로 스위칭해야 할 때</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h2 id="4-요약-및-시사점-graph-rag-관점">4. 요약 및 시사점 (Graph RAG 관점)</h2>
+
+<p>Amazon Neptune을 이용한 Graph RAG 아키텍처를 설계할 때 SDK 선택의 기준은 다음과 같습니다.</p>
+
+<ul>
+  <li>
+    <p><strong>Strands Agents를 선택해야 할 때:</strong> 복잡한 오케스트레이션 코드를 걷어내고, <strong>“Neptune DB 조회 툴”, “Vector DB 검색 툴”을 MCP로 던져주기만 하면 강력한 LLM(Claude 3.5 Sonnet 등)이 알아서 적절한 도구를 조합해 답변을 도출</strong>하는 유연하고 빠른 개발이 필요하다면 Strands Agents가 최고의 선택입니다.</p>
+  </li>
+  <li>
+    <p><strong>참고 (LiteLLM의 역할):</strong> LiteLLM은 Strands Agents와 경쟁하는 기술이 아닙니다. 오히려 Strands 내부에서 다양한 외부 LLM을 호출할 때 사용하는 <strong>‘어댑터(Adapter)’</strong> 역할을 하여 두 기술은 훌륭한 시너지를 냅니다.</p>
+  </li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#ai-engineering" class="page__taxonomy-item p-category" rel="tag">AI Engineering</a><span class="sep">, </span>
+    
+      <a href="/categories/#generative-ai" class="page__taxonomy-item p-category" rel="tag">Generative AI</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2026-03-29T22:00:00+09:00">March 29, 2026</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=AWS+Strands+Agents+SDK+%EC%86%8C%EA%B0%9C%20%2Fgenerative%2520ai%2Fai%2520engineering%2Fstrands-agents%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fgenerative%2520ai%2Fai%2520engineering%2Fstrands-agents%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=/generative%20ai/ai%20engineering/strands-agents/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=AWS+Strands+Agents+SDK+%EC%86%8C%EA%B0%9C%20%2Fgenerative%2520ai%2Fai%2520engineering%2Fstrands-agents%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ai%20intelligence/ai%20engineering/neptune_kg/" class="pagination--pager" title="Amazon Neptune 워크샵 후기: 지식 그래프의 현주소와 엔터프라이즈 도입 전략">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ai%20intelligence/ai%20engineering/neptune_kg/" rel="permalink">Amazon Neptune 워크샵 후기: 지식 그래프의 현주소와 엔터프라이즈 도입 전략
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+      
+        Amazon Neptune 워크샵을 통해 지식 그래프의 현주소와 엔터프라이즈 도입 전략을 구체화합니다."
+      
+    </p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/generative%20ai/practical%20lab/intro_genai_sdk/" rel="permalink">생성형 AI API 서비스에 대한 통합 인터페이스 (Google Gen AI SDK)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          24 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+      
+        구글의 생성형 AI API 서비스에 대한 통합 인터페이스를 제공합니다."
+      
+    </p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/ai%20intelligence/tech%20strategy/agentgo-market-strategy-intelligence-vol01/" rel="permalink">2026 2월 AI 트렌드 리포트: ‘에이전틱 분석’의 표준화와 버티컬 AX 전략
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          8 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+      
+        모델 경쟁을 넘어 워크플로우 경쟁으로. 2026년 초입에서 마주한 AI 시장의 핵심 기술 동향과 비즈니스 대응 전략을 심층 분석합니다.
+      
+    </p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/generative%20ai/practical%20lab/image_generation/" rel="permalink">Imagen 4 모델을 활용한 이미지 생성
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+      
+        Imagen 4 모델을 활용하여 이미지를 생성하는 코드입니다. 다양한 버전의 Imagen 모델을 통해 실습해보세요."
+      
+    </p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+
+<script src="https://giscus.app/client.js"
+        data-repo="joinc-dream/joinc-dream.github.io"
+        data-repo-id="R_kgDOPa3ASQ"
+        data-category="General"
+        data-category-id="DIC_kwDOPa3ASc4CuAGK"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="ko"
+        crossorigin="anonymous"
+        async>
+</script>
+</div>
+
+
+    
+  </div>
+
+  
+
+  <div id="footer" class="page__footer">
+    <footer>
+      <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+      
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2013 - 2026 <a href="">JOINC AI TeamBlog</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+    </footer>
+  </div>
+
+  
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

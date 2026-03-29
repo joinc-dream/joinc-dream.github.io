@@ -70,4 +70,16 @@ var store = [{
         "tags": [],
         "url": "/generative%20ai/practical%20lab/intro_genai_sdk/",
         "teaser": null
+      },{
+        "title": "Amazon Neptune 워크샵 후기: 지식 그래프의 현주소와 엔터프라이즈 도입 전략",
+        "excerpt":"Amazon Neptune 워크샵 후기: 지식 그래프의 현주소와 엔터프라이즈 도입 전략 최근 성공적으로 Amazon Neptune 기반의 지식 그래프(Knowledge Graph) 및 온톨로지(Ontology) 실습 워크샵을 마무리했습니다. 저는 RAG 기반 Agent를 개발하는 AI Engineer로서 Vector DB를 활용한 일반적인 RAG 뿐 아니라 Neo4j와 같은 Graph DB를 활용한 Graph RAG에도 관심이 꾸준히 있었지만, 비용이 너무 큰...","categories": ["AI Intelligence","AI Engineering"],
+        "tags": [],
+        "url": "/ai%20intelligence/ai%20engineering/neptune_kg/",
+        "teaser": null
+      },{
+        "title": "AWS Strands Agents SDK 소개",
+        "excerpt":"AWS Strands Agents SDK 소개 및 주요 프레임워크 비교 Amazon Neptune을 활용한 Graph RAG 애플리케이션 구축 시, 아키텍처에 Strands Agents SDK가 있어서 소개해드리려고 합니다. 최근 AWS에서 오픈소스로 공개한 Strands Agents SDK는 기존 프레임워크들의 복잡성을 덜어내고, LLM 자체의 추론 능력에 기반한 가볍고 강력한 대안으로 주목받고 있습니다. 1. Strands Agents SDK 간략...","categories": ["Generative AI","AI Engineering"],
+        "tags": [],
+        "url": "/generative%20ai/ai%20engineering/strands-agents/",
+        "teaser": null
       }]

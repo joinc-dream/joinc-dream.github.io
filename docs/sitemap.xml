@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/members/sangbaeyun/</loc>
-<lastmod>2026-03-24T21:42:37+09:00</lastmod>
+<lastmod>2026-03-29T12:52:58+09:00</lastmod>
 </url>
 <url>
 <loc>/members/soonsin/</loc>
-<lastmod>2026-03-24T21:42:37+09:00</lastmod>
+<lastmod>2026-03-29T12:52:58+09:00</lastmod>
 </url>
 <url>
 <loc>/generative%20ai/practical%20lab/chat-gpt-oss/</loc>
@@ -47,6 +47,14 @@
 <url>
 <loc>/generative%20ai/practical%20lab/intro_genai_sdk/</loc>
 <lastmod>2026-03-24T22:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>/ai%20intelligence/ai%20engineering/neptune_kg/</loc>
+<lastmod>2026-03-29T22:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>/generative%20ai/ai%20engineering/strands-agents/</loc>
+<lastmod>2026-03-29T22:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>/about/</loc>
